@@ -2,12 +2,12 @@ import React from "react";
 import { render } from "react-dom";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./theme/Theme.js";
-
-class App extends React {
+import Home from "./components/home/Home.jsx";
+class App extends React.Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <div>Hello World</div>
+        <Home />
       </MuiThemeProvider>
     );
   }
