@@ -1,4 +1,4 @@
-var webpack=require("webpack");
+var webpack = require("webpack");
 var path = require("path");
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
@@ -11,9 +11,9 @@ var config = {
         publicPath: "/app/"
     },
     devServer: {
-        inline:true,
+        inline: true,
         port: 1970
-      },
+    },
     module: {
         rules: [
             {
@@ -33,9 +33,9 @@ var config = {
             },
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: /(node_modules|bower_components)/,
                 use: ['eslint-loader']
-              }
+            }
         ]
     }
 };
