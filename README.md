@@ -13,7 +13,7 @@
     ALTER USER "postgres" with PASSWORD '//ENTER YOUR PASSWORD HERE//';
     ```
 
-4. Change the password in scripts/setup.sh
+4. Copy scripts/sample.setup.sh to scripts/setup.sh and change the password.
 5. Run `cd scripts && bash setup.sh`
 6. Install nvm - Node Version Manager
     * `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
