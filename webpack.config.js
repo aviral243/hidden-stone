@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-const WebpackMd5Hash = require('webpack-md5-hash');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WebpackDashboard = require('webpack-dashboard/plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -19,6 +18,9 @@ const config = {
         open: true,
         inline: true,
         port: 1970
+    },
+    optimization: {
+        minimize: true,
     },
     module: {
         rules: [
@@ -49,7 +51,6 @@ const config = {
             // default: false
             dry: true,
         }),
-        new WebpackMd5Hash(),
         new WebpackDashboard(), // Adding webpack-dashboard plugin
         new BundleAnalyzerPlugin({
             // Can be `server`, `static` or `disabled`.

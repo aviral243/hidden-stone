@@ -48,7 +48,6 @@
     "webpack-cli": "^3.3.2",
     "webpack-dashboard": "^3.0.6",
     "webpack-dev-server": "^3.3.1",
-    "webpack-md5-hash": "0.0.6",
     "webpack-stats-plugin": "^0.2.1"
   }
 }
