@@ -2,3 +2,4 @@ node_modules
 package-lock.json
 dist
 scripts/setup.sh
+stats.json
