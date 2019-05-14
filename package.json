@@ -2,7 +2,7 @@
   "name": "hidden-stone",
   "version": "1.0.0",
   "description": "UFound",
-  "main": "IIIndex.js",
+  "main": "Index.js",
   "scripts": {
     "start": "npm run build",
     "build": " webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --open",
