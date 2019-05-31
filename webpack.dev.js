@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 const WebpackDashboard = require("webpack-dashboard/plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
@@ -5,6 +6,8 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 const merge = require("webpack-merge");
 const common = require("./webpack.config");
 const DIST_DIR = path.resolve(__dirname, "dist");
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
 
 const configDev = {
   devServer: {
@@ -12,7 +15,8 @@ const configDev = {
     compress: true,
     open: true,
     inline: true,
-    port: 1970
+    port: 1970,
+    hot: true
   },
   plugins: [
     new WebpackDashboard(), // Adding webpack-dashboard plugin
@@ -39,8 +43,10 @@ const configDev = {
       statsOptions: null,
       // Log level. Can be 'info', 'warn', 'error' or 'silent'.
       logLevel: "info"
-    })
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 };
 
-module.exports = merge(common, configDev);
+module.exports = smp.wrap(merge(common, configDev));
