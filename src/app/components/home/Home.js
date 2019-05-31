@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 class Home extends Component {
   render() {
-    return <div>Hello World</div>;
+    return <div className="main">Hello World!!!</div>;
   }
 }
 

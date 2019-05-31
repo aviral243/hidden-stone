@@ -3,3 +3,5 @@ package-lock.json
 dist
 scripts/setup.sh
 stats.json
+.vscode
+.dist
