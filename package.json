@@ -8,7 +8,7 @@
     "build": "webpack-dev-server --config webpack.dev.js",
     "start:dashboard": "webpack-dashboard -- npm start",
     "build:prod": " webpack --config webpack.prod.js",
-    "bundle-report": "webpack-bundle-analyzer --port 9000 stats.json"
+    "bundle-report": "webpack --profile --json > stats.json && webpack-bundle-analyzer  --port 9000 stats.json"
   },
   "repository": {
     "type": "git",

@@ -13,9 +13,13 @@ const config = {
     // chunkFilename: "[id].bundle_[chunkhash].js",
     // sourceMapFilename: "[file].map",
     path: `${DIST_DIR}/app`,
-    publicPath: "/app/"
+    publicPath: "/app/",
+    pathinfo: false
   },
   optimization: {
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
+    splitChunks: false
     // splitChunks: {
     //   chunks: "all",
     //   minSize: 30000,
@@ -38,12 +42,22 @@ const config = {
     //   }
     // }
   },
-
+  resolve: {
+    // options for resolving module requests
+    // (does not apply to resolving to loaders)
+    modules: ["node_modules", `${SRC_DIR}/app`]
+  },
   module: {
     rules: [
-      { test: /(\.scss)$/, use: ["style-loader", "css-loader", "sass-loader"] },
+      {
+        test: /(\.scss)$/,
+        include: `${SRC_DIR}/app/styles`,
+        use: ["style-loader", "css-loader", "sass-loader"]
+      },
       {
         test: /\.(html)$/,
+        include: `${SRC_DIR}/index.html`,
+        exclude: /(node_modules|bower_components)/,
         use: {
           loader: "html-loader",
           options: {
