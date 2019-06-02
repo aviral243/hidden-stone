@@ -25,6 +25,6 @@
 
 7. Follow <https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge> for changing 'peer' to 'md5' for postgresql. This step is necessary for phppgadmin
 8. Run  `npm install`
-9. Run `npm start` for development build
+9. Run `npm start -s` for development build
 
 ### visit <https://localhost:1970/>

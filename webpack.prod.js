@@ -4,11 +4,17 @@ const common = require("./webpack.config");
 const OfflinePlugin = require("offline-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const path = require("path");
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
 
 const SRC_DIR = path.resolve(__dirname, "src");
 
 const configProd = {
   mode: "production",
+  performance: {
+    maxAssetSize: 1e7,
+    maxEntrypointSize: 1e7
+  },
   optimization: {
     minimize: true,
     minimizer: [
@@ -48,4 +54,4 @@ const configProd = {
     new webpack.optimize.ModuleConcatenationPlugin()
   ]
 };
-module.exports = merge(common, configProd);
+module.exports = smp.wrap(merge(common, configProd));
