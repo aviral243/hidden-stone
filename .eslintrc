@@ -2,7 +2,7 @@
     "settings": {
         "react": {
             "version": "detect"
-        },
+        }
     },
     "extends": [
         "eslint:recommended",
@@ -24,9 +24,7 @@
     "env": {
         "es6": true,
         "browser": true,
-        "node": true,
-        "jquery": true,
-        "mocha": true
+        "node": true
     },
     "rules": {
         "prettier/prettier": 1,
@@ -116,7 +114,7 @@
         "no-debugger": 1,
         "no-var": 1,
         "semi": [
-            1,
+            0,
             "always"
         ],
         "no-trailing-spaces": 0,
