@@ -16,32 +16,6 @@ const config = {
     publicPath: "/hidden-stone/app/",
     pathinfo: false
   },
-  optimization: {
-    removeAvailableModules: false,
-    removeEmptyChunks: true,
-    // splitChunks: false
-    splitChunks: {
-      chunks: "all",
-      minSize: 300,
-      maxSize: 30000,
-      minChunks: 10,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 2,
-      automaticNameDelimiter: "~",
-      name: false,
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true
-        }
-      }
-    }
-  },
   resolve: {
     // options for resolving module requests
     // (does not apply to resolving to loaders)
