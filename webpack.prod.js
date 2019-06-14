@@ -16,6 +16,30 @@ const configProd = {
     maxEntrypointSize: 1e7
   },
   optimization: {
+    removeAvailableModules: false,
+    removeEmptyChunks: true,
+    // splitChunks: false
+    splitChunks: {
+      chunks: "all",
+      minSize: 10000,
+      maxSize: 40000,
+      minChunks: 10,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 2,
+      automaticNameDelimiter: "~",
+      name: false,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    },
     minimize: true,
     minimizer: [
       new UglifyJsPlugin({
