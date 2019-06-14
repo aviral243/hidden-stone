@@ -14,6 +14,7 @@ const configDev = {
     contentBase: SRC_DIR,
     compress: true,
     open: true,
+    host: "0.0.0.0",
     inline: true,
     port: 1970,
     hot: true,

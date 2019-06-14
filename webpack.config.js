@@ -10,37 +10,37 @@ const config = {
   },
   output: {
     filename: "bundle.js",
-    // chunkFilename: "[id].bundle_[chunkhash].js",
-    // sourceMapFilename: "[file].map",
+    chunkFilename: "[chunkhash].js",
+    sourceMapFilename: "[file].map",
     path: `${DIST_DIR}/app`,
-    publicPath: "/app/",
+    publicPath: "/hidden-stone/app/",
     pathinfo: false
   },
   optimization: {
     removeAvailableModules: false,
-    removeEmptyChunks: false,
-    splitChunks: false
-    // splitChunks: {
-    //   chunks: "all",
-    //   minSize: 30000,
-    //   maxSize: 0,
-    //   minChunks: 1,
-    //   maxAsyncRequests: 5,
-    //   maxInitialRequests: 3,
-    //   automaticNameDelimiter: "~",
-    //   name: false,
-    //   cacheGroups: {
-    //     vendors: {
-    //       test: /[\\/]node_modules[\\/]/,
-    //       priority: -10
-    //     },
-    //     default: {
-    //       minChunks: 2,
-    //       priority: -20,
-    //       reuseExistingChunk: true
-    //     }
-    //   }
-    // }
+    removeEmptyChunks: true,
+    // splitChunks: false
+    splitChunks: {
+      chunks: "all",
+      minSize: 300,
+      maxSize: 30000,
+      minChunks: 10,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 2,
+      automaticNameDelimiter: "~",
+      name: false,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
   },
   resolve: {
     // options for resolving module requests
@@ -95,8 +95,6 @@ const config = {
     new HtmlWebpackPlugin({
       template: `${SRC_DIR}/index.html`,
       filename: `${DIST_DIR}/index.html`
-      // chunks: ["bundle"],
-      // inject: "body"
     }),
     new webpack.ProgressPlugin()
   ]
