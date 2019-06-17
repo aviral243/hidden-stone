@@ -1,0 +1,38 @@
+.toolbar{
+    position: absolute;
+    width: 422px;
+    left: 1497px;;
+    top: 308px;
+    height: 400px;
+}
+
+.navigation{
+    display: flex;
+    height: 100%;
+
+}
+
+.items a{
+    color: black;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    height: 100px;;
+}
+
+li{
+    height: 100px;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.verticalLine{
+    border-left: 2px solid #000;
+
+}
