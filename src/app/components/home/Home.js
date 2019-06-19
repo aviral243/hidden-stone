@@ -3,7 +3,7 @@ import TopBar from "../topbar/TopBar.js";
 class Home extends Component {
   render() {
     return (
-      <div className="main">
+      <div>
         <TopBar />
       </div>
     );

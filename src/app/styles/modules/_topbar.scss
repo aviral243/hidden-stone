@@ -1,6 +1,28 @@
-.topbar{
-    display: inline-block;
+
+.main{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
 }
 
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem;
+}
 
+.contact{
+    display: block;
+    margin: auto 0 auto 0;
+}
 
+.web{
+    display: block;
+}
+
+.contactUs{
+    font-family: "Lato";
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}

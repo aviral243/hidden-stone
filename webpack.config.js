@@ -56,7 +56,7 @@ const config = {
         ]
       },
       {
-        test: /\.(jpe?g|png|woff|svg)(\?[a-z0-9=.]+)?$/,
+        test: /\.(jpe?g|png|svg)(\?[a-z0-9=.]+)?$/,
         loader: "url-loader?limit=10000"
       }
     ]

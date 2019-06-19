@@ -2,15 +2,15 @@ import React, { Component } from "react";
 class TopBar extends Component {
   render() {
     return (
-      <div className="topbar">
-        <span>
+      <div className="main">
+        <div className="web">
           <div className="logo">
             <a href={"https://www.google.com"}>
               <img src={require("../../images/logo.svg")} />
             </a>
           </div>
-        </span>
-        <span>
+        </div>
+        <div className="contact">
           <div className="logo">
             <a href={"https://www.google.com"}>
               <img src={require("../../images/FB.svg")} />
@@ -22,9 +22,11 @@ class TopBar extends Component {
             </a>
           </div>
           <div className="logo">
-            <a href={"https://www.google.com"}>Contact</a>
+            <a className="contactUs" href={"https://www.google.com"}>
+              CONTACT
+            </a>
           </div>
-        </span>
+        </div>
       </div>
     );
   }
