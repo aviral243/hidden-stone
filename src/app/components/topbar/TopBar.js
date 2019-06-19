@@ -1,16 +1,30 @@
 import React, { Component } from "react";
-import Logo from "./Logo.js";
-import Facebook from "./Facebook";
-import Instagram from "./Instagram";
-import Contact from "./Contact";
 class TopBar extends Component {
   render() {
     return (
-      <div>
-        <Logo />
-        <Facebook />
-        <Instagram />
-        <Contact />
+      <div className="topbar">
+        <span>
+          <div className="logo">
+            <a href={"https://www.google.com"}>
+              <img src={require("../../images/logo.svg")} />
+            </a>
+          </div>
+        </span>
+        <span>
+          <div className="logo">
+            <a href={"https://www.google.com"}>
+              <img src={require("../../images/FB.svg")} />
+            </a>
+          </div>
+          <div className="logo">
+            <a href={"https://www.google.com"}>
+              <img src={require("../../images/Insta.svg")} />
+            </a>
+          </div>
+          <div className="logo">
+            <a href={"https://www.google.com"}>Contact</a>
+          </div>
+        </span>
       </div>
     );
   }
