@@ -5,6 +5,12 @@ class Home extends Component {
     return (
       <div>
         <TopBar />
+        <section>
+          <img id="bg1" src={require("../../images/HomeBG.png")} />
+        </section>
+        <section>
+          <img id="bg1" src={require("../../images/HomeBG.png")} />
+        </section>
       </div>
     );
   }

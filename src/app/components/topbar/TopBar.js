@@ -2,7 +2,7 @@ import React, { Component } from "react";
 class TopBar extends Component {
   render() {
     return (
-      <div className="main">
+      <div className="topbar">
         <div className="web">
           <div className="logo">
             <a href={"https://www.google.com"}>
