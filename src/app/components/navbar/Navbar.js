@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-const navbr = () => {
+const navbar = () => {
   return (
     <ul className="Navbar">
       <li className="NavItem">
@@ -28,4 +28,4 @@ const navbr = () => {
   );
 };
 
-export default navbr;
+export default navbar;
