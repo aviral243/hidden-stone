@@ -1,24 +1,27 @@
 import React, { Component } from "react";
+import UFlogo from "../../images/logo.svg";
+import FBlogo from "../../images/FB.svg";
+import Instalogo from "../../images/Insta.svg";
 class TopBar extends Component {
   render() {
     return (
-      <div className="topbar">
+      <div className="TopBarContainer">
         <div className="web">
           <div className="logo">
             <a href={"https://www.google.com"}>
-              <img src={require("../../images/logo.svg")} />
+              <img src={UFlogo} />
             </a>
           </div>
         </div>
         <div className="contact">
           <div className="logo">
             <a href={"https://www.google.com"}>
-              <img src={require("../../images/FB.svg")} />
+              <img src={FBlogo} />
             </a>
           </div>
           <div className="logo">
             <a href={"https://www.google.com"}>
-              <img src={require("../../images/Insta.svg")} />
+              <img src={Instalogo} />
             </a>
           </div>
           <div className="logo">

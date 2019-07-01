@@ -5,3 +5,56 @@
 body{
     margin: 0;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    margin: 20px;
+    padding: 0px 15px 0px 15px;
+    height: 60px;
+    width: 330px;
+    background-color:#FBFBFB;
+    border: solid 1px #c4c4c4;
+    font-size: 28px;
+    font-weight: lighter;
+    font-family: 'Lato';
+}
+
+input:focus{
+    margin: 20px;
+    padding: 0px 15px 0px 15px;
+    height: 60px;
+    width: 330px;
+    background-color:#FBFBFB;
+    border: solid 1px #c4c4c4;
+    font-size: 28px;
+    font-family: 'Lato';
+    font-weight: lighter;
+    border: 0;
+    outline-color: #FF9B40;
+}
+
+button{
+    height: 64px;
+    padding: 0 64px 0 64px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size:20px;
+    background-color: #FF9B40;
+    border: 0;
+    outline: 0;
+}
+
+button:active{
+    height: 64px;
+    padding: 0 64px 0 64px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size:20px;
+    background-color: rgb(255, 134, 64);
+    border: 0;
+}
