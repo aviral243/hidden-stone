@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-const navbar = () => {
+const NavBar = () => {
   return (
-    <ul className="Navbar">
+    <ul className="NavBarContainer">
       <li className="NavItem">
         <NavLink to="/" exact>
           HOME
@@ -28,4 +28,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default NavBar;

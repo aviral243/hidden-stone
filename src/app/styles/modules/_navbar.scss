@@ -1,33 +1,15 @@
-.Navbar {
-    // position: absolute;
-    //width: 422px;
-    // left: 1497px;
-    // top: 308px;
-    // margin: 0;
-    // padding: 0;
+.NavBarContainer {
     list-style: none;
     align-items: center;
-    // height: 100%;
     width: fit-content;
     
 }
-
-// .NavItem{
-//    // padding: 50px 0;
-//     //box-sizing: border-box;
-//     //display: block;
-//     //width: 100%;
-    
-    
-// }
 
 .NavItem a {
     color: #2b2b2b;
     text-decoration: none;
     width: 422px;
-    //box-sizing: border-box;
     display: block;
-    //height: 100px;
     font-family: Lato;
     font-size: 25px;
     line-height: 30px;
