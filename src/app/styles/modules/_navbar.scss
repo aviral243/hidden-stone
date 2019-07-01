@@ -1,0 +1,36 @@
+.NavBarContainer {
+    list-style: none;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+.NavItem a {
+    color: #2b2b2b;
+    text-decoration: none;
+    width: 422px;
+    display: block;
+    font-family: Lato;
+    font-size: 25px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 32.51px 0px 32.01px 40px;
+    border-left: 2px solid #2b2b2b;
+    transition: background-color 1s;
+    
+} 
+ 
+.NavItem a:active,
+.NavItem a.active {
+
+    color: #ff9b40;
+    background-color: #fbfbfb;
+    opacity: 0.75;
+    border-left: 6px solid #ff9b40;
+    
+}
+
+.NavItem a:hover{
+    background-color: #fbfbfb;
+}
