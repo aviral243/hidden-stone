@@ -54,6 +54,10 @@ const config = {
           },
           "eslint-loader"
         ]
+      },
+      {
+        test: /\.(jpe?g|png|svg)(\?[a-z0-9=.]+)?$/,
+        loader: "url-loader?limit=10000"
       }
     ]
   },
