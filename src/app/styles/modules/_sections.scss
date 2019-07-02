@@ -1,0 +1,40 @@
+.MainSection{
+@include section();
+align-content: center;
+>span{
+    display: flex;
+    flex-direction: row;
+}
+
+.donate{
+    @include btn-standard();
+}
+.learnmore{
+    @include btn-standard-transparent();
+}
+}
+.AboutUsSection{
+    @include section();
+}
+.viewMore{
+    @include btn-standard-transparent();
+    color:$primaryColor;
+    min-width: fit-content;
+    padding:0;
+    min-height: fit-content;
+    >img{
+        margin-top: 0.2rem;
+        margin-left: 1rem;
+    }
+}
+.OurWorkSection{
+    @include section();
+   > .workContainer{
+        >.imgMainContainer{
+            @include image-container(1.75);
+        }
+        >.imgContainer{
+            @include image-container(1);
+        }
+    }
+}

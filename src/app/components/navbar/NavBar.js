@@ -20,7 +20,7 @@ const NavBar = () => {
         </NavLink>
       </li>
       <li className="NavItem">
-        <NavLink to="/join" exact>
+        <NavLink to="/donate" exact>
           JOIN THE JOURNEY
         </NavLink>
       </li>

@@ -1,0 +1,96 @@
+@mixin section(){
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0.75*$gutterWidth 0.5*$gutterWidth;
+    margin: 2*$gutterWidth;
+}
+@mixin btn($scale:1){
+ align-items: center;
+  border:0;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-family: $generalFontFamily;
+  font-size: $scale*1.4rem;
+  height: $scale*3.5rem;
+  justify-content: space-around;
+  margin: 0;
+  min-width: 12rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0;
+}
+@mixin btn-standard($scale:1) {
+ @include btn($scale:1);
+  background-color: $primaryColor;
+  &:hover{
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15);
+    // transform: translateY(-0.125rem);
+  }
+  &:hover:active, &:active {
+    box-shadow: 0 0 0 white;
+    background: $primaryColorDark;
+    // transform: translateY(0);
+  }
+  &:disabled, &:hover:disabled{
+    box-shadow: 0 0 0 white;
+    // transform: translateY(0);
+    color: white;
+    background: $primaryDisabledColor;
+  }
+}
+
+@mixin btn-standard-transparent($scale:1) {
+ @include btn($scale:1);
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  // -webkit-transition: all 0.1s ease-in-out;
+  // -moz-transition: all 0.1s ease-in-out;
+  // transition: all 0.1s ease-in-out;
+  // transform: translate(0, 0);
+  &:hover{
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  &:hover:active, &:active {
+    box-shadow: 0 0 0 rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+  }
+}
+@mixin image-scale($scale:1) {
+width: $scale*13.125rem;
+   min-height: 7.875rem;
+   height: $scale*7.875rem;
+}
+
+@mixin image-container($scale:1){
+ display: flex;
+ flex-direction: column;
+ margin: 0;
+ padding: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  min-height: $scale*7.875rem;
+  width: $scale*13.125rem;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  >img {
+    @include image-scale($scale);
+    object-fit: cover;
+    margin: 0;
+  }
+  >.imgContent{
+      display: flex;
+      flex-direction: column;
+      padding:$scale*0.45rem $scale*0.8rem;
+ >.imgHeading{
+      font-size: $scale*0.8rem;
+      font-weight: 500;
+    }
+    >.imgSubHeading{
+        font-size: $scale*0.6rem;
+      font-weight: 300;
+  }
+ 
+        
+  }
+}
