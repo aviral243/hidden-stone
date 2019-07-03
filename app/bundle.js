@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		1: 0
+/******/ 		2: 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,44 +148,18 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([17,2,0]);
+/******/ 	deferredModules.push([36,4,3,5,6,1,0]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-module.exports = __webpack_require__.p + "178f0d3c5216d712d1c67360dd1d3c40.svg";
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI5LjE0NzggMjUuNDAyOEwyOS44MTE1IDIwLjM2NzZIMjQuNzMwMVYxNy4xNTMyQzI0LjczMDEgMTUuNjk3MSAyNS4xNDE2IDE0LjcwNDYgMjcuMjczNCAxNC43MDQ2SDMwVjEwLjIwMDhDMjguNjg1MyAxMC4wNjIzIDI3LjM2MzggOS45OTUzNyAyNi4wNDE2IDEwLjAwMDJDMjIuMTIzIDEwLjAwMDIgMTkuNDQxNiAxMi4zNDQ2IDE5LjQ0MTYgMTYuNjU1N1YyMC4zNjc2SDE1VjI1LjQwMjhIMTkuNDMxVjM4QzIxLjIzMTUgMzcuOTg4MyAyMy4wMjA1IDM3LjcxNzEgMjQuNzQwNyAzNy4xOTUxVjI1LjQwMjhIMjkuMTQ3OFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zOCAxOS45OTc0QzM4LjAwMDUgMjMuNTU3NiAzNi45NDUzIDI3LjAzNzkgMzQuOTY3NyAyOS45OTg0QzMyLjk5MDIgMzIuOTU4OCAzMC4xNzkxIDM1LjI2NjMgMjYuODkwMSAzNi42MjkxQzIzLjYwMTEgMzcuOTkxOSAxOS45ODE4IDM4LjM0ODcgMTYuNDkgMzcuNjU0NEMxMi45OTgxIDM2Ljk2MDIgOS43OTA2MSAzNS4yNDYxIDcuMjczIDMyLjcyODhDNC43NTU0IDMwLjIxMTYgMy4wNDA4MSAyNy4wMDQzIDIuMzQ2MDYgMjMuNTEyNkMxLjY1MTMyIDIwLjAyMDggMi4wMDc2MyAxNi40MDE1IDMuMzY5OTMgMTMuMTEyM0M0LjczMjIzIDkuODIzMDcgNy4wMzkzMyA3LjAxMTcxIDkuOTk5NDcgNS4wMzM3M0MxMi45NTk2IDMuMDU1NzUgMTYuNDM5OCAyIDIwIDJDMjQuNzczMiAyLjAwMDY5IDI5LjM1MDggMy44OTY5NyAzMi43MjYyIDcuMjcxOTJDMzYuMTAxNyAxMC42NDY5IDM3Ljk5ODYgMTUuMjI0MiAzOCAxOS45OTc0VjE5Ljk5NzRaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L3N2Zz4K"
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI0Ljg5NCAzNkgxMS4xMDZDOC4xNjE3MiAzNS45OTU5IDUuMzM5MTIgMzQuNzY5MSAzLjI1NzE4IDMyLjU4ODZDMS4xNzUyMyAzMC40MDgxIDAuMDAzODg4MTcgMjcuNDUxOCAwIDI0LjM2ODFWMTEuNjMxOUMwLjAwMzg4ODE3IDguNTQ4MTcgMS4xNzUyMyA1LjU5MTkyIDMuMjU3MTggMy40MTE0QzUuMzM5MTIgMS4yMzA4OCA4LjE2MTcyIDAuMDA0MDcyMjcgMTEuMTA2IDBIMjQuODk0QzI3LjgzODYgMC4wMDMwNTYwMiAzMC42NjE3IDEuMjI5NTQgMzIuNzQzOSAzLjQxMDI4QzM0LjgyNiA1LjU5MTAyIDM1Ljk5NzEgOC41NDc4NiAzNiAxMS42MzE5VjI0LjM2ODFDMzUuOTk3MSAyNy40NTIxIDM0LjgyNiAzMC40MDkgMzIuNzQzOSAzMi41ODk3QzMwLjY2MTcgMzQuNzcwNSAyNy44Mzg2IDM1Ljk5NjkgMjQuODk0IDM2Wk0xMS4xMDYgMi42MDQ5NkM4LjgyMTkyIDIuNjEyMDYgNi42MzMyNCAzLjU2NTI3IDUuMDE3NzggNS4yNTY1QzMuNDAyMzIgNi45NDc3MyAyLjQ5MTI3IDkuMjM5NjMgMi40ODM1MiAxMS42MzE5VjI0LjM2ODFDMi40ODU0NiAyNi43NjY3IDMuMzk2MDggMjkuMDY2NCA1LjAxNTQ1IDMwLjc2MjVDNi42MzQ4MiAzMi40NTg1IDguODMwNTkgMzMuNDEyMiAxMS4xMjA3IDMzLjQxNDNIMjQuODk0QzI3LjE4NDQgMzMuNDEyMiAyOS4zODA2IDMyLjQ1ODYgMzEuMDAwNiAzMC43NjI3QzMyLjYyMDUgMjkuMDY2OCAzMy41MzE5IDI2Ljc2NyAzMy41MzQ5IDI0LjM2ODFWMTEuNjMxOUMzMy41MjcxIDkuMjM2MzEgMzIuNjEzNSA2Ljk0MTUxIDMwLjk5NDEgNS4yNDk3M0MyOS4zNzQ3IDMuNTU3OTUgMjcuMTgxMyAyLjYwNjk4IDI0Ljg5NCAyLjYwNDk2SDExLjEwNlpNMTguMDA1NSAyOC4zODUyQzE2LjA1MTYgMjguMzg1MiAxNC4xNDE1IDI3Ljc3ODggMTIuNTE2NCAyNi42NDI2QzEwLjg5MTMgMjUuNTA2MyA5LjYyNDE5IDIzLjg5MTIgOC44NzQ5NSAyMi4wMDEyQzguMTI1NzIgMjAuMTExMiA3LjkyODAxIDE4LjAzMSA4LjMwNjgxIDE2LjAyMzRDOC42ODU2IDE0LjAxNTggOS42MjM5MSAxMi4xNzA4IDExLjAwMzIgMTAuNzIxM0MxMi4zODI1IDkuMjcxODcgMTQuMTQxIDguMjgyOTkgMTYuMDU2NiA3Ljg3OTU2QzE3Ljk3MjIgNy40NzYxMyAxOS45NTg5IDcuNjc2MjQgMjEuNzY2IDguNDU0NjRDMjMuNTczIDkuMjMzMDMgMjUuMTE5MyAxMC41NTQ4IDI2LjIwOTYgMTIuMjUzQzI3LjI5OTkgMTMuOTUxMiAyNy44ODUzIDE1Ljk0OTcgMjcuODkxOCAxNy45OTYyQzI3Ljg4OTkgMjAuNzQyIDI2Ljg0NzggMjMuMzc0OSAyNC45OTQzIDI1LjMxNjlDMjMuMTQwNyAyNy4yNTg5IDIwLjYyNzMgMjguMzUxNCAxOC4wMDU1IDI4LjM1NDRWMjguMzg1MlpNMTguMDA1NSAxMC4yNjIxQzE2LjUzNzIgMTAuMjYyOSAxNS4xMDIyIDEwLjcyIDEzLjg4MjIgMTEuNTc1N0MxMi42NjIxIDEyLjQzMTMgMTEuNzEyIDEzLjY0NjkgMTEuMTUyMiAxNS4wNjg1QzEwLjU5MjMgMTYuNDkwMiAxMC40NDc5IDE4LjA1MzkgMTAuNzM3MiAxOS41NjE1QzExLjAyNjUgMjEuMDY5MiAxMS43MzY1IDIyLjQ1MyAxMi43NzczIDIzLjUzNzdDMTMuODE4MSAyNC42MjI0IDE1LjE0MjkgMjUuMzU5MiAxNi41ODM4IDI1LjY1NDdDMTguMDI0OCAyNS45NTAyIDE5LjUxNyAyNS43OTEyIDIwLjg3MTYgMjUuMTk3OEMyMi4yMjYxIDI0LjYwNDQgMjMuMzgyMSAyMy42MDMyIDI0LjE5MyAyMi4zMjEyQzI1LjAwMzkgMjEuMDM5MiAyNS40MzMyIDE5LjUzNCAyNS40MjY3IDE3Ljk5NjJDMjUuNDIyOCAxNS45MzY3IDI0LjYzOTQgMTMuOTYyOSAyMy4yNDgzIDEyLjUwNzRDMjEuODU3MiAxMS4wNTE4IDE5Ljk3MTkgMTAuMjMzMyAxOC4wMDU1IDEwLjIzMTNWMTAuMjYyMVpNMjcuNzQxMiA1Ljg0ODY1QzI3LjMzNTkgNS44NDk0MSAyNi45Mzk5IDUuOTc1OTkgMjYuNjAzMyA2LjIxMjM3QzI2LjI2NjYgNi40NDg3NiAyNi4wMDQ1IDYuNzg0MzUgMjUuODQ5OSA3LjE3Njc0QzI1LjY5NTMgNy41NjkxMyAyNS42NTUyIDguMDAwNzEgMjUuNzM0NyA4LjQxNjk1QzI1LjgxNDIgOC44MzMxOSAyNi4wMDk4IDkuMjE1NCAyNi4yOTY2IDkuNTE1MjlDMjYuNTgzNCA5LjgxNTE4IDI2Ljk0ODcgMTAuMDE5MyAyNy4zNDYzIDEwLjEwMThDMjcuNzQzOCAxMC4xODQ0IDI4LjE1NTggMTAuMTQxNiAyOC41MzAyIDkuOTc4OTlDMjguOTA0NiA5LjgxNjM3IDI5LjIyNDUgOS41NDExNyAyOS40NDk2IDkuMTg4MTdDMjkuNjc0NyA4LjgzNTE3IDI5Ljc5NDkgOC40MjAyMSAyOS43OTQ5IDcuOTk1NzNDMjkuNzk4OCA3LjcxMDg2IDI5Ljc0ODUgNy40MjgwNCAyOS42NDcgNy4xNjM3M0MyOS41NDU1IDYuODk5NDEgMjkuMzk0OCA2LjY1ODkxIDI5LjIwMzYgNi40NTYyMUMyOS4wMTI1IDYuMjUzNTEgMjguNzg0OCA2LjA5MjY4IDI4LjUzMzcgNS45ODMwOUMyOC4yODI2IDUuODczNDkgMjguMDEzMiA1LjgxNzMzIDI3Ljc0MTIgNS44MTc4N1Y1Ljg0ODY1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
-
-/***/ }),
-/* 12 */
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(13);
+var content = __webpack_require__(28);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -199,27 +173,30 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(15)(content, options);
+var update = __webpack_require__(30)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 13 */
+
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(false);
+exports = module.exports = __webpack_require__(29)(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Yeseva+One:100,200,300,400,500,600,700,800,900);", ""]);
+
 // Module
-exports.push([module.i, ".topbar {\n  display: inline-block;\n  vertical-align: middle;\n  padding: 1rem; }\n\nbody {\n  margin: 0; }\n\n.main {\n  background-color: black; }\n", ""]);
+exports.push([module.i, ".orangeText {\n  color: #FF9B40;\n  font-weight: 500; }\n\np {\n  font-size: 28px;\n  line-height: 44px;\n  letter-spacing: 0.1rem;\n  font-weight: 300;\n  padding: 0 20px; }\n\nh1 {\n  padding: 45px 20px;\n  margin: 0;\n  font-family: Yeseva One;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 56px;\n  line-height: 78px;\n  letter-spacing: 0.1rem; }\n\nhtml {\n  font-family: Lato; }\n\n.TopBarContainer {\n  background-color: transparent;\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  width: 100%; }\n\n.logo {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  padding: 1rem; }\n\n.contact {\n  position: relative;\n  display: block;\n  margin: auto 0 auto 0; }\n\n.web {\n  position: relative;\n  display: block; }\n\n.contactUs {\n  font-family: \"Lato\";\n  text-decoration: none;\n  color: white;\n  font-size: 28px; }\n\n#bg1 {\n  display: block;\n  width: 100%;\n  height: auto; }\n\n.NavBarContainer {\n  list-style: none;\n  align-items: center;\n  width: fit-content; }\n\n.NavItem a {\n  color: #2b2b2b;\n  text-decoration: none;\n  width: 422px;\n  display: block;\n  font-family: Lato;\n  font-size: 25px;\n  line-height: 30px;\n  font-style: normal;\n  font-weight: normal;\n  padding: 32.51px 0px 32.01px 40px;\n  border-left: 2px solid #2b2b2b;\n  transition: background-color 1s; }\n\n.NavItem a:active,\n.NavItem a.active {\n  color: #ff9b40;\n  background-color: #fbfbfb;\n  opacity: 0.75;\n  border-left: 6px solid #ff9b40; }\n\n.NavItem a:hover {\n  background-color: #fbfbfb; }\n\n.MainSection {\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  padding: 0.9375rem 0.625rem;\n  margin: 2.5rem;\n  align-content: center; }\n  .MainSection > span {\n    display: flex;\n    flex-direction: row; }\n  .MainSection .donate {\n    align-items: center;\n    border: 0;\n    color: black;\n    cursor: pointer;\n    display: flex;\n    font-family: Lato;\n    font-size: 1.4rem;\n    height: 3.5rem;\n    justify-content: space-around;\n    margin: 0;\n    min-width: 12rem;\n    width: -moz-fit-content;\n    width: fit-content;\n    border-radius: 0;\n    background-color: #FF9B40; }\n    .MainSection .donate:hover {\n      box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n    .MainSection .donate:hover:active, .MainSection .donate:active {\n      box-shadow: 0 0 0 white;\n      background: #ff8640; }\n    .MainSection .donate:disabled, .MainSection .donate:hover:disabled {\n      box-shadow: 0 0 0 white;\n      color: white;\n      background: #555555; }\n  .MainSection .learnmore {\n    align-items: center;\n    border: 0;\n    color: black;\n    cursor: pointer;\n    display: flex;\n    font-family: Lato;\n    font-size: 1.4rem;\n    height: 3.5rem;\n    justify-content: space-around;\n    margin: 0;\n    min-width: 12rem;\n    width: -moz-fit-content;\n    width: fit-content;\n    border-radius: 0;\n    color: white;\n    background-color: rgba(0, 0, 0, 0); }\n    .MainSection .learnmore:hover {\n      box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n    .MainSection .learnmore:hover:active, .MainSection .learnmore:active {\n      box-shadow: 0 0 0 black;\n      background: rgba(0, 0, 0, 0); }\n\n.AboutUsSection {\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  padding: 0.9375rem 0.625rem;\n  margin: 2.5rem; }\n\n.viewMore {\n  align-items: center;\n  border: 0;\n  color: black;\n  cursor: pointer;\n  display: flex;\n  font-family: Lato;\n  font-size: 1.4rem;\n  height: 3.5rem;\n  justify-content: space-around;\n  margin: 0;\n  min-width: 12rem;\n  width: -moz-fit-content;\n  width: fit-content;\n  border-radius: 0;\n  color: white;\n  background-color: rgba(0, 0, 0, 0);\n  color: #FF9B40;\n  min-width: fit-content;\n  padding: 0;\n  min-height: fit-content; }\n  .viewMore:hover {\n    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n  .viewMore:hover:active, .viewMore:active {\n    box-shadow: 0 0 0 black;\n    background: rgba(0, 0, 0, 0); }\n  .viewMore > img {\n    margin-top: 0.2rem;\n    margin-left: 1rem; }\n\n.OurWorkSection {\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  padding: 0.9375rem 0.625rem;\n  margin: 2.5rem; }\n  .OurWorkSection > .workContainer > .imgMainContainer {\n    display: flex;\n    flex-direction: column;\n    margin: 0;\n    padding: 0;\n    vertical-align: middle;\n    overflow: hidden;\n    min-height: 13.78125rem;\n    width: 22.96875rem;\n    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); }\n    .OurWorkSection > .workContainer > .imgMainContainer > img {\n      width: 22.96875rem;\n      min-height: 7.875rem;\n      height: 13.78125rem;\n      object-fit: cover;\n      margin: 0; }\n    .OurWorkSection > .workContainer > .imgMainContainer > .imgContent {\n      display: flex;\n      flex-direction: column;\n      padding: 0.7875rem 1.4rem; }\n      .OurWorkSection > .workContainer > .imgMainContainer > .imgContent > .imgHeading {\n        font-size: 1.4rem;\n        font-weight: 500; }\n      .OurWorkSection > .workContainer > .imgMainContainer > .imgContent > .imgSubHeading {\n        font-size: 1.05rem;\n        font-weight: 300; }\n  .OurWorkSection > .workContainer > .imgContainer {\n    display: flex;\n    flex-direction: column;\n    margin: 0;\n    padding: 0;\n    vertical-align: middle;\n    overflow: hidden;\n    min-height: 7.875rem;\n    width: 13.125rem;\n    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); }\n    .OurWorkSection > .workContainer > .imgContainer > img {\n      width: 13.125rem;\n      min-height: 7.875rem;\n      height: 7.875rem;\n      object-fit: cover;\n      margin: 0; }\n    .OurWorkSection > .workContainer > .imgContainer > .imgContent {\n      display: flex;\n      flex-direction: column;\n      padding: 0.45rem 0.8rem; }\n      .OurWorkSection > .workContainer > .imgContainer > .imgContent > .imgHeading {\n        font-size: 0.8rem;\n        font-weight: 500; }\n      .OurWorkSection > .workContainer > .imgContainer > .imgContent > .imgSubHeading {\n        font-size: 0.6rem;\n        font-weight: 300; }\n", ""]);
 
 
 
 /***/ }),
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
+
+/***/ 36:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -230,9 +207,12 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(2);
+var react_dom = __webpack_require__(15);
 
-// CONCATENATED MODULE: ./src/app/components/topbar/Logo.js
+// EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 1 modules
+var react_router_dom = __webpack_require__(22);
+
+// CONCATENATED MODULE: ./src/app/components/home/sections/Main.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -253,226 +233,239 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Logo_Logo =
+var Main_Main =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Logo, _Component);
+  _inherits(Main, _Component);
 
-  function Logo() {
-    _classCallCheck(this, Logo);
+  function Main() {
+    _classCallCheck(this, Main);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Logo).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Main).apply(this, arguments));
   }
 
-  _createClass(Logo, [{
+  _createClass(Main, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", {
-        className: "topbar"
-      }, react_default.a.createElement("a", {
-        href: "https://www.google.com"
-      }, react_default.a.createElement("img", {
-        src: __webpack_require__(9)
+      return react_default.a.createElement("section", {
+        className: "MainSection"
+      }, react_default.a.createElement("h1", null, "let\u2019s build a ", react_default.a.createElement("span", {
+        className: "orangeText"
+      }, "society"), " with skilled individuals"), react_default.a.createElement("p", null, react_default.a.createElement("span", {
+        className: "orangeText"
+      }, "Utthan"), " works to build this society of our dreams"), react_default.a.createElement("span", null, react_default.a.createElement("button", {
+        className: "donate"
+      }, "Donate"), react_default.a.createElement("button", {
+        className: "learnmore"
+      }, "Learn More")));
+    }
+  }]);
+
+  return Main;
+}(react["Component"]);
+
+/* harmony default export */ var sections_Main = (Main_Main);
+// EXTERNAL MODULE: ./src/app/images/arrow-right.svg
+var arrow_right = __webpack_require__(8);
+var arrow_right_default = /*#__PURE__*/__webpack_require__.n(arrow_right);
+
+// CONCATENATED MODULE: ./src/app/components/home/sections/AboutUs.js
+function AboutUs_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { AboutUs_typeof = function _typeof(obj) { return typeof obj; }; } else { AboutUs_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return AboutUs_typeof(obj); }
+
+function AboutUs_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function AboutUs_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function AboutUs_createClass(Constructor, protoProps, staticProps) { if (protoProps) AboutUs_defineProperties(Constructor.prototype, protoProps); if (staticProps) AboutUs_defineProperties(Constructor, staticProps); return Constructor; }
+
+function AboutUs_possibleConstructorReturn(self, call) { if (call && (AboutUs_typeof(call) === "object" || typeof call === "function")) { return call; } return AboutUs_assertThisInitialized(self); }
+
+function AboutUs_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function AboutUs_getPrototypeOf(o) { AboutUs_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return AboutUs_getPrototypeOf(o); }
+
+function AboutUs_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) AboutUs_setPrototypeOf(subClass, superClass); }
+
+function AboutUs_setPrototypeOf(o, p) { AboutUs_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return AboutUs_setPrototypeOf(o, p); }
+
+
+
+
+var AboutUs_AboutUs =
+/*#__PURE__*/
+function (_Component) {
+  AboutUs_inherits(AboutUs, _Component);
+
+  function AboutUs() {
+    AboutUs_classCallCheck(this, AboutUs);
+
+    return AboutUs_possibleConstructorReturn(this, AboutUs_getPrototypeOf(AboutUs).apply(this, arguments));
+  }
+
+  AboutUs_createClass(AboutUs, [{
+    key: "render",
+    value: function render() {
+      return react_default.a.createElement("section", {
+        className: "AboutUsSection"
+      }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
+        className: "orangeText"
+      }, "the"), " challenge"), react_default.a.createElement("p", null, "We believe that society can only thrive when every individual is given a chance to contribute. However, due to issues such as poverty and umeployment, a part of society is left out. The rural areas are currently in despair, and the ongoing solutions aren\u2019t just enough."), react_default.a.createElement("p", null, react_default.a.createElement("span", {
+        className: "orangeText"
+      }, "Utthan"), " is an NGO which works to enhance the current scenario.", " "), react_default.a.createElement("button", {
+        className: "viewMore"
+      }, "view more", react_default.a.createElement("img", {
+        src: arrow_right_default.a
       })));
     }
   }]);
 
-  return Logo;
+  return AboutUs;
 }(react["Component"]);
 
-/* harmony default export */ var topbar_Logo = (Logo_Logo);
-// CONCATENATED MODULE: ./src/app/components/topbar/Facebook.js
-function Facebook_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Facebook_typeof = function _typeof(obj) { return typeof obj; }; } else { Facebook_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Facebook_typeof(obj); }
+/* harmony default export */ var sections_AboutUs = (AboutUs_AboutUs);
+// CONCATENATED MODULE: ./src/app/components/home/sections/Donate.js
+function Donate_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Donate_typeof = function _typeof(obj) { return typeof obj; }; } else { Donate_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Donate_typeof(obj); }
 
-function Facebook_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function Donate_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function Facebook_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function Donate_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function Facebook_createClass(Constructor, protoProps, staticProps) { if (protoProps) Facebook_defineProperties(Constructor.prototype, protoProps); if (staticProps) Facebook_defineProperties(Constructor, staticProps); return Constructor; }
+function Donate_createClass(Constructor, protoProps, staticProps) { if (protoProps) Donate_defineProperties(Constructor.prototype, protoProps); if (staticProps) Donate_defineProperties(Constructor, staticProps); return Constructor; }
 
-function Facebook_possibleConstructorReturn(self, call) { if (call && (Facebook_typeof(call) === "object" || typeof call === "function")) { return call; } return Facebook_assertThisInitialized(self); }
+function Donate_possibleConstructorReturn(self, call) { if (call && (Donate_typeof(call) === "object" || typeof call === "function")) { return call; } return Donate_assertThisInitialized(self); }
 
-function Facebook_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function Donate_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-function Facebook_getPrototypeOf(o) { Facebook_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Facebook_getPrototypeOf(o); }
+function Donate_getPrototypeOf(o) { Donate_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Donate_getPrototypeOf(o); }
 
-function Facebook_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) Facebook_setPrototypeOf(subClass, superClass); }
+function Donate_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) Donate_setPrototypeOf(subClass, superClass); }
 
-function Facebook_setPrototypeOf(o, p) { Facebook_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Facebook_setPrototypeOf(o, p); }
+function Donate_setPrototypeOf(o, p) { Donate_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Donate_setPrototypeOf(o, p); }
 
 
 
-var Facebook_Facebook =
+var Donate_Donate =
 /*#__PURE__*/
 function (_Component) {
-  Facebook_inherits(Facebook, _Component);
+  Donate_inherits(Donate, _Component);
 
-  function Facebook() {
-    Facebook_classCallCheck(this, Facebook);
+  function Donate() {
+    Donate_classCallCheck(this, Donate);
 
-    return Facebook_possibleConstructorReturn(this, Facebook_getPrototypeOf(Facebook).apply(this, arguments));
+    return Donate_possibleConstructorReturn(this, Donate_getPrototypeOf(Donate).apply(this, arguments));
   }
 
-  Facebook_createClass(Facebook, [{
+  Donate_createClass(Donate, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", {
-        className: "topbar"
-      }, react_default.a.createElement("a", {
-        href: "https://www.google.com"
+      return react_default.a.createElement("section", {
+        className: "DonateSection"
+      }, "hi");
+    }
+  }]);
+
+  return Donate;
+}(react["Component"]);
+
+/* harmony default export */ var sections_Donate = (Donate_Donate);
+// EXTERNAL MODULE: ./src/app/images/HomeBG.png
+var HomeBG = __webpack_require__(6);
+var HomeBG_default = /*#__PURE__*/__webpack_require__.n(HomeBG);
+
+// CONCATENATED MODULE: ./src/app/components/home/sections/OurWork.js
+function OurWork_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { OurWork_typeof = function _typeof(obj) { return typeof obj; }; } else { OurWork_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return OurWork_typeof(obj); }
+
+function OurWork_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function OurWork_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function OurWork_createClass(Constructor, protoProps, staticProps) { if (protoProps) OurWork_defineProperties(Constructor.prototype, protoProps); if (staticProps) OurWork_defineProperties(Constructor, staticProps); return Constructor; }
+
+function OurWork_possibleConstructorReturn(self, call) { if (call && (OurWork_typeof(call) === "object" || typeof call === "function")) { return call; } return OurWork_assertThisInitialized(self); }
+
+function OurWork_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function OurWork_getPrototypeOf(o) { OurWork_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return OurWork_getPrototypeOf(o); }
+
+function OurWork_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) OurWork_setPrototypeOf(subClass, superClass); }
+
+function OurWork_setPrototypeOf(o, p) { OurWork_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return OurWork_setPrototypeOf(o, p); }
+
+
+
+
+
+var OurWork_OurWork =
+/*#__PURE__*/
+function (_Component) {
+  OurWork_inherits(OurWork, _Component);
+
+  function OurWork() {
+    OurWork_classCallCheck(this, OurWork);
+
+    return OurWork_possibleConstructorReturn(this, OurWork_getPrototypeOf(OurWork).apply(this, arguments));
+  }
+
+  OurWork_createClass(OurWork, [{
+    key: "render",
+    value: function render() {
+      return react_default.a.createElement("section", {
+        className: "OurWorkSection"
+      }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
+        className: "orangeText"
+      }, "the"), " mission"), react_default.a.createElement("p", null, react_default.a.createElement("span", {
+        className: "orangeText"
+      }, "Utthan"), " strives to deliver facilites at the doorstep of these people. Our primary aim is to teach them different skills. Later we collaborate with different sectors to find them jobs. We also organise session to spread awareness and education"), react_default.a.createElement("div", {
+        className: "workContainer"
+      }, react_default.a.createElement("div", {
+        className: "imgMainContainer"
       }, react_default.a.createElement("img", {
-        src: __webpack_require__(10)
-      })));
-    }
-  }]);
-
-  return Facebook;
-}(react["Component"]);
-
-/* harmony default export */ var topbar_Facebook = (Facebook_Facebook);
-// CONCATENATED MODULE: ./src/app/components/topbar/Instagram.js
-function Instagram_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Instagram_typeof = function _typeof(obj) { return typeof obj; }; } else { Instagram_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Instagram_typeof(obj); }
-
-function Instagram_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function Instagram_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function Instagram_createClass(Constructor, protoProps, staticProps) { if (protoProps) Instagram_defineProperties(Constructor.prototype, protoProps); if (staticProps) Instagram_defineProperties(Constructor, staticProps); return Constructor; }
-
-function Instagram_possibleConstructorReturn(self, call) { if (call && (Instagram_typeof(call) === "object" || typeof call === "function")) { return call; } return Instagram_assertThisInitialized(self); }
-
-function Instagram_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function Instagram_getPrototypeOf(o) { Instagram_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Instagram_getPrototypeOf(o); }
-
-function Instagram_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) Instagram_setPrototypeOf(subClass, superClass); }
-
-function Instagram_setPrototypeOf(o, p) { Instagram_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Instagram_setPrototypeOf(o, p); }
-
-
-
-var Instagram_Instagram =
-/*#__PURE__*/
-function (_Component) {
-  Instagram_inherits(Instagram, _Component);
-
-  function Instagram() {
-    Instagram_classCallCheck(this, Instagram);
-
-    return Instagram_possibleConstructorReturn(this, Instagram_getPrototypeOf(Instagram).apply(this, arguments));
-  }
-
-  Instagram_createClass(Instagram, [{
-    key: "render",
-    value: function render() {
-      return react_default.a.createElement("div", {
-        className: "topbar"
-      }, react_default.a.createElement("a", {
-        href: "https://www.google.com"
+        src: HomeBG_default.a
+      }), react_default.a.createElement("span", {
+        className: "imgContent"
+      }, react_default.a.createElement("span", {
+        className: "imgHeading"
+      }, "Stiching workshop in Bareily"), react_default.a.createElement("span", {
+        className: "imgSubHeading"
+      }, " March 2, 2019"))), react_default.a.createElement("div", {
+        className: "imgContainer"
       }, react_default.a.createElement("img", {
-        src: __webpack_require__(11)
-      })));
+        src: HomeBG_default.a
+      })), react_default.a.createElement("div", {
+        className: "imgContainer"
+      }, react_default.a.createElement("img", {
+        src: HomeBG_default.a
+      })), react_default.a.createElement("div", {
+        className: "imgContainer"
+      }, react_default.a.createElement("img", {
+        src: HomeBG_default.a
+      })), react_default.a.createElement("div", {
+        className: "imgContainer"
+      }, react_default.a.createElement("img", {
+        src: HomeBG_default.a
+      })), react_default.a.createElement("button", {
+        className: "viewMore"
+      }, "view more", react_default.a.createElement("img", {
+        src: arrow_right_default.a
+      }))));
     }
   }]);
 
-  return Instagram;
+  return OurWork;
 }(react["Component"]);
 
-/* harmony default export */ var topbar_Instagram = (Instagram_Instagram);
-// CONCATENATED MODULE: ./src/app/components/topbar/Contact.js
-function Contact_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Contact_typeof = function _typeof(obj) { return typeof obj; }; } else { Contact_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Contact_typeof(obj); }
-
-function Contact_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function Contact_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function Contact_createClass(Constructor, protoProps, staticProps) { if (protoProps) Contact_defineProperties(Constructor.prototype, protoProps); if (staticProps) Contact_defineProperties(Constructor, staticProps); return Constructor; }
-
-function Contact_possibleConstructorReturn(self, call) { if (call && (Contact_typeof(call) === "object" || typeof call === "function")) { return call; } return Contact_assertThisInitialized(self); }
-
-function Contact_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function Contact_getPrototypeOf(o) { Contact_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Contact_getPrototypeOf(o); }
-
-function Contact_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) Contact_setPrototypeOf(subClass, superClass); }
-
-function Contact_setPrototypeOf(o, p) { Contact_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Contact_setPrototypeOf(o, p); }
-
-
-
-var Contact_Contact =
-/*#__PURE__*/
-function (_Component) {
-  Contact_inherits(Contact, _Component);
-
-  function Contact() {
-    Contact_classCallCheck(this, Contact);
-
-    return Contact_possibleConstructorReturn(this, Contact_getPrototypeOf(Contact).apply(this, arguments));
-  }
-
-  Contact_createClass(Contact, [{
-    key: "render",
-    value: function render() {
-      return react_default.a.createElement("div", {
-        className: "topbar"
-      }, react_default.a.createElement("a", {
-        href: "https://www.google.com"
-      }, "Contact"));
-    }
-  }]);
-
-  return Contact;
-}(react["Component"]);
-
-/* harmony default export */ var topbar_Contact = (Contact_Contact);
-// CONCATENATED MODULE: ./src/app/components/topbar/TopBar.js
-function TopBar_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { TopBar_typeof = function _typeof(obj) { return typeof obj; }; } else { TopBar_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return TopBar_typeof(obj); }
-
-function TopBar_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function TopBar_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function TopBar_createClass(Constructor, protoProps, staticProps) { if (protoProps) TopBar_defineProperties(Constructor.prototype, protoProps); if (staticProps) TopBar_defineProperties(Constructor, staticProps); return Constructor; }
-
-function TopBar_possibleConstructorReturn(self, call) { if (call && (TopBar_typeof(call) === "object" || typeof call === "function")) { return call; } return TopBar_assertThisInitialized(self); }
-
-function TopBar_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function TopBar_getPrototypeOf(o) { TopBar_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return TopBar_getPrototypeOf(o); }
-
-function TopBar_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) TopBar_setPrototypeOf(subClass, superClass); }
-
-function TopBar_setPrototypeOf(o, p) { TopBar_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return TopBar_setPrototypeOf(o, p); }
+/* harmony default export */ var sections_OurWork = (OurWork_OurWork);
+// CONCATENATED MODULE: ./src/app/components/home/sections/index.js
 
 
 
 
-
-
-
-var TopBar_TopBar =
-/*#__PURE__*/
-function (_Component) {
-  TopBar_inherits(TopBar, _Component);
-
-  function TopBar() {
-    TopBar_classCallCheck(this, TopBar);
-
-    return TopBar_possibleConstructorReturn(this, TopBar_getPrototypeOf(TopBar).apply(this, arguments));
-  }
-
-  TopBar_createClass(TopBar, [{
-    key: "render",
-    value: function render() {
-      return react_default.a.createElement("div", null, react_default.a.createElement(topbar_Logo, null), react_default.a.createElement(topbar_Facebook, null), react_default.a.createElement(topbar_Instagram, null), react_default.a.createElement(topbar_Contact, null));
-    }
-  }]);
-
-  return TopBar;
-}(react["Component"]);
-
-/* harmony default export */ var topbar_TopBar = (TopBar_TopBar);
+/* harmony default export */ var sections = ({
+  Main: sections_Main,
+  AboutUs: sections_AboutUs,
+  Donate: sections_Donate,
+  OurWork: sections_OurWork
+});
 // CONCATENATED MODULE: ./src/app/components/home/Home.js
 function Home_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Home_typeof = function _typeof(obj) { return typeof obj; }; } else { Home_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Home_typeof(obj); }
 
@@ -511,7 +504,7 @@ function (_Component) {
     value: function render() {
       return react_default.a.createElement("div", {
         className: "main"
-      }, react_default.a.createElement(topbar_TopBar, null));
+      }, react_default.a.createElement(sections.OurWork, null));
     }
   }]);
 
@@ -520,10 +513,10 @@ function (_Component) {
 
 /* harmony default export */ var home_Home = (Home_Home);
 // EXTERNAL MODULE: ./node_modules/offline-plugin/runtime.js
-var runtime = __webpack_require__(3);
+var runtime = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./src/app/styles/main.scss
-var main = __webpack_require__(12);
+var main = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./src/app/Index.js
 function Index_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Index_typeof = function _typeof(obj) { return typeof obj; }; } else { Index_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Index_typeof(obj); }
@@ -548,6 +541,7 @@ function Index_setPrototypeOf(o, p) { Index_setPrototypeOf = Object.setPrototype
 
 
 
+
 runtime["install"]();
 
 
@@ -565,7 +559,7 @@ function (_React$Component) {
   Index_createClass(Index, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement(home_Home, null);
+      return react_default.a.createElement(react_router_dom["a" /* BrowserRouter */], null, react_default.a.createElement(home_Home, null));
     }
   }]);
 
@@ -574,5 +568,20 @@ function (_React$Component) {
 
 Object(react_dom["render"])(react_default.a.createElement(Index_Index, null), window.document.getElementById("app"));
 
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "54306fbd36a21d268eacd1613702188f.png";
+
+/***/ }),
+
+/***/ 8:
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMTJIMjAiIHN0cm9rZT0iI0ZGOUI0MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE0IDZMMjAgMTJMMTQgMTgiIHN0cm9rZT0iI0ZGOUI0MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg=="
+
 /***/ })
-/******/ ]);
+
+/******/ });
