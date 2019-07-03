@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One:100,200,300,400,500,600,700,800,900');
+/*========THEME============*/        //highlighter black bg
 $primaryColor: #FF9B40; 
 $primaryColorDark:#ff8640; 
 $primaryDisabledColor:#555555;
 $gutterWidth:1.25rem;
 $blackText: #2B2B2B;        //black color for text
 $hlWhite: #FBFBFB;          //highlighter white bg
-$hlBlack: #C4C4C4;          //highlighter black bg
+$hlBlack: #C4C4C4;  
+
+/*========FONTS============*/        //highlighter black bg
 $letterSpacing:0.1rem;
 $generalFontFamily:Lato;
+$text:300;
+$heading:500;
 $headerFontFamily:Yeseva One;
+$thinHeading:400;

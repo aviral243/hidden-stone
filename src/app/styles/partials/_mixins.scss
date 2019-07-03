@@ -84,11 +84,11 @@ width: $scale*13.125rem;
       padding:$scale*0.45rem $scale*0.8rem;
  >.imgHeading{
       font-size: $scale*0.8rem;
-      font-weight: 500;
+      font-weight: $heading;
     }
     >.imgSubHeading{
         font-size: $scale*0.6rem;
-      font-weight: 300;
+      font-weight: $text;
   }
  
         
