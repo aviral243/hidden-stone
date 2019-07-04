@@ -1,0 +1,41 @@
+.OurStorySubSection {
+	@include section();
+}
+.OurEndeavoursSubSection {
+	@include section();
+}
+.OurTeamSubSection {
+	@include section();
+	.teamContainer {
+        @include display-column();
+        padding: $gutterWidth;
+        >span{
+            @include display-row();
+            padding: $gutterWidth 0;
+            justify-content: space-between;
+        }
+		.teamMemberContainer {
+            @include display-row();
+            width: 40rem;
+
+			> img {
+				background: $hlBlack;
+                width: 200px;
+                min-width: 10rem;
+				height: 220px;
+            }
+            >span{
+                @include display-column();
+                padding:0.6*$gutterWidth 1.6*$gutterWidth;
+            }
+			.teamMemberName {
+                font-size: $normalFontSize;
+                font-weight: $thinHeading
+            }
+            .teamMemberPost{
+                 font-size: $normalFontSize;
+                font-weight: $text;
+            }
+		}
+	}
+}

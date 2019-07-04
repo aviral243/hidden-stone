@@ -1,5 +1,21 @@
-$primaryColor: #FF9B40; 
-$primaryColorDark:#ff8640;    //orange theme
-$blackText: #2B2B2B;        //black color for text
-$hlWhite: #FBFBFB;          //highlighter white bg
-$hlBlack: #C4C4C4;          //highlighter black bg
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One:300,400,500');
+/*========THEME============*/ //highlighter black bg
+$primaryColor: #ff9b40;
+$primaryColorDark: #ff8640;
+$primaryDisabledColor: #555555;
+$gutterWidth: 1.25rem;
+$blackText: #2b2b2b; //black color for text
+$hlWhite: #fbfbfb; //highlighter white bg
+$hlBlack: #c4c4c4;
+$hlHover:#f0f0f0;
+$dividerColor:#DDDDDD;
+
+/*========FONTS============*/ //highlighter black bg
+$generalFontFamily: Lato;
+$headerFontFamily: Yeseva One;
+$text: 300;
+$heading: 500;
+$thinHeading: 400;
+$letterSpacing: 0.1rem;
+$normalFontSize:1.75rem;
+$headerFontSize:3.5rem;

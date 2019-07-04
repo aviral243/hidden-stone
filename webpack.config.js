@@ -43,7 +43,7 @@ const config = {
       },
       {
         test: /\.js?/,
-        include: SRC_DIR,
+        include: `${SRC_DIR}/app/`,
         exclude: /(node_modules|bower_components)/,
         use: [
           {
@@ -57,6 +57,12 @@ const config = {
       },
       {
         test: /\.(jpe?g|png|svg)(\?[a-z0-9=.]+)?$/,
+        include: `${SRC_DIR}/app/images`,
+        loader: "url-loader?limit=10000"
+      },
+      {
+        test: /\.woff2?/,
+        include: `${SRC_DIR}/app/fonts`,
         loader: "url-loader?limit=10000"
       }
     ]

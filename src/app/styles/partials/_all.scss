@@ -1,4 +1,6 @@
 @import "variables";
-@import "button";
-@import "input";
+@import "mixins";
+@import "theme";
+@import "text";
+@import "utils";
 //import all partials here and then this will be imported in the main
