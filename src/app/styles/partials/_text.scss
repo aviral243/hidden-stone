@@ -1,21 +1,21 @@
-.orangeText{
-    color:$primaryColor;
-font-weight: $heading;
-
+p {
+	font-size: $normalFontSize;
+	line-height: 44px;
+	letter-spacing: $letterSpacing;
+	font-weight: $text;
+	padding: 0 20px;
 }
-p{
-font-size: 28px;
-line-height: 44px;
-letter-spacing: $letterSpacing;
-font-weight: $text;
-padding: 0 20px;
+h1 {
+	padding: 45px 20px;
+	margin: 0;
+	font-family: $headerFontFamily;
+	font-weight: $heading;
+	font-size: $headerFontSize;
+	line-height: 78px;
+	letter-spacing: $letterSpacing;
 }
-h1{
-    padding: 45px 20px;
-    margin: 0;
-font-family: $headerFontFamily;
-font-weight: $heading;
-font-size: 56px;
-line-height: 78px;
-letter-spacing: $letterSpacing;
+b{
+	font-size: $normalFontSize;
+	font-weight: $heading;
+	letter-spacing: $letterSpacing;
 }

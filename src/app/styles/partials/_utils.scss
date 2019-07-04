@@ -1,0 +1,30 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    margin: 20px;
+    padding: 0px 15px 0px 15px;
+    height: 3.4rem;
+    width: 330px;
+    border: solid 1px $hlBlack;
+    font-size: $normalFontSize;
+    font-weight: $text;
+    font-family: $generalFontFamily;
+}
+
+input:focus{
+    outline-color: #FF9B40;
+}
+.vertical-line{
+@include divider();
+}
+hr{
+@include divider();
+}
+.orangeText {
+	color: $primaryColor;
+	font-weight: $heading;
+}
