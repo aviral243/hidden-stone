@@ -1,30 +1,37 @@
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
+p {
+	font-size: $normalFontSize;
+	line-height: 44px;
+	letter-spacing: $letterSpacing;
+	font-weight: $text;
+	padding: 0 20px;
+	font-family: $generalFontFamilyLight;
 }
-
-input{
-    margin: 20px;
-    padding: 0px 15px 0px 15px;
-    height: 3.4rem;
-    width: 330px;
-    border: solid 1px $hlBlack;
-    font-size: $normalFontSize;
-    font-weight: $text;
-    font-family: $generalFontFamily;
+h1 {
+	padding: 45px 20px;
+	margin: 0;
+	font-family: $headerFontFamily;
+	font-weight: $heading;
+	font-size: $headerFontSize;
+	line-height: 78px;
+	letter-spacing: $letterSpacing;
 }
-
-input:focus{
-    outline-color: #FF9B40;
+b {
+	font-size: $normalFontSize;
+	font-weight: $heading;
+	letter-spacing: $letterSpacing;
 }
-.vertical-line{
-@include divider();
+.vertical-line {
+	@include divider();
 }
-hr{
-@include divider();
+hr {
+	@include divider();
+}
+p {
+	> .orangeText {
+		color: $primaryColor;
+		font-family: $generalFontFamilyMedium;
+	}
 }
 .orangeText {
 	color: $primaryColor;
-	font-weight: $heading;
 }

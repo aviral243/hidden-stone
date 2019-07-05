@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One:300,400,500');
+@include font-Lato('Lato','Lato-Regular');
+@include font-Lato('LatoLight','Lato-Light');
+@include font-Lato('LatoMedium','Lato-Medium');
+@include font-Lato('LatoBold','Lato-Bold');
+
+@include font-YesevaOne('YesevaOne','YesevaOne-Regular');
 /*========THEME============*/ //highlighter black bg
 $primaryColor: #ff9b40;
 $primaryColorDark: #ff8640;
@@ -7,15 +13,19 @@ $gutterWidth: 1.25rem;
 $blackText: #2b2b2b; //black color for text
 $hlWhite: #fbfbfb; //highlighter white bg
 $hlBlack: #c4c4c4;
-$hlHover:#f0f0f0;
-$dividerColor:#DDDDDD;
+$hlHover: #f0f0f0;
+$dividerColor: #dddddd;
+$borderColor:#E5E5E5;
 
 /*========FONTS============*/ //highlighter black bg
 $generalFontFamily: Lato;
-$headerFontFamily: Yeseva One;
+$generalFontFamilyLight: LatoLight;
+$generalFontFamilyMedium: LatoMedium;
+$generalFontFamilyBold: LatoBold;
+$headerFontFamily: YesevaOne;
 $text: 300;
 $heading: 500;
 $thinHeading: 400;
 $letterSpacing: 0.1rem;
-$normalFontSize:1.75rem;
-$headerFontSize:3.5rem;
+$normalFontSize: 1.75rem;
+$headerFontSize: 3.5rem;
