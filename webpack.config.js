@@ -61,7 +61,7 @@ const config = {
         loader: "url-loader?limit=10000"
       },
       {
-        test: /\.woff2?/,
+        test: /\.(woff|woff2|ttf)?/,
         include: `${SRC_DIR}/app/fonts`,
         loader: "url-loader?limit=10000"
       }

@@ -47,6 +47,7 @@
 				margin-top: 4rem;
 				.donateSchemeContainer {
 					position: relative;
+
 					.donate {
 						@include btn-standard(0.8);
 						color: white;
@@ -120,11 +121,47 @@
 				@include display-row();
 				align-content: center;
 				align-items: center;
+
+				.donateInput {
+					@include input(1);
+					position: relative;
+					padding-left: 2rem;
+					&:focus {
+						+ .rupeeSymbol {
+							opacity: 1;
+						}
+					}
+					&:valid {
+						+ .rupeeSymbol {
+							opacity: 1;
+						}
+					}
+				}
+				.rupeeSymbol {
+					position: absolute;
+					width: 0.9rem;
+					color: red;
+					margin-left: 2rem;
+					opacity: 0;
+				}
 				.donate {
-					@include btn-standard();
+					@include btn-standard(0.8);
 					color: white;
 				}
 			}
 		}
 	}
+}
+.Error404Section {
+	@include section();
+	@include display-column();
+}
+.ComingSoonSection {
+	@include section();
+	@include display-column();
+}
+.goHome {
+	@include btn-standard();
+	color: white;
+	margin: 0 20px;
 }
