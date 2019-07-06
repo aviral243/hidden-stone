@@ -1,19 +1,21 @@
 @mixin font-Lato($font-family,$font-file) {
 	@font-face {
 		font-family: $font-family;
-        src:url('../fonts/Lato/'+$font-file+'.woff') format('woff'),
-            url('../fonts/Lato/'+$font-file+'.woff2') format('woff2'); 
+		src: url('../fonts/Lato/'+$font-file+'.woff') format('woff'),
+			url('../fonts/Lato/'+$font-file+'.woff2') format('woff2');
 		font-weight: normal;
 		font-style: normal;
+		font-display: auto;
 	}
 }
 @mixin font-YesevaOne($font-family,$font-file) {
 	@font-face {
 		font-family: $font-family;
-        src:url('../fonts/YesevaOne/'+$font-file+'.woff') format('woff'),
-            url('../fonts/YesevaOne/'+$font-file+'.woff2') format('woff2');
+		src: url('../fonts/YesevaOne/'+$font-file+'.woff') format('woff'),
+			url('../fonts/YesevaOne/'+$font-file+'.woff2') format('woff2');
 		font-weight: normal;
 		font-style: normal;
+		font-display: auto;
 	}
 }
 

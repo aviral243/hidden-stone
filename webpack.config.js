@@ -26,25 +26,36 @@ const config = {
       {
         test: /(\.scss)$/,
         include: `${SRC_DIR}/app/styles`,
+        exclude: [
+          /(node_modules|bower_components)/,
+          `${SRC_DIR}/app/components`,
+          `${SRC_DIR}/app/images`,
+          `${SRC_DIR}/app/fonts`
+        ],
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(html)$/,
         include: `${SRC_DIR}/index.html`,
-        exclude: /(node_modules|bower_components)/,
+        exclude: [/(node_modules|bower_components)/, `${SRC_DIR}/app/`],
         use: {
           loader: "html-loader",
           options: {
             minimize: true,
-            removeComments: false,
-            collapseWhitespace: false
+            removeComments: true,
+            collapseWhitespace: true
           }
         }
       },
       {
         test: /\.js?/,
-        include: `${SRC_DIR}/app/`,
-        exclude: /(node_modules|bower_components)/,
+        include: [`${SRC_DIR}/app/components`, `${SRC_DIR}/app/Index.js`],
+        exclude: [
+          /(node_modules|bower_components)/,
+          `${SRC_DIR}/app/fonts`,
+          `${SRC_DIR}/app/images`,
+          `${SRC_DIR}/app/styles`
+        ],
         use: [
           {
             loader: "babel-loader",
@@ -58,12 +69,25 @@ const config = {
       {
         test: /\.(jpe?g|png|svg)(\?[a-z0-9=.]+)?$/,
         include: `${SRC_DIR}/app/images`,
+        exclude: [
+          /(node_modules|bower_components)/,
+          `${SRC_DIR}/app/components`,
+          `${SRC_DIR}/app/fonts`,
+          `${SRC_DIR}/app/styles`
+        ],
         loader: "url-loader?limit=10000"
       },
       {
-        test: /\.(woff|woff2|ttf)?/,
+        test: /\.(woff|woff2)?/,
         include: `${SRC_DIR}/app/fonts`,
-        loader: "url-loader?limit=10000"
+        exclude: [
+          /(node_modules|bower_components)/,
+          `${SRC_DIR}/app/components`,
+          `${SRC_DIR}/app/images`,
+          `${SRC_DIR}/app/styles`
+        ],
+        loader:
+          "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[hash].[ext]"
       }
     ]
   },

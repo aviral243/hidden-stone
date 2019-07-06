@@ -30,11 +30,12 @@
             }
 			.teamMemberName {
                 font-size: $normalFontSize;
-                font-weight: $thinHeading
+                font-family: $generalFontFamily;
+                margin-bottom: $gutterWidth;
             }
             .teamMemberPost{
                  font-size: $normalFontSize;
-                font-weight: $text;
+                font-family: $generalFontFamilyLight;
             }
 		}
 	}

@@ -19,6 +19,7 @@
 	cursor: pointer;
 	display: flex;
 	font-family: $generalFontFamilyBold;
+	font-weight: 900;
 	font-size: $scale*1.2rem;
 	height: $scale*3.5rem;
 	justify-content: space-around;
@@ -51,6 +52,7 @@
 }
 @mixin small-heading($scale:1) {
 	font-size: $scale*0.8rem;
+	margin-bottom: $scale*0.2rem;
 	font-family: $generalFontFamilyMedium;
 }
 @mixin small-subheading($scale:1) {
@@ -96,7 +98,7 @@
 	> .imgContent {
 		display: flex;
 		flex-direction: column;
-		padding: $scale*0.45rem $scale*0.8rem;
+		padding: $scale*0.6rem $scale*0.9rem;
 		> .imgHeading {
 			@include small-heading($scale);
 		}
