@@ -1,8 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-const WebpackDashboard = require("webpack-dashboard/plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
 const merge = require("webpack-merge");
 const common = require("./webpack.config");
 const SRC_DIR = path.resolve(__dirname, "src");
@@ -35,7 +32,6 @@ const configDev = {
     }
   },
   plugins: [
-    new WebpackDashboard(), // Adding webpack-dashboard plugin
     new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ]

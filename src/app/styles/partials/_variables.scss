@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Yeseva+One:300,400,500');
 @include font-Lato('Lato','Lato-Regular');
 @include font-Lato('LatoLight','Lato-Light');
 @include font-Lato('LatoMedium','Lato-Medium');
 @include font-Lato('LatoBold','Lato-Bold');
+@include font-Lato('LatoHeavy','Lato-Heavy');
 
 @include font-YesevaOne('YesevaOne','YesevaOne-Regular');
 /*========THEME============*/ //highlighter black bg
@@ -22,7 +22,7 @@ $borderColor:#E5E5E5;
 $generalFontFamily: Lato;
 $generalFontFamilyLight: LatoLight;
 $generalFontFamilyMedium: LatoMedium;
-$generalFontFamilyBold: LatoBold;
+$generalFontFamilyBold: LatoHeavy;
 $headerFontFamily: YesevaOne;
 $text: 300;
 $heading: 500;
