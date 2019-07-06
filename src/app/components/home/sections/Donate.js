@@ -25,12 +25,18 @@ class Donate extends Component {
               <Schemes />
             </div>
           </div>
-
-          <div className="vertical-line" />
+          <div className="verticalLine" />
           <div className="donateAmountContainer">
             <p>Or donate an amount of your choice :)</p>
             <form className="donateAmount">
-              <input type="number" min="0" className="donateInput" required pattern="[1-9]{1}" />
+              <input
+                type="number"
+                min="0"
+                max="99999999"
+                className="donateInput"
+                required
+                pattern="[1-9]{1}"
+              />
               <img src={rupeeSymbol} className="rupeeSymbol" />
               <button className="donate">Donate</button>
             </form>
