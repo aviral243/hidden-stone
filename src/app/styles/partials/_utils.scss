@@ -3,11 +3,11 @@ p {
 	line-height: 44px;
 	letter-spacing: $letterSpacing;
 	font-weight: $text;
-	padding: 0 20px;
+	padding: $gutterWidth 2*$gutterWidth;
 	font-family: $generalFontFamilyLight;
 }
 h1 {
-	padding: 45px 20px;
+	padding: $gutterWidth 2*$gutterWidth;
 	margin: 0;
 	font-family: $headerFontFamily;
 	font-weight: $heading;
@@ -20,7 +20,7 @@ b {
 	font-weight: $heading;
 	letter-spacing: $letterSpacing;
 }
-.vertical-line {
+.verticalLine {
 	@include divider();
 }
 hr {

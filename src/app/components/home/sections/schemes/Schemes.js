@@ -1,44 +1,41 @@
-/* eslint-disable arrow-spacing */
-/* eslint-disable no-console */
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import rightArrowHead from "../../../../images/chevron-right.svg";
+import rupeeSymbol from "../../../../images/rupee.svg";
 import { defaultSchemes } from "./defaultSchemes";
-class Schemes extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      show: false
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        {defaultSchemes.map((schemeDetails, index) => (
-          <span className="donateSchemeContainer" key={schemeDetails}>
-            <input type="radio" id={index} name="scheme" />
-            <label className="donateSchemeName" htmlFor={index}>
-              <img src={rightArrowHead} />
-              {schemeDetails.scheme}
-            </label>
-            <div className="donateSchemeContent">
-              <button className="donate">Donate</button>
-              <span>
-                <span className="schemeContentAmount">Amount to be paid</span>
+const Schemes = () => (
+  <div>
+    {defaultSchemes.map((schemeDetails, index) => (
+      <span className="donateSchemeContainer" key={index}>
+        <input
+          type="radio"
+          id={index}
+          name="scheme"
+          value={index}
+          defaultChecked={schemeDetails.selected}
+        />
+        <span className="donateSchemeContainerContent">
+          <label className="donateSchemeName" htmlFor={index}>
+            <img src={rightArrowHead} />
+            {schemeDetails.scheme}
+          </label>
+          <div className="donateSchemeContent">
+            <button className="donate">Donate</button>
+            <span>
+              <label className="schemeContentAmount">Amount to be paid</label>
+              <label>
+                <img src={rupeeSymbol} />
                 {schemeDetails.amount}
-              </span>
-              <span>
-                <span className="schemeContentDuration">Membership Tenure</span>
-                {schemeDetails.duration}
-              </span>
-            </div>
-
-            <hr />
-          </span>
-        ))}
-      </div>
-    );
-  }
-}
+              </label>
+            </span>
+            <span>
+              <label className="schemeContentDuration">Membership Tenure</label>
+              {schemeDetails.duration}
+            </span>
+          </div>
+        </span>
+        <hr />
+      </span>
+    ))}
+  </div>
+);
 export default Schemes;

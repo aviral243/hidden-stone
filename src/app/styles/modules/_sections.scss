@@ -1,142 +1,184 @@
-.MainSection {
-	@include section();
-	align-content: center;
-	> span {
-		@include display-row();
-	}
-	.donate {
-		@include btn-standard();
-	}
-	.learnmore {
-		@include btn-standard-transparent();
-	}
-}
-.AboutUsSection {
-	@include section();
-}
 .viewMore {
 	@include btn-standard-transparent();
 	color: $primaryColor;
 	min-width: fit-content;
 	padding: 0;
 	min-height: fit-content;
+
 	> img {
 		margin-top: 0.2rem;
 		margin-left: 1rem;
 	}
 }
+.MainSection {
+	@include section();
+	align-content: center;
+
+	> span {
+		@include display-row();
+	}
+
+	.donate {
+		@include btn-standard();
+	}
+
+	.learnmore {
+		@include btn-standard-transparent();
+	}
+}
+
+.AboutUsSection {
+	@include section();
+}
+
 .OurWorkSection {
 	@include section();
+
 	> .workContainer {
 		> .imgMainContainer {
 			@include image-container(1.75);
 		}
+
 		> .imgContainer {
 			@include image-container(1);
 		}
 	}
 }
+
 .DonateSection {
+	@include section();
+	.verticalLine {
+		margin-top: 13*$gutterWidth;
+		margin-bottom: 4*$gutterWidth;
+	}
+
 	.donateContainer {
 		@include display-row();
+
 		> .donateSchemesContainer {
 			@include display-column();
 			width: 50%;
+
 			.donateSchemes {
 				@include display-column();
-				margin-top: 4rem;
-				.donateSchemeContainer {
-					position: relative;
+				margin-top: 2*$gutterWidth;
+				padding: 0 2*$gutterWidth;
 
-					.donate {
-						@include btn-standard(0.8);
-						color: white;
-						position: absolute;
-						z-index: -1;
-						top: 0.6rem;
-						right: 0;
-						max-height: 0;
-						transition: all .4s ease-in-out;
-						opacity: 0;
-					}
+				.donateSchemeContainer {
 					input[type=radio] {
 						position: absolute;
 						opacity: 0;
-						z-index: -1;
 						margin: 0;
 						padding: 0;
 					}
+
 					input:checked {
-						+ .donateSchemeName {
-							padding: $gutterWidth;
-							img {
-								transform: rotate(90deg);
+						+ .donateSchemeContainerContent {
+							padding-bottom: 5rem;
+
+							.donateSchemeName {
+								padding: $gutterWidth;
+
+								img {
+									transform: rotate(90deg);
+								}
 							}
-						}
-						~ .donateSchemeContent {
-							max-height: auto;
-							padding: 1em;
-							> .donate {
-								max-height: 100vh;
-								opacity: 1;
+
+							.donateSchemeContent {
+								> .donate {
+									max-height: 100vh;
+									opacity: 1;
+								}
 							}
 						}
 					}
 
-					overflow: hidden;
-					@include display-column();
-					cursor: pointer;
-					.donateSchemeName {
-						> img {
-							margin-right: 1.4rem;
-							transition: all .4s ease-in-out;
-						}
-						@include display-row();
-						cursor: pointer;
-						text-transform: uppercase;
-						font-size: 1.2rem;
-						padding: $gutterWidth;
-						align-content: center;
-						align-items: center;
-					}
-					.donateSchemeContent {
-						max-height: 0;
+					.donateSchemeContainerContent {
+						position: relative;
 						transition: all .4s ease-in-out;
-						padding: 0 1rem;
-					}
-					&-close {
-						display: flex;
-						justify-content: flex-end;
-						padding: 1em;
-						font-size: 0.75em;
+						height: fit-content;
+
+						.donate {
+							@include btn-standard(0.8);
+							color: white;
+							position: absolute;
+							top: 0.6rem;
+							right: 0;
+							max-height: 0;
+							transition: opacity .4s ease-in-out, max-height .4s ease-in-out;
+							opacity: 0;
+						}
+
+						overflow: hidden;
+						@include display-column();
 						cursor: pointer;
+
+						.donateSchemeName {
+							> img {
+								margin-right: 1.4rem;
+								transition: all .4s ease-in-out;
+							}
+
+							@include display-row();
+							cursor: pointer;
+							text-transform: uppercase;
+							font-size: 1.2rem;
+							padding: $gutterWidth;
+							align-content: center;
+							align-items: center;
+						}
+
+						.donateSchemeContent {
+							.schemeContentAmount,
+							.schemeContentDuration {
+								color: $primaryGreyColor;
+							}
+
+							max-height: 0;
+							padding: 0 1rem;
+							display: grid;
+							grid-template-rows: auto auto;
+
+							> span {
+								display: grid;
+								grid-template-columns: auto 4*$gutterWidth;
+								padding: 0.1*$gutterWidth 1.5*$gutterWidth 0.1*$gutterWidth 2.5*$gutterWidth;
+							}
+						}
 					}
 				}
 			}
 		}
+
 		> .donateAmountContainer {
 			@include display-column();
 			width: 50%;
+
 			> .donateAmount {
 				@include display-row();
 				align-content: center;
 				align-items: center;
+				margin-top: 2*$gutterWidth;
+				padding: 0 2*$gutterWidth;
 
 				.donateInput {
 					@include input(1);
 					position: relative;
 					padding-left: 2rem;
+					margin-right: 1*$gutterWidth;
 					&:focus {
 						+ .rupeeSymbol {
 							opacity: 1;
 						}
 					}
+
 					&:valid {
 						+ .rupeeSymbol {
 							opacity: 1;
 						}
 					}
 				}
+
 				.rupeeSymbol {
 					position: absolute;
 					width: 0.9rem;
@@ -144,6 +186,7 @@
 					margin-left: 2rem;
 					opacity: 0;
 				}
+
 				.donate {
 					@include btn-standard(0.8);
 					color: white;
@@ -152,14 +195,17 @@
 		}
 	}
 }
+
 .Error404Section {
 	@include section();
 	@include display-column();
 }
+
 .ComingSoonSection {
 	@include section();
 	@include display-column();
 }
+
 .goHome {
 	@include btn-standard();
 	color: white;
