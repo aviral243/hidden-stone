@@ -3,14 +3,14 @@
 /***/ 33:
 /***/ (function(module, exports) {
 
-module.exports = "data:font/woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICIvaG9tZS9uZW1lc2lzL0RvY3VtZW50cy9VRm91bmQvaGlkZGVuLXN0b25lL2Rpc3QvYXBwL2ZvbnRzL0xhdG8tUmVndWxhci53b2ZmIjs="
+module.exports = "data:font/woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9MYXRvLVJlZ3VsYXIud29mZiI7"
 
 /***/ }),
 
 /***/ 34:
 /***/ (function(module, exports) {
 
-module.exports = "data:font/woff2;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICIvaG9tZS9uZW1lc2lzL0RvY3VtZW50cy9VRm91bmQvaGlkZGVuLXN0b25lL2Rpc3QvYXBwL2ZvbnRzL0xhdG8tUmVndWxhci53b2ZmMiI7"
+module.exports = "data:font/woff2;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9MYXRvLVJlZ3VsYXIud29mZjIiOw=="
 
 /***/ }),
 
