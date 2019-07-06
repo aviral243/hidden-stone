@@ -3,14 +3,14 @@
 /***/ 33:
 /***/ (function(module, exports) {
 
-module.exports = "data:font/woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9MYXRvLVJlZ3VsYXIud29mZiI7"
+module.exports = "data:font/woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9mb250LndvZmYiOw=="
 
 /***/ }),
 
 /***/ 34:
 /***/ (function(module, exports) {
 
-module.exports = "data:font/woff2;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9MYXRvLVJlZ3VsYXIud29mZjIiOw=="
+module.exports = "data:font/woff2;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9mb250LndvZmYyIjs="
 
 /***/ }),
 
