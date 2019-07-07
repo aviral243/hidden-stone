@@ -1,104 +1,83 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
 
-/***/ 33:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/9c66bab167a73034d7e85ff6d2fb9333.woff";
-
-/***/ }),
-
-/***/ 34:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/f79fdb7f94b6c44fa464aaf878f986a4.woff2";
-
-/***/ }),
-
-/***/ 35:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/5e010e7d5a21e9105d6073ceec643520.woff";
-
-/***/ }),
-
-/***/ 36:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/620aadb8da576bcc887bc711463d99d5.woff2";
-
-/***/ }),
-
-/***/ 37:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/12a77593f1a1e9f8ecddb8bfdaa4e836.woff";
-
-/***/ }),
-
-/***/ 38:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/72bb03785e860c75618d1d7cdd478f24.woff2";
-
-/***/ }),
-
-/***/ 39:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/0b6ba4ad52519bf0a2001b0004f62d03.woff";
-
-/***/ }),
-
-/***/ 40:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/8a4beeaa789b8d5bbeb7742e7e7ca64e.woff2";
-
-/***/ }),
-
-/***/ 41:
+/***/ "7p4E":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/85650919c1d44b3c6ba44e987de12d8c.woff";
 
 /***/ }),
 
-/***/ 42:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/85bf84b45af1babcee374acae66a9ca3.woff2";
-
-/***/ }),
-
-/***/ 43:
+/***/ "8PTZ":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/95ce76bd4b86c78903abba2b749e7f23.woff";
 
 /***/ }),
 
-/***/ 44:
+/***/ "8jF8":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "fonts/2011437f9a6e713e01b4e8871bf39f3e.woff2";
+module.exports = __webpack_require__.p + "fonts/f79fdb7f94b6c44fa464aaf878f986a4.woff2";
 
 /***/ }),
 
-/***/ 51:
+/***/ "BBiw":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/5e010e7d5a21e9105d6073ceec643520.woff";
+
+/***/ }),
+
+/***/ "Fvd6":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/0b6ba4ad52519bf0a2001b0004f62d03.woff";
+
+/***/ }),
+
+/***/ "OSwI":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/9c66bab167a73034d7e85ff6d2fb9333.woff";
+
+/***/ }),
+
+/***/ "Or7N":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/85bf84b45af1babcee374acae66a9ca3.woff2";
+
+/***/ }),
+
+/***/ "QwMc":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/12a77593f1a1e9f8ecddb8bfdaa4e836.woff";
+
+/***/ }),
+
+/***/ "SS55":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/620aadb8da576bcc887bc711463d99d5.woff2";
+
+/***/ }),
+
+/***/ "T9no":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
+var react = __webpack_require__("q1tI");
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(17);
+var react_dom = __webpack_require__("i8i4");
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 1 modules
-var react_router_dom = __webpack_require__(24);
+var react_router_dom = __webpack_require__("55Ip");
 
 // CONCATENATED MODULE: ./src/app/components/home/sections/Main.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -154,7 +133,7 @@ function (_Component) {
 
 /* harmony default export */ var sections_Main = (Main_Main);
 // EXTERNAL MODULE: ./src/app/images/arrow-right.svg
-var arrow_right = __webpack_require__(8);
+var arrow_right = __webpack_require__("z9NS");
 var arrow_right_default = /*#__PURE__*/__webpack_require__.n(arrow_right);
 
 // CONCATENATED MODULE: ./src/app/components/home/sections/AboutUs.js
@@ -212,11 +191,11 @@ function (_Component) {
 
 /* harmony default export */ var sections_AboutUs = (AboutUs_AboutUs);
 // EXTERNAL MODULE: ./src/app/images/chevron-right.svg
-var chevron_right = __webpack_require__(11);
+var chevron_right = __webpack_require__("aMBy");
 var chevron_right_default = /*#__PURE__*/__webpack_require__.n(chevron_right);
 
 // EXTERNAL MODULE: ./src/app/images/rupee.svg
-var rupee = __webpack_require__(9);
+var rupee = __webpack_require__("dkAj");
 var rupee_default = /*#__PURE__*/__webpack_require__.n(rupee);
 
 // CONCATENATED MODULE: ./src/app/components/home/sections/schemes/defaultSchemes.js
@@ -362,7 +341,7 @@ function (_Component) {
 
 /* harmony default export */ var sections_Donate = (Donate_Donate);
 // EXTERNAL MODULE: ./src/app/images/HomeBG.png
-var HomeBG = __webpack_require__(5);
+var HomeBG = __webpack_require__("iMvq");
 var HomeBG_default = /*#__PURE__*/__webpack_require__.n(HomeBG);
 
 // CONCATENATED MODULE: ./src/app/components/home/sections/OurWork.js
@@ -613,10 +592,10 @@ function (_Component) {
 
 /* harmony default export */ var home_Home = (Home_Home);
 // EXTERNAL MODULE: ./node_modules/offline-plugin/runtime.js
-var runtime = __webpack_require__(18);
+var runtime = __webpack_require__("uvWk");
 
 // EXTERNAL MODULE: ./src/app/styles/main.scss
-var main = __webpack_require__(29);
+var main = __webpack_require__("k6iW");
 
 // CONCATENATED MODULE: ./src/app/Index.js
 function Index_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Index_typeof = function _typeof(obj) { return typeof obj; }; } else { Index_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Index_typeof(obj); }
@@ -667,6 +646,27 @@ function (_React$Component) {
 }(react_default.a.Component);
 
 Object(react_dom["render"])(react_default.a.createElement(Index_Index, null), window.document.getElementById("app"));
+
+/***/ }),
+
+/***/ "UifW":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/8a4beeaa789b8d5bbeb7742e7e7ca64e.woff2";
+
+/***/ }),
+
+/***/ "ikvA":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/2011437f9a6e713e01b4e8871bf39f3e.woff2";
+
+/***/ }),
+
+/***/ "tI0r":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fonts/72bb03785e860c75618d1d7cdd478f24.woff2";
 
 /***/ })
 
