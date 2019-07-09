@@ -91,6 +91,9 @@ const config = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true
+  },
   plugins: [
     new CleanWebpackPlugin({
       // Simulate the removal of files
