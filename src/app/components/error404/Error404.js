@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Error404 = () => (
   <div className="Error404Section">
     <h1>
@@ -13,7 +14,9 @@ const Error404 = () => (
       Go back to
       <span className="orangeText"> Home</span>.
     </p>
-    <button className="goHome">Home</button>
+    <Link className="goHome" to="/">
+      Home
+    </Link>
   </div>
 );
 export default Error404;
