@@ -65,6 +65,7 @@
 	}
 
 	.learnmore {
+		text-transform: uppercase;
 		@include desktop-320-767() {
 			@include btn-standard-transparent(0.8);
 		}
@@ -177,9 +178,10 @@
 			@include display-column();
 		}
 		@include display-row();
-
+		
 		> .donateSchemesContainer {
 			@include desktop-320-767() {
+				height: calc(100vh - #{6*$gutterWidth});
 				width: 100%;
 			}
 			@include display-column();
