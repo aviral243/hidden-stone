@@ -67,6 +67,7 @@
 
 @mixin btn-standard-transparent($scale:1) {
 	@include btn($scale);
+	text-transform: uppercase;
 	color: white;
 	background-color: rgba(0, 0, 0, 0);
 	&:hover {
