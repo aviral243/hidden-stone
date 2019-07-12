@@ -7,6 +7,11 @@
 	flex-direction: column;
 }
 @mixin section() {
+	@include desktop-320-767() {
+		min-height: 100vh;
+		width: 100vw;
+		padding: 0;
+	}
 	@include display-column();
 	width: 80%;
 	padding: 0.75*$gutterWidth 0.5*$gutterWidth;
@@ -58,11 +63,10 @@
 @mixin small-subheading($scale:1) {
 	font-size: $scale*0.6rem;
 	font-family: $generalFontFamilyLight;
-	
 }
 
 @mixin btn-standard-transparent($scale:1) {
-	@include btn($scale:1);
+	@include btn($scale);
 	color: white;
 	background-color: rgba(0, 0, 0, 0);
 	&:hover {
@@ -74,9 +78,8 @@
 		background: rgba(0, 0, 0, 0);
 	}
 }
-@mixin image-scale($scale:1) {
-	width: $scale*13.125rem;
-	min-height: 7.875rem;
+@mixin image-scale($scale) {
+	min-height: 6.875rem;
 	height: $scale*7.875rem;
 }
 
@@ -88,7 +91,7 @@
 	vertical-align: middle;
 	overflow: hidden;
 	min-height: $scale*7.875rem;
-	width: $scale*13.125rem;
+	width: $scale*14.125rem;
 	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
 	> img {
 		@include image-scale($scale);
@@ -120,7 +123,7 @@
 	height: $scale*3.6rem;
 	width: $scale*16rem;
 	border: solid 1px $hlBlack;
-	font-size: $normalFontSize;
+	font-size: $scale*$normalFontSize;
 	font-weight: $text;
 	font-family: $generalFontFamily;
 
@@ -131,7 +134,8 @@
 		outline-color: $primaryColor;
 		outline-style: none;
 	}
-	&::-webkit-inner-spin-button,&::-webkit-outer-spin-button {
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
 	}

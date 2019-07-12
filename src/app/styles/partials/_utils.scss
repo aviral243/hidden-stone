@@ -1,21 +1,37 @@
 p {
+	@include desktop-320-767() {
+		font-size: $mobileNormalFontSize;
+		line-height: $mobileNormaLineHeight;
+		padding: 0.8*$gutterWidth 1.6*$gutterWidth;
+		margin: 0;
+	}
+	margin: 0;
 	font-size: $normalFontSize;
-	line-height: 44px;
+	line-height: $normaLineHeight;
 	letter-spacing: $letterSpacing;
 	font-weight: $text;
 	padding: $gutterWidth 2*$gutterWidth;
 	font-family: $generalFontFamilyLight;
 }
 h1 {
+	@include desktop-320-767() {
+		font-size: $mobileHeaderFontSize;
+		line-height: $mobileHeaderLineHeight;
+		padding: 1.6*$gutterWidth;
+	}
 	padding: $gutterWidth 2*$gutterWidth;
 	margin: 0;
 	font-family: $headerFontFamily;
 	font-weight: $heading;
 	font-size: $headerFontSize;
-	line-height: 78px;
+	line-height: $headerLineHeight;
 	letter-spacing: $letterSpacing;
 }
 b {
+	@include desktop-320-767() {
+		font-size: $mobileNormalFontSize;
+		line-height: $mobileNormaLineHeight;
+	}
 	font-size: $normalFontSize;
 	font-weight: $heading;
 	letter-spacing: $letterSpacing;

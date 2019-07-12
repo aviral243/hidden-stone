@@ -10,8 +10,7 @@ const config = {
   },
   output: {
     filename: "bundle.js",
-    chunkFilename: "[chunkhash].js",
-    sourceMapFilename: "[file].map",
+    chunkFilename: "[name].[contenthash:8].js",
     path: `${DIST_DIR}/app`,
     publicPath: "/hidden-stone/app/",
     pathinfo: false

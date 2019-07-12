@@ -19,7 +19,6 @@ const Schemes = () => (
             {schemeDetails.scheme}
           </label>
           <div className="donateSchemeContent">
-            <button className="donate">Donate</button>
             <span>
               <label className="schemeContentAmount">Amount to be paid</label>
               <label>
@@ -31,6 +30,7 @@ const Schemes = () => (
               <label className="schemeContentDuration">Membership Tenure</label>
               {schemeDetails.duration}
             </span>
+            <button className="donate">Donate</button>
           </div>
         </span>
         <hr />

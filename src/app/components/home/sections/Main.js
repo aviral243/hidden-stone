@@ -4,6 +4,7 @@ class Main extends Component {
   render() {
     return (
       <section className="MainSection">
+        <div className="grad" />
         <h1>
           let’s build a <span className="orangeText">society</span> with skilled
           individuals

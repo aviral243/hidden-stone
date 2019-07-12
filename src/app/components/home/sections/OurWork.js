@@ -24,22 +24,30 @@ class OurWork extends Component {
               <span className="imgSubHeading"> March 2, 2019</span>
             </span>
           </div>
-          <div className="imgContainer">
-            <img src={work} />
-          </div>
-          <div className="imgContainer">
-            <img src={work} />
-          </div>
-          <div className="imgContainer">
-            <img src={work} />
-          </div>
-          <div className="imgContainer">
-            <img src={work} />
-          </div>
-          <button className="viewMore">
-            view more
-            <img src={arrowRight} />
-          </button>
+          <span className="imgSmallContainer">
+            <div>
+              <span>
+                <div className="imgContainer">
+                  <img src={work} />
+                </div>
+                <div className="imgContainer">
+                  <img src={work} />
+                </div>
+              </span>
+              <span>
+                <div className="imgContainer">
+                  <img src={work} />
+                </div>
+                <div className="imgContainer">
+                  <img src={work} />
+                </div>
+              </span>
+            </div>
+            <button className="viewMore">
+              view more
+              <img src={arrowRight} />
+            </button>
+          </span>
         </div>
       </section>
     );
