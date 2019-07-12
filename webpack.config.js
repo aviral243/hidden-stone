@@ -12,7 +12,7 @@ const config = {
     filename: "bundle.js",
     chunkFilename: "[name].[contenthash:8].js",
     path: `${DIST_DIR}/app`,
-    publicPath: "/hidden-stone/app/",
+    publicPath: "/app/",
     pathinfo: false
   },
   resolve: {
