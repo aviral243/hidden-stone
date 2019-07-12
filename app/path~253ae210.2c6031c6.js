@@ -1616,7 +1616,7 @@ function install(options) {
     if (hasSW()) {
       var registration = navigator.serviceWorker
         .register(
-          "/app/sw.js", {
+          "/hidden-stone/app/sw.js", {
             
             
           }
