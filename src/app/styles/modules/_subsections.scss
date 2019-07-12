@@ -7,36 +7,69 @@
 .OurTeamSubSection {
 	@include section();
 	.teamContainer {
-        @include display-column();
-        padding: $gutterWidth;
-        >span{
-            @include display-row();
-            padding: $gutterWidth 0;
-            justify-content: space-between;
-        }
+		@include desktop-320-767() {
+			@include display-column();
+			padding: 0 1.6*$gutterWidth;
+		}
+		@include display-column();
+		padding: $gutterWidth 0 $gutterWidth $gutterWidth*2;
+		> span {
+			@include desktop-320-767() {
+				@include display-column();
+				padding: 0;
+				justify-content: space-between;
+			}
+			@include display-row();
+			padding: $gutterWidth 0;
+			justify-content: space-between;
+		}
 		.teamMemberContainer {
-            @include display-row();
-            width: 40rem;
+			@include desktop-320-767() {
+			margin-bottom: $gutterWidth;
+				width: calc(100vw - #{3.2*$gutterWidth});
+			}
+			@include display-row();
+			width: 40rem;
 
 			> img {
+				@include desktop-320-767() {
+					min-width: 40%;
+					width: 40%;
+					height: 6*$gutterWidth;
+                }
+                @include desktop-768-1024(){
+					min-height: 6*$gutterWidth;
+
+                }
 				background: $hlBlack;
-                width: 200px;
-                min-width: 10rem;
-				height: 220px;
-            }
-            >span{
-                @include display-column();
-                padding:0.6*$gutterWidth 1.6*$gutterWidth;
-            }
+				width: 12,5rem;
+				min-width: 10rem;
+				height: 13.75rem;
+			}
+			> span {
+                @include desktop-320-767() {
+				padding: 0.6*$gutterWidth 0 0 $gutterWidth;
+				}
+				@include display-column();
+				padding: 0.6*$gutterWidth 1.6*$gutterWidth;
+			}
+
 			.teamMemberName {
-                font-size: $normalFontSize;
-                font-family: $generalFontFamily;
-                margin-bottom: $gutterWidth;
-            }
-            .teamMemberPost{
-                 font-size: $normalFontSize;
-                font-family: $generalFontFamilyLight;
-            }
+				@include desktop-320-767() {
+                    font-size: $mobileNormalFontSize;
+                    margin-bottom: 0.4*$gutterWidth;
+				}
+				font-size: $normalFontSize;
+				font-family: $generalFontFamily;
+				margin-bottom: $gutterWidth;
+			}
+			.teamMemberPost {
+				@include desktop-320-767() {
+					font-size: $mobileNormalFontSize;
+				}
+				font-size: $normalFontSize;
+				font-family: $generalFontFamilyLight;
+			}
 		}
 	}
 }
