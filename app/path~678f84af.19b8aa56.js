@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[5],{
 
 /***/ "+wdc":
 /***/ (function(module, exports, __webpack_require__) {
@@ -27,6 +27,79 @@ b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstabl
 exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l||w())};exports.unstable_continueExecution=function(){null!==d&&p()};exports.unstable_pauseExecution=function(){};exports.unstable_getFirstCallbackNode=function(){return d};
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("yLpj")))
+
+/***/ }),
+
+/***/ "81GO":
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Module dependencies.
+ */
+
+var Tween = __webpack_require__("IECa");
+var raf = __webpack_require__("NXNr");
+
+/**
+ * Expose `scrollTo`.
+ */
+
+module.exports = scrollTo;
+
+/**
+ * Scroll to `(x, y)`.
+ *
+ * @param {Number} x
+ * @param {Number} y
+ * @api public
+ */
+
+function scrollTo(x, y, options) {
+  options = options || {};
+
+  // start position
+  var start = scroll();
+
+  // setup tween
+  var tween = Tween(start)
+    .ease(options.ease || 'out-circ')
+    .to({ top: y, left: x })
+    .duration(options.duration || 1000);
+
+  // scroll
+  tween.update(function(o){
+    window.scrollTo(o.left | 0, o.top | 0);
+  });
+
+  // handle end
+  tween.on('end', function(){
+    animate = function(){};
+  });
+
+  // animate
+  function animate() {
+    raf(animate);
+    tween.update();
+  }
+
+  animate();
+  
+  return tween;
+}
+
+/**
+ * Return scroll position.
+ *
+ * @return {Object}
+ * @api private
+ */
+
+function scroll() {
+  var y = window.pageYOffset || document.documentElement.scrollTop;
+  var x = window.pageXOffset || document.documentElement.scrollLeft;
+  return { top: y, left: x };
+}
+
 
 /***/ }),
 

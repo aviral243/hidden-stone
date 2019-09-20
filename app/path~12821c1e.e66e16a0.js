@@ -76,9 +76,31 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__("i8i4");
 
-// EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 1 modules
+// EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__("55Ip");
 
+// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__("Ty5D");
+
+// CONCATENATED MODULE: ./src/app/components/error404/Error404.js
+
+
+
+var Error404_Error404 = function Error404() {
+  return react_default.a.createElement("div", {
+    className: "Error404Section"
+  }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
+    className: "orangeText"
+  }, "Oops!!!"), " 404"), react_default.a.createElement("p", null, "Page not found.", react_default.a.createElement("br", null), "You are probably in a wrong place."), react_default.a.createElement("p", null, "Go back to", react_default.a.createElement("span", {
+    className: "orangeText"
+  }, " Home"), "."), react_default.a.createElement("button", {
+    className: "goHome"
+  }, react_default.a.createElement(react_router_dom["b" /* Link */], {
+    to: "/"
+  }, "Home")));
+};
+
+/* harmony default export */ var error404_Error404 = (Error404_Error404);
 // CONCATENATED MODULE: ./src/app/components/home/sections/Main.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -115,7 +137,8 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "MainSection"
+        className: "MainSection",
+        id: "main"
       }, react_default.a.createElement("div", {
         className: "grad"
       }), react_default.a.createElement("h1", null, "let\u2019s build a ", react_default.a.createElement("span", {
@@ -175,7 +198,8 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "AboutUsSection"
+        className: "AboutUsSection",
+        id: "aboutus"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
       }, "the"), " challenge"), react_default.a.createElement("p", null, "We believe that society can only thrive when every individual is given a chance to contribute. However, due to issues such as poverty and umeployment, a part of society is left out. The rural areas are currently in despair, and the ongoing solutions aren\u2019t just enough."), react_default.a.createElement("p", null, react_default.a.createElement("span", {
@@ -307,7 +331,8 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "DonateSection"
+        className: "DonateSection",
+        id: "donate"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
       }, "help"), " us"), react_default.a.createElement("div", {
@@ -384,7 +409,8 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "OurWorkSection"
+        className: "OurWorkSection",
+        id: "ourwork"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
       }, "the"), " mission"), react_default.a.createElement("p", null, react_default.a.createElement("span", {
@@ -549,6 +575,194 @@ var SubSections = {
   OurStory: subsections_OurStory
 };
 
+// EXTERNAL MODULE: ./src/app/images/logo.svg
+var logo = __webpack_require__("b0GQ");
+var logo_default = /*#__PURE__*/__webpack_require__.n(logo);
+
+// EXTERNAL MODULE: ./src/app/images/FB.svg
+var FB = __webpack_require__("aD4B");
+var FB_default = /*#__PURE__*/__webpack_require__.n(FB);
+
+// EXTERNAL MODULE: ./src/app/images/Insta.svg
+var Insta = __webpack_require__("kgAJ");
+var Insta_default = /*#__PURE__*/__webpack_require__.n(Insta);
+
+// CONCATENATED MODULE: ./src/app/components/topbar/TopBar.js
+function TopBar_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { TopBar_typeof = function _typeof(obj) { return typeof obj; }; } else { TopBar_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return TopBar_typeof(obj); }
+
+function TopBar_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function TopBar_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function TopBar_createClass(Constructor, protoProps, staticProps) { if (protoProps) TopBar_defineProperties(Constructor.prototype, protoProps); if (staticProps) TopBar_defineProperties(Constructor, staticProps); return Constructor; }
+
+function TopBar_possibleConstructorReturn(self, call) { if (call && (TopBar_typeof(call) === "object" || typeof call === "function")) { return call; } return TopBar_assertThisInitialized(self); }
+
+function TopBar_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function TopBar_getPrototypeOf(o) { TopBar_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return TopBar_getPrototypeOf(o); }
+
+function TopBar_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) TopBar_setPrototypeOf(subClass, superClass); }
+
+function TopBar_setPrototypeOf(o, p) { TopBar_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return TopBar_setPrototypeOf(o, p); }
+
+
+
+
+
+
+var TopBar_TopBar =
+/*#__PURE__*/
+function (_Component) {
+  TopBar_inherits(TopBar, _Component);
+
+  function TopBar() {
+    TopBar_classCallCheck(this, TopBar);
+
+    return TopBar_possibleConstructorReturn(this, TopBar_getPrototypeOf(TopBar).apply(this, arguments));
+  }
+
+  TopBar_createClass(TopBar, [{
+    key: "render",
+    value: function render() {
+      return react_default.a.createElement("div", {
+        className: "TopBarContainer"
+      }, react_default.a.createElement("div", {
+        className: "web"
+      }, react_default.a.createElement("div", {
+        className: "logo"
+      }, react_default.a.createElement("a", {
+        href: "https://www.google.com"
+      }, react_default.a.createElement("img", {
+        src: logo_default.a
+      })))), react_default.a.createElement("div", {
+        className: "contact"
+      }, react_default.a.createElement("div", {
+        className: "logo"
+      }, react_default.a.createElement("a", {
+        href: "https://www.google.com"
+      }, react_default.a.createElement("img", {
+        src: FB_default.a
+      }))), react_default.a.createElement("div", {
+        className: "logo"
+      }, react_default.a.createElement("a", {
+        href: "https://www.google.com"
+      }, react_default.a.createElement("img", {
+        src: Insta_default.a
+      }))), react_default.a.createElement("div", {
+        className: "logo"
+      }, react_default.a.createElement("a", {
+        className: "contactUs",
+        href: "https://www.google.com"
+      }, "CONTACT"))));
+    }
+  }]);
+
+  return TopBar;
+}(react["Component"]);
+
+/* harmony default export */ var topbar_TopBar = (TopBar_TopBar);
+// CONCATENATED MODULE: ./src/app/components/navbar/NavBar.js
+function NavBar_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { NavBar_typeof = function _typeof(obj) { return typeof obj; }; } else { NavBar_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return NavBar_typeof(obj); }
+
+function NavBar_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function NavBar_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function NavBar_createClass(Constructor, protoProps, staticProps) { if (protoProps) NavBar_defineProperties(Constructor.prototype, protoProps); if (staticProps) NavBar_defineProperties(Constructor, staticProps); return Constructor; }
+
+function NavBar_possibleConstructorReturn(self, call) { if (call && (NavBar_typeof(call) === "object" || typeof call === "function")) { return call; } return NavBar_assertThisInitialized(self); }
+
+function NavBar_getPrototypeOf(o) { NavBar_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return NavBar_getPrototypeOf(o); }
+
+function NavBar_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function NavBar_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) NavBar_setPrototypeOf(subClass, superClass); }
+
+function NavBar_setPrototypeOf(o, p) { NavBar_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return NavBar_setPrototypeOf(o, p); }
+
+
+
+var NavBar_NavBar =
+/*#__PURE__*/
+function (_Component) {
+  NavBar_inherits(NavBar, _Component);
+
+  function NavBar(props) {
+    var _this;
+
+    NavBar_classCallCheck(this, NavBar);
+
+    _this = NavBar_possibleConstructorReturn(this, NavBar_getPrototypeOf(NavBar).call(this, props));
+    _this.state = {
+      isActive: true,
+      jqueryEaseReady: false
+    };
+    _this.toggleClass = _this.toggleClass.bind(NavBar_assertThisInitialized(_this));
+    return _this;
+  }
+
+  NavBar_createClass(NavBar, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {// let header = document.getElementById("navbar");
+      // let navItemsLinks = header.getElementsByClassName("NavItemLinks");
+      // for (let i = 0; i < navItemsLinks.length; i++) {
+      //   navItemsLinks[i].addEventListener("click", () => {
+      //     let current = header.getElementsByClassName("active");
+      //     current[0].className = current[0].className.replace(" active", "");
+      //     this.className += " active";
+      //   });
+      // }
+    }
+  }, {
+    key: "toggleClass",
+    value: function toggleClass(e) {
+      e.preventDefault();
+      this.setState({
+        isActive: !this.state.isActive
+      });
+      this.scrollToRef(e);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          isActive = _this$state.isActive,
+          flag = _this$state.flag;
+      return react_default.a.createElement("ul", {
+        className: "navbar-nav NavBarContainer",
+        id: "navbar"
+      }, react_default.a.createElement("li", {
+        className: "nav-item NavItem"
+      }, react_default.a.createElement("a", {
+        href: "#main" // ref={ref => (this.myRef = ref)}
+        ,
+        className: "nav-link NavItemLinks js-scroll-trigger" // onClick={e => this.toggleClass(e)}
+        ,
+        id: "main"
+      }, "HOME")), react_default.a.createElement("li", {
+        className: "NavItem"
+      }, react_default.a.createElement("a", {
+        href: "#aboutus",
+        className: "NavItemLinks js-scroll-trigger"
+      }, "WHO WE ARE")), react_default.a.createElement("li", {
+        className: "NavItem"
+      }, react_default.a.createElement("a", {
+        href: "#ourwork",
+        className: "NavItemLinks js-scroll-trigger"
+      }, "WHAT WE DO")), react_default.a.createElement("li", {
+        className: "NavItem"
+      }, react_default.a.createElement("a", {
+        href: "#donate",
+        className: "NavItemLinks js-scroll-trigger"
+      }, "JOIN THE JOURNEY")));
+    }
+  }]);
+
+  return NavBar;
+}(react["Component"]);
+
+/* harmony default export */ var navbar_NavBar = (NavBar_NavBar);
 // CONCATENATED MODULE: ./src/app/components/home/Home.js
 function Home_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Home_typeof = function _typeof(obj) { return typeof obj; }; } else { Home_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Home_typeof(obj); }
 
@@ -571,6 +785,8 @@ function Home_setPrototypeOf(o, p) { Home_setPrototypeOf = Object.setPrototypeOf
 
 
 
+
+
 var Home_Home =
 /*#__PURE__*/
 function (_Component) {
@@ -586,8 +802,10 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("div", {
-        className: "main"
-      }, react_default.a.createElement(Sections.Main, null), react_default.a.createElement(Sections.OurWork, null), react_default.a.createElement(Sections.AboutUs, null), react_default.a.createElement(Sections.Donate, null), react_default.a.createElement(SubSections.OurEndeavours, null), react_default.a.createElement(SubSections.OurTeam, null), react_default.a.createElement(SubSections.OurStory, null));
+        className: "HomeContainer"
+      }, react_default.a.createElement(topbar_TopBar, null), react_default.a.createElement("div", {
+        className: "HomeSection"
+      }, react_default.a.createElement(Sections.Main, null), react_default.a.createElement(Sections.AboutUs, null), react_default.a.createElement(Sections.OurWork, null), react_default.a.createElement(Sections.Donate, null)), react_default.a.createElement(navbar_NavBar, null));
     }
   }]);
 
@@ -595,61 +813,255 @@ function (_Component) {
 }(react["Component"]);
 
 /* harmony default export */ var home_Home = (Home_Home);
-// EXTERNAL MODULE: ./node_modules/offline-plugin/runtime.js
-var runtime = __webpack_require__("uvWk");
+// EXTERNAL MODULE: ./node_modules/react-scroll-to-component/index.js
+var react_scroll_to_component = __webpack_require__("hWpC");
+var react_scroll_to_component_default = /*#__PURE__*/__webpack_require__.n(react_scroll_to_component);
 
+// CONCATENATED MODULE: ./src/app/components/test/index.js
+function test_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { test_typeof = function _typeof(obj) { return typeof obj; }; } else { test_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return test_typeof(obj); }
+
+function test_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function test_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function test_createClass(Constructor, protoProps, staticProps) { if (protoProps) test_defineProperties(Constructor.prototype, protoProps); if (staticProps) test_defineProperties(Constructor, staticProps); return Constructor; }
+
+function test_possibleConstructorReturn(self, call) { if (call && (test_typeof(call) === "object" || typeof call === "function")) { return call; } return test_assertThisInitialized(self); }
+
+function test_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function test_getPrototypeOf(o) { test_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return test_getPrototypeOf(o); }
+
+function test_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) test_setPrototypeOf(subClass, superClass); }
+
+function test_setPrototypeOf(o, p) { test_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return test_setPrototypeOf(o, p); }
+
+
+
+
+var test_Test =
+/*#__PURE__*/
+function (_Component) {
+  test_inherits(Test, _Component);
+
+  function Test() {
+    test_classCallCheck(this, Test);
+
+    return test_possibleConstructorReturn(this, test_getPrototypeOf(Test).apply(this, arguments));
+  }
+
+  test_createClass(Test, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      react_scroll_to_component_default()(this.Blue, {
+        offset: 0,
+        align: "middle",
+        duration: 500,
+        ease: "inCirc"
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      return react_default.a.createElement("div", {
+        className: "main"
+      }, react_default.a.createElement("div", {
+        className: "button_group"
+      }, react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Violet, {
+            offset: 0,
+            align: "top",
+            duration: 1500
+          });
+        }
+      }, "Go To Violet"), react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Indigo, {
+            offset: 0,
+            align: "bottom",
+            duration: 500,
+            ease: "inExpo"
+          });
+        }
+      }, "Go To Indigo"), react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Blue, {
+            offset: -200,
+            align: "middle",
+            duration: 1500,
+            ease: "inCirc"
+          });
+        }
+      }, "Go To Blue"), react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Green, {
+            offset: 0,
+            align: "middle",
+            duration: 500,
+            ease: "inExpo"
+          });
+        }
+      }, "Go To Green"), react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Yellow, {
+            offset: 0,
+            align: "top",
+            duration: 1500,
+            ease: "inCirc"
+          });
+        }
+      }, "Go To Yellow"), react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Orange, {
+            offset: 0,
+            align: "top",
+            duration: 500,
+            ease: "inCirc"
+          });
+        }
+      }, "Go To Orange"), react_default.a.createElement("button", {
+        onClick: function onClick() {
+          return react_scroll_to_component_default()(_this.Red, {
+            offset: 0,
+            align: "top",
+            duration: 500
+          });
+        }
+      }, "Go To Red")), react_default.a.createElement("section", {
+        className: "violet",
+        ref: function ref(section) {
+          _this.Violet = section;
+        }
+      }, "Violet"), react_default.a.createElement("section", {
+        className: "indigo",
+        ref: function ref(section) {
+          _this.Indigo = section;
+        }
+      }, "Indigo"), react_default.a.createElement("section", {
+        className: "blue",
+        ref: function ref(section) {
+          _this.Blue = section;
+        }
+      }, "Blue"), react_default.a.createElement("section", {
+        className: "green",
+        ref: function ref(section) {
+          _this.Green = section;
+        }
+      }, "Green"), react_default.a.createElement("section", {
+        className: "yellow",
+        ref: function ref(section) {
+          _this.Yellow = section;
+        }
+      }, "Yellow"), react_default.a.createElement("section", {
+        className: "orange",
+        ref: function ref(section) {
+          _this.Orange = section;
+        }
+      }, "Orange"), react_default.a.createElement("section", {
+        className: "red",
+        ref: function ref(section) {
+          _this.Red = section;
+        }
+      }, "Red"));
+    }
+  }]);
+
+  return Test;
+}(react["Component"]);
+
+/* harmony default export */ var test = (test_Test);
+// CONCATENATED MODULE: ./src/app/components/coming-soon/ComingSoon.js
+
+
+var ComingSoon_ComingSoon = function ComingSoon() {
+  return react_default.a.createElement("div", {
+    className: "ComingSoonSection"
+  }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
+    className: "orangeText"
+  }, "Coming"), " Soon!!!"), react_default.a.createElement("p", null, "Stay Tuned.", react_default.a.createElement("br", null), "Go back to", react_default.a.createElement("span", {
+    className: "orangeText"
+  }, " Home"), "."), react_default.a.createElement("button", {
+    className: "goHome"
+  }, "Home"));
+};
+
+/* harmony default export */ var coming_soon_ComingSoon = (ComingSoon_ComingSoon);
 // EXTERNAL MODULE: ./src/app/styles/main.scss
 var main = __webpack_require__("k6iW");
 
-// CONCATENATED MODULE: ./src/app/Index.js
-function Index_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Index_typeof = function _typeof(obj) { return typeof obj; }; } else { Index_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Index_typeof(obj); }
+// CONCATENATED MODULE: ./src/app/components/App.js
+function App_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { App_typeof = function _typeof(obj) { return typeof obj; }; } else { App_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return App_typeof(obj); }
 
-function Index_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function App_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function Index_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function App_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function Index_createClass(Constructor, protoProps, staticProps) { if (protoProps) Index_defineProperties(Constructor.prototype, protoProps); if (staticProps) Index_defineProperties(Constructor, staticProps); return Constructor; }
+function App_createClass(Constructor, protoProps, staticProps) { if (protoProps) App_defineProperties(Constructor.prototype, protoProps); if (staticProps) App_defineProperties(Constructor, staticProps); return Constructor; }
 
-function Index_possibleConstructorReturn(self, call) { if (call && (Index_typeof(call) === "object" || typeof call === "function")) { return call; } return Index_assertThisInitialized(self); }
+function App_possibleConstructorReturn(self, call) { if (call && (App_typeof(call) === "object" || typeof call === "function")) { return call; } return App_assertThisInitialized(self); }
 
-function Index_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function App_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-function Index_getPrototypeOf(o) { Index_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Index_getPrototypeOf(o); }
+function App_getPrototypeOf(o) { App_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return App_getPrototypeOf(o); }
 
-function Index_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) Index_setPrototypeOf(subClass, superClass); }
+function App_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) App_setPrototypeOf(subClass, superClass); }
 
-function Index_setPrototypeOf(o, p) { Index_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Index_setPrototypeOf(o, p); }
-
-
+function App_setPrototypeOf(o, p) { App_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return App_setPrototypeOf(o, p); }
 
 
 
 
-runtime["install"]();
 
 
-var Index_Index =
+
+
+
+var App_Index =
 /*#__PURE__*/
 function (_React$Component) {
-  Index_inherits(Index, _React$Component);
+  App_inherits(Index, _React$Component);
 
   function Index() {
-    Index_classCallCheck(this, Index);
+    App_classCallCheck(this, Index);
 
-    return Index_possibleConstructorReturn(this, Index_getPrototypeOf(Index).apply(this, arguments));
+    return App_possibleConstructorReturn(this, App_getPrototypeOf(Index).apply(this, arguments));
   }
 
-  Index_createClass(Index, [{
+  App_createClass(Index, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement(react_router_dom["a" /* BrowserRouter */], null, react_default.a.createElement(home_Home, null));
+      return react_default.a.createElement(react_router["c" /* Switch */], null, react_default.a.createElement(react_router["a" /* Route */], {
+        path: "/",
+        component: home_Home
+      }), react_default.a.createElement(react_router["a" /* Route */], {
+        path: "/coming-soon",
+        component: coming_soon_ComingSoon
+      }), react_default.a.createElement(react_router["a" /* Route */], {
+        component: error404_Error404
+      }));
     }
   }]);
 
   return Index;
 }(react_default.a.Component);
 
-Object(react_dom["render"])(react_default.a.createElement(Index_Index, null), window.document.getElementById("app"));
+/* harmony default export */ var App = (App_Index);
+// EXTERNAL MODULE: ./node_modules/offline-plugin/runtime.js
+var runtime = __webpack_require__("uvWk");
+
+// CONCATENATED MODULE: ./src/app/Index.js
+
+
+
+
+
+runtime["install"]();
+Object(react_dom["render"])(react_default.a.createElement(react_router_dom["a" /* BrowserRouter */], null, react_default.a.createElement(react_router["a" /* Route */], {
+  component: App
+})), document.getElementById("app"));
 
 /***/ }),
 
