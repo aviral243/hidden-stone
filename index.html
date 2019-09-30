@@ -21,7 +21,6 @@
         (function ($) {
             "use strict";
             $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-                alert('clicked')
                 if (
                     location.pathname.replace(/^\//, "") ==
                     this.pathname.replace(/^\//, "") &&
@@ -34,7 +33,7 @@
                             {
                                 scrollTop: target.offset().top
                             },
-                            1000,
+                            800,
                             "easeInOutExpo"
                         );
                         return false;
@@ -44,6 +43,33 @@
             $("body").scrollspy({
                 target: "#navbar"
             });
+            $(document).scroll(function () {
+                let rgbHL = $(document).scrollTop();
+                let opacityHL = 0.2 + rgbHL / 500;
+                let rgb = $(document).scrollTop() / 4;
+                let reverseRgb = 300 - $(document).scrollTop();
+                let reverseRgbContactUs = 500 - $(document).scrollTop();
+                console.log(rgbHL);
+                $(".NavItemLinks").hover(
+                    function () {
+                        if (rgbHL > 350) {
+                            $(this).addClass("hover");
+                        }
+                    },
+                    function () {
+                        if (rgbHL > 350) {
+                            $(this).removeClass("hover");
+                        }
+
+                    }
+                );
+                $("#navbar .NavItem .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#navbar .NavItem .NavItemLinks").css("border-color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#topbar").css("background-color", "rgba(" + rgb + ", " + rgb + ", " + rgb + "," + rgb / 140 + ")");
+                $("#topbar .logo a img").css("fill", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#topbar .logo a.contactUs").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
+            });
+
         }(jQuery)); 
     </script>
 </body>
