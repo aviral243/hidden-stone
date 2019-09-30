@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/hidden-stone/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -5317,7 +5317,7 @@ function install(options) {
     if (hasSW()) {
       var registration = navigator.serviceWorker
         .register(
-          "/sw.js", {
+          "/hidden-stone/sw.js", {
             
             
           }
