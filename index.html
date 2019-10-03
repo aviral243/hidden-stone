@@ -48,7 +48,7 @@
                 let rgb = $(document).scrollTop() / 4;
                 let reverseRgb = 300 - $(document).scrollTop();
                 let rgbTop = rgb * 4 / 3;
-                let reverseRgbContactUs = (rgbHL / 2) == 43 ? 43 : 500 - rgbHL / 2;
+                let reverseRgbContactUs = (500 - rgbHL / 2) <= 40 ? 43 : 500 - rgbHL / 2;
                 console.log(rgbHL);
                 if (rgbHL < 600) {
                     $(".NavItemLinks").addClass("hover");
