@@ -16,9 +16,9 @@
     <div id="app"></div>
     <script src="/app/bundle.js"></script>
     <script type="text/javascript">
-
         (function ($) {
             "use strict";
+            $("body").scrollTop(0);
             $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
                 if (
                     location.pathname.replace(/^\//, "") ==
@@ -47,28 +47,32 @@
                 let opacityHL = 0.2 + rgbHL / 500;
                 let rgb = $(document).scrollTop() / 4;
                 let reverseRgb = 300 - $(document).scrollTop();
-                let reverseRgbContactUs = 500 - $(document).scrollTop();
+                let rgbTop = rgb * 4 / 3;
+                let reverseRgbContactUs = (rgbHL / 2) == 43 ? 43 : 500 - rgbHL / 2;
                 console.log(rgbHL);
-                $(".NavItemLinks").hover(
-                    function () {
-                        if (rgbHL > 350) {
-                            $(this).addClass("hover");
-                        }
-                    },
-                    function () {
-                        if (rgbHL > 350) {
-                            $(this).removeClass("hover");
-                        }
+                if (rgbHL < 600) {
+                    $(".NavItemLinks").addClass("hover");
+                }
+                if (rgbHL > 600) {
+                    $(".NavItemLinks").removeClass("hover");
 
-                    }
-                );
+                }
+                let rgbTopOpacity = rgbHL > 950 ? 1 : rgbTop / 900;
                 $("#navbar .NavItem .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
                 $("#navbar .NavItem .NavItemLinks").css("border-color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
-                $("#topbar").css("background-color", "rgba(" + rgb + ", " + rgb + ", " + rgb + "," + rgb / 140 + ")");
+                $("#topbar").css("background-color", "rgba(" + rgbTop + ", " + rgbTop + ", " + rgbTop + "," + rgbTopOpacity + ")");
                 $("#topbar .logo a img").css("fill", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
-                $("#topbar .logo a.contactUs").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
+                $("#topbar .logo a").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
             });
-
+            var header = document.getElementById("navbar");
+            var links = header.getElementsByClassName("NavItemLinks");
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("activeLink");
+                    current[0].className = current[0].className.replace(" activeLink", "");
+                    this.className += " activeLink";
+                });
+            }
         }(jQuery)); 
     </script>
 </body>
