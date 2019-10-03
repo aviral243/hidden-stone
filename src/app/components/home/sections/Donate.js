@@ -13,7 +13,7 @@ class Donate extends Component {
 
   render() {
     return (
-      <section className="DonateSection">
+      <section className="DonateSection" id="donate">
         <h1>
           <span className="orangeText">help</span> us
         </h1>
