@@ -1,5 +1,16 @@
-#bg1{
-    display: block;
-    width: 100%;
-    height: auto;
+.HomeContainer {
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .NavBarContainer {
+        @include desktop-768-1024() {
+            display: none;
+        }
+
+        position: fixed;
+        right: 0px;
+        top: $gutterWidth*15;
+        width: 420px;
+    }
 }

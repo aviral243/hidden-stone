@@ -1,40 +1,60 @@
 .NavBarContainer,
 .SubSectionNavBarContainer {
-	@include display-column();
-	list-style: none;
-	align-items: center;
-	width: fit-content;
-	a {
-		border-left: 2px solid $blackText;
-		color: $blackText;
-		display: block;
-		font-family: Lato;
-		font-size: 25px;
-		font-weight: normal;
-		line-height: 30px;
-		padding: 32.51px 0px 32.01px 40px;
-		text-decoration: none;
-		text-transform: uppercase;
-		transition: background-color .4s ease;
-		width: 422px;
-		&::before {
-			content: "";
-			border-left: 2px solid rgba(255, 255, 255, 0);
-		}
-		&.active::before,
-		&:active::before {
-			content: "";
-			border-left: 0;
-		}
-		&:active,
-		&.active {
-			color: $primaryColor;
-			background-color: $hlWhite;
-			opacity: 0.75;
-			border-left: 6px solid $primaryColor;
-		}
-		&:not(:focus):hover {
-			background-color: $hlHover;
-		}
-	}
+  @include desktop-320-767() {
+    display: none;
+  }
+
+  @include desktop-320() {
+    display: none;
+  }
+
+  @include display-column();
+
+  list-style: none;
+  align-items: center;
+  width: fit-content;
+
+  a {
+    border-left: 2px solid #fff;
+    color: #fff;
+    display: block;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 32.51px 0px 32.01px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .4s ease;
+    width: 422px;
+
+    &::before {
+      content: "";
+      border-left: 2px solid rgba(255, 255, 255, 0);
+    }
+
+    &.active::before,
+    &:active::before {
+      content: "";
+      border-left: 0;
+    }
+
+    &:active,
+    &.active,
+    &:focus {
+      color: $primaryColor !important;
+      background-color: rgba($hlWhite, 0.2);
+
+      border-left: 6px solid $primaryColor !important;
+    }
+
+    &:not(:focus):hover {
+      background-color: $hlHover;
+    }
+
+    &.hover {
+      background-color: $primaryColor !important;
+
+    }
+  }
 }

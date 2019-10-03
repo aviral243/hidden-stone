@@ -1,31 +1,39 @@
+.TopBarContainer {
+    @include desktop-320-767() {
+        display: none;
+    }
 
-.TopBarContainer{
-    background-color: transparent;
+    @include desktop-320() {
+        display: none;
+    }
+
+    background-color: black;
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
-.logo{
+.logo {
     position: relative;
     display: inline-block;
     vertical-align: middle;
     padding: 1rem;
 }
 
-.contact{
+.contact {
     position: relative;
     display: block;
     margin: auto 0 auto 0;
 }
 
-.web{
+.web {
     position: relative;
     display: block;
 }
 
-.contactUs{
+.contactUs {
     font-family: "Lato";
     text-decoration: none;
     color: white;

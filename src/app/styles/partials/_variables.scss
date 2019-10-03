@@ -1,11 +1,12 @@
-@include font-Lato('Lato','Lato-Regular');
-@include font-Lato('LatoLight','Lato-Light');
-@include font-Lato('LatoMedium','Lato-Medium');
-@include font-Lato('LatoBold','Lato-Bold');
-@include font-Lato('LatoHeavy','Lato-Heavy');
+@include font-Lato('Lato', 'Lato-Regular');
+@include font-Lato('LatoLight', 'Lato-Light');
+@include font-Lato('LatoMedium', 'Lato-Medium');
+@include font-Lato('LatoBold', 'Lato-Bold');
+@include font-Lato('LatoHeavy', 'Lato-Heavy');
 
-@include font-YesevaOne('YesevaOne','YesevaOne-Regular');
-/*========THEME============*/ //highlighter black bg
+@include font-YesevaOne('YesevaOne', 'YesevaOne-Regular');
+/*========THEME============*/
+//highlighter black bg
 $primaryColor: #ff9b40;
 $primaryColorDark: #ff8640;
 $primaryDisabledColor: #555555;
@@ -18,7 +19,8 @@ $hlHover: #f0f0f0;
 $dividerColor: #dddddd;
 $borderColor:#E5E5E5;
 
-/*========FONTS============*/ //highlighter black bg
+/*========FONTS============*/
+//highlighter black bg
 $generalFontFamily: Lato;
 $generalFontFamilyLight: LatoLight;
 $generalFontFamilyMedium: LatoMedium;
