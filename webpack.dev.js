@@ -8,6 +8,7 @@ const smp = new SpeedMeasurePlugin();
 
 const configDev = {
   devServer: {
+    historyApiFallback: true,
     contentBase: SRC_DIR,
     compress: true,
     open: true,

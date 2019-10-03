@@ -12,43 +12,9 @@ const SRC_DIR = path.resolve(__dirname, "src");
 const configProd = {
   mode: "production",
   cache: true,
-  performance: {
-    maxAssetSize: 1e7,
-    maxEntrypointSize: 1e7
-  },
   optimization: {
-    runtimeChunk: "single",
-    moduleIds: "hashed",
     removeAvailableModules: true,
-    removeEmptyChunks: true,
-    flagIncludedChunks: true,
-    mergeDuplicateChunks: true,
-    // splitChunks: false
-    splitChunks: {
-      chunks: "all",
-      minSize: 20000,
-      maxSize: 50000,
-      minChunks: 10,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 2,
-      automaticNameDelimiter: "~",
-      name: true,
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10,
-          name: "vendors",
-          filename: "[name].vendors.js",
-          chunks: "all"
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true
-        }
-      }
-    },
-    minimize: true,
+    splitChunks: false,
     minimizer: [
       new UglifyJsPlugin({
         test: /\.js(\?.*)?$/i,

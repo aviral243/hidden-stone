@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const DIST_DIR = path.resolve(__dirname, "dist");
+const DIST_DIR = path.resolve(__dirname, "public");
 const SRC_DIR = path.resolve(__dirname, "src");
 const config = {
   entry: {
@@ -10,9 +10,8 @@ const config = {
   },
   output: {
     filename: "bundle.js",
-    chunkFilename: "[name].[contenthash:8].js",
     path: `${DIST_DIR}/app`,
-    publicPath: "/hidden-stone/app/",
+    publicPath: "/app/",
     pathinfo: false
   },
   resolve: {
@@ -25,12 +24,6 @@ const config = {
       {
         test: /(\.scss)$/,
         include: `${SRC_DIR}/app/styles`,
-        exclude: [
-          /(node_modules|bower_components)/,
-          `${SRC_DIR}/app/components`,
-          `${SRC_DIR}/app/images`,
-          `${SRC_DIR}/app/fonts`
-        ],
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
@@ -40,21 +33,15 @@ const config = {
         use: {
           loader: "html-loader",
           options: {
-            minimize: true,
+            minimize: false,
             removeComments: true,
-            collapseWhitespace: true
+            collapseWhitespace: false
           }
         }
       },
       {
         test: /\.js?/,
         include: [`${SRC_DIR}/app/components`, `${SRC_DIR}/app/Index.js`],
-        exclude: [
-          /(node_modules|bower_components)/,
-          `${SRC_DIR}/app/fonts`,
-          `${SRC_DIR}/app/images`,
-          `${SRC_DIR}/app/styles`
-        ],
         use: [
           {
             loader: "babel-loader",
@@ -68,23 +55,11 @@ const config = {
       {
         test: /\.(jpe?g|png|svg)(\?[a-z0-9=.]+)?$/,
         include: `${SRC_DIR}/app/images`,
-        exclude: [
-          /(node_modules|bower_components)/,
-          `${SRC_DIR}/app/components`,
-          `${SRC_DIR}/app/fonts`,
-          `${SRC_DIR}/app/styles`
-        ],
-        loader: "url-loader?limit=10000"
+        loader: "url-loader?limit=10000&name=images/[hash].[ext]"
       },
       {
         test: /\.(woff|woff2)?/,
         include: `${SRC_DIR}/app/fonts`,
-        exclude: [
-          /(node_modules|bower_components)/,
-          `${SRC_DIR}/app/components`,
-          `${SRC_DIR}/app/images`,
-          `${SRC_DIR}/app/styles`
-        ],
         loader:
           "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[hash].[ext]"
       }
@@ -101,7 +76,8 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: `${SRC_DIR}/index.html`,
-      filename: `${DIST_DIR}/index.html`
+      filename: `${DIST_DIR}/index.html`,
+      inject: false
     }),
     new webpack.ProgressPlugin()
   ]
