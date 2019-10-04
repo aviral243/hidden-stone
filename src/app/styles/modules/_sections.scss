@@ -69,6 +69,7 @@
 
   .learnmore {
     text-transform: uppercase;
+    padding: $gutterWidth $gutterWidth;
 
     @include desktop-320-767() {
       @include btn-standard-transparent(0.8);

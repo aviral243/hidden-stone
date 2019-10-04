@@ -5,11 +5,17 @@ import Instalogo from "../../images/Insta.svg";
 class TopBar extends Component {
   render() {
     return (
-      <div className="TopBarContainer">
+      <div className="TopBarContainer" id="topbar">
         <div className="web">
           <div className="logo">
-            <a href={"https://www.google.com"}>
+            <a href={"https://utthanfoundation.co"} id="UFlogo">
               <img src={UFlogo} />
+              <div className="TopBarHeadingContainer">
+                <span className="TopBarHeading">Utthan Foundation</span>
+                <span className="TopBarSubHeading">
+                  Your success, our determination
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -21,7 +27,7 @@ class TopBar extends Component {
           </div>
           <div className="logo">
             <a href={"https://www.google.com"}>
-              <img src={Instalogo} />
+              <img src={Instalogo} id="instaLogo" />
             </a>
           </div>
           <div className="logo">

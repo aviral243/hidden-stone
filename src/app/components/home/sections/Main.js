@@ -15,7 +15,7 @@ class Main extends Component {
         </p>
         <span>
           <button className="donate">
-            <Link to="/coming-soon">Donate</Link>
+            <Link to="/">Donate</Link>
           </button>
           <button className="learnmore">Learn More</button>
         </span>
