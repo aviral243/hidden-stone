@@ -1,0 +1,73 @@
+.NavBarContainer,
+.SubSectionNavBarContainer {
+  @include desktop-1025-1280() {
+    display: none;
+  }
+
+  @include desktop-320-767() {
+    display: none;
+  }
+
+  @include desktop-320() {
+    display: none;
+  }
+
+  @include display-column();
+
+  list-style: none;
+  align-items: center;
+  width: fit-content;
+
+  .NavItem {
+
+
+    .NavItemLinks {
+      border-left: 2px solid #fff;
+      color: #fff;
+      display: block;
+      font-family: Lato;
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 30px;
+      padding: 32.51px 0px 32.01px 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .4s ease;
+      width: 422px;
+
+      &::before {
+        content: "";
+        border-left: 2px solid rgba(255, 255, 255, 0);
+      }
+
+      &.hover:hover {
+        background-color: rgba($hlBlack, 0.1) !important;
+      }
+
+      &:not(:focus):hover {
+        background-color: $hlHover;
+      }
+
+
+    }
+
+    .activeLink {
+      &::before {
+        content: "";
+        border-left: 0px;
+      }
+
+      & {
+        color: $primaryColor !important;
+        background-color: rgba($hlWhite, 1);
+
+        border-left: 6px solid $primaryColor !important;
+      }
+
+      &.hover {
+        background-color: rgba($hlWhite, 0.2) !important;
+
+      }
+    }
+  }
+}

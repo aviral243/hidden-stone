@@ -1,0 +1,70 @@
+.TopBarContainer {
+
+    @include desktop-320-767() {
+        display: none;
+    }
+
+    @include desktop-320() {
+        display: none;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white
+}
+
+#UFlogo {
+    @include display-row();
+
+    .TopBarHeadingContainer {
+        @include display-column();
+        justify-content: center;
+        margin-left: $gutterWidth;
+
+        .TopBarHeading {
+            font-size: 28px;
+            margin-bottom: $gutterWidth*0.4;
+
+        }
+    }
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem;
+
+    .insta {
+        .instaPath {
+            fill: black;
+        }
+    }
+}
+
+.contact {
+    position: relative;
+    display: block;
+    margin: auto 0 auto 0;
+}
+
+.web {
+    position: relative;
+    display: block;
+}
+
+.contactUs {
+    font-family: "Lato";
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}

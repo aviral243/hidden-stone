@@ -1,0 +1,42 @@
+@include font-Lato('Lato', 'Lato-Regular');
+@include font-Lato('LatoLight', 'Lato-Light');
+@include font-Lato('LatoMedium', 'Lato-Medium');
+@include font-Lato('LatoBold', 'Lato-Bold');
+@include font-Lato('LatoHeavy', 'Lato-Heavy');
+
+@include font-YesevaOne('YesevaOne', 'YesevaOne-Regular');
+/*========THEME============*/
+//highlighter black bg
+$primaryColor: #ff9b40;
+$primaryColorDark: #ff8640;
+$primaryDisabledColor: #555555;
+$primaryGreyColor:#888888;
+$gutterWidth: 1.25rem;
+$blackText: #2b2b2b; //black color for text
+$hlWhite: #fbfbfb; //highlighter white bg
+$hlBlack: #c4c4c4;
+$hlHover: #f0f0f0;
+$dividerColor: #dddddd;
+$borderColor:#E5E5E5;
+
+/*========FONTS============*/
+//highlighter black bg
+$generalFontFamily: Lato;
+$generalFontFamilyLight: LatoLight;
+$generalFontFamilyMedium: LatoMedium;
+$generalFontFamilyBold: LatoHeavy;
+$headerFontFamily: YesevaOne;
+$text: 300;
+$heading: 500;
+$thinHeading: 400;
+$letterSpacing: 0.0rem;
+$normaLineHeight: 2.75rem;
+$headerLineHeight: 4.875rem;
+$normalFontSize: 1.75rem;
+$headerFontSize: 3.5rem;
+
+/*======moible-view========*/
+$mobileNormalFontSize: 1.2rem;
+$mobileHeaderFontSize: 2.6rem;
+$mobileNormaLineHeight: 1.8rem;
+$mobileHeaderLineHeight: 3.6rem;
