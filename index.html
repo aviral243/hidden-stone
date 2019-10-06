@@ -28,11 +28,11 @@
                     let target = $(this.hash);
                     target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
                     if (target.length) {
-                        $("html, body").animate(
+                        $("html, body, div").animate(
                             {
                                 scrollTop: target.offset().top
                             },
-                            800,
+                            1000,
                             "easeInOutExpo"
                         );
                         return false;
@@ -42,6 +42,36 @@
             $("body").scrollspy({
                 target: "#navbar"
             });
+
+            $(window).bind('scroll', function () {
+                var currentTop = $(window).scrollTop();
+                var elems = $('.section');
+                elems.each(function (index) {
+                    var elemTop = $(this).offset().top - 50;
+                    var elemBottom = elemTop + $(this).height();
+                    if (currentTop >= elemTop && currentTop <= elemBottom) {
+                        var id = $(this).attr('id');
+                        var navElem = $('a[href="#' + id + '"]');
+                        navElem.parent().addClass('activeLink').siblings().removeClass('activeLink');
+                    }
+                })
+            });
+
+            $("#home-subsection-right-section").bind('scroll', function () {
+                var currentTop = $("#home-subsection-right-section").scrollTop();
+                console.log("scrolled");
+                var elems = $('.section');
+                elems.each(function (index) {
+                    var elemTop = $(this).offset().top - 50;
+                    var elemBottom = elemTop + $(this).height();
+                    if (currentTop >= elemTop && currentTop <= elemBottom) {
+                        var id = $(this).attr('id');
+                        var navElem = $('a[href="#' + id + '"]');
+                        navElem.parent().addClass('activeLink').siblings().removeClass('activeLink');
+                    }
+                })
+            });
+
             $(document).scroll(function () {
                 let rgbHL = $(document).scrollTop();
                 let opacityHL = 0.2 + rgbHL / 500;
@@ -49,7 +79,6 @@
                 let reverseRgb = 300 - $(document).scrollTop();
                 let rgbTop = rgb * 4 / 3;
                 let reverseRgbContactUs = (500 - rgbHL / 2) <= 40 ? 43 : 500 - rgbHL / 2;
-                console.log(rgbHL);
                 if (rgbHL < 600) {
                     $(".NavItemLinks").addClass("hover");
                 }
@@ -58,21 +87,75 @@
 
                 }
                 let rgbTopOpacity = rgbHL > 950 ? 1 : rgbTop / 900;
-                $("#navbar .NavItem .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
-                $("#navbar .NavItem .NavItemLinks").css("border-color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#navbar .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#navbar .NavItemLinks").css("border-color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
                 $("#topbar").css("background-color", "rgba(" + rgbTop + ", " + rgbTop + ", " + rgbTop + "," + rgbTopOpacity + ")");
                 $("#topbar .logo a img").css("fill", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
                 $("#topbar .logo a").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
             });
-            var header = document.getElementById("navbar");
-            var links = header.getElementsByClassName("NavItemLinks");
-            for (var i = 0; i < links.length; i++) {
-                links[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("activeLink");
-                    current[0].className = current[0].className.replace(" activeLink", "");
-                    this.className += " activeLink";
-                });
-            }
+            // var headerNavbar = document.getElementById("navbar");
+
+            // var linksNavbar = headerNavbar.getElementsByClassName("NavItemLinks");
+            // for (var i = 0; i < linksNavbar.length; i++) {
+            //     linksNavbar[i].addEventListener("click", function () {
+            //         var current = headerNavbar.getElementsByClassName("activeLinkNavbar");
+            //         current[0].className = current[0].className.replace(" activeLinkNavbar", "");
+            //         this.className += " activeLinkNavbar";
+            //     });
+
+            // }
+
+            // var headerSubSectionNavbar = document.getElementById("subsection-navbar");
+            // var linksSubSectionNavbar = headerNavbar.getElementsByClassName("NavItemLinks");
+            //         console.log(linksSubSectionNavbar);
+
+            // for (var i = 0; i < linksSubSectionNavbar.length; i++) {
+            //     linksSubSectionNavbar[i].addEventListener("click", function () {
+            //         var current = headerSubSectionNavbar.getElementsByClassName("activeLinkSubSectionNavbar");
+            //         current[0].className = current[0].className.replace(" activeLinkSubSectionNavbar", "");
+            //         this.className += " activeLinkSubSectionNavBar";
+            //     });
+
+            // }
+            // $('a#nav-main').each(function () {
+            //     this.addEventListener("click", function () {
+            //         $("a#nav-main").parent().removeClass("activeLink")
+            //         $(this).parent().addClass("activeLink")
+            //     });
+            // });
+            // $('a#nav-sub-section').each(function () {
+            //     this.addEventListener("click", function () {
+            //         $("a#nav-sub-section").removeClass("activeLink")
+            //         $(this).addClass("activeLink")
+            //     });
+            // });
+
+            $("#aboutUsInfo").click(function () {
+                var section = document.getElementsByClassName("section")
+                for (let i = 0; i < section.length; i++) {
+                    const element = section[i];
+                    element.className += " inactiveSection";
+                }
+                $("#topbar").addClass("inactiveSection")
+                $("#navbar").addClass("inactiveSection")
+                $("#subsection-navbar").addClass("activeNavbar")
+                $("#subsection-topbar").addClass("activeTopBar")
+                $("#home-subsection-right-section").addClass("activeSection");
+                $("#home-subsection-left-section").addClass("inactiveSection");
+            });
+            $("#back-left-arrow").click(function () {
+                var section = document.getElementsByClassName("section")
+                for (let i = 0; i < section.length; i++) {
+                    const element = section[i];
+                    element.className = element.className.replace(" inactiveSection", "");
+                }
+                $("#topbar").removeClass("inactiveSection")
+                $("#navbar").removeClass("inactiveSection")
+                $("#subsection-topbar").removeClass("activeTopBar")
+                $("#subsection-navbar").removeClass("activeNavbar")
+                $("#home-subsection-right-section").removeClass("activeSection");
+                $("#home-subsection-left-section").removeClass("inactiveSection");
+            });
         }(jQuery)); 
     </script>
 </body>

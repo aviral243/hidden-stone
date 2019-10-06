@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 47);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,7 +92,7 @@
 
 
 if (true) {
-  module.exports = __webpack_require__(19);
+  module.exports = __webpack_require__(20);
 } else {}
 
 
@@ -116,7 +116,7 @@ module.exports = __webpack_require__.p + "images/54306fbd36a21d268eacd1613702188
 if (false) { var throwOnDirectAccess, ReactIs; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(23)();
+  module.exports = __webpack_require__(24)();
 }
 
 
@@ -155,7 +155,7 @@ module.exports = _inheritsLoose;
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(25)
+var isarray = __webpack_require__(26)
 
 /**
  * Expose `pathToRegexp`.
@@ -714,7 +714,7 @@ module.exports = g;
 
 
 if (true) {
-  module.exports = __webpack_require__(26);
+  module.exports = __webpack_require__(27);
 } else {}
 
 
@@ -748,7 +748,7 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(21);
 } else {}
 
 
@@ -898,6 +898,12 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYi
 
 /***/ }),
 /* 18 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTMuMzMzNCAzMkgxMC42NjY3IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjYuNjY2NyA0OEwxMC42NjY3IDMyTDI2LjY2NjcgMTYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo="
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports) {
 
 var appCacheIframe;
@@ -1081,7 +1087,7 @@ exports.update = update;
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1113,7 +1119,7 @@ unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_Y
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1129,7 +1135,7 @@ unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_Y
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),n=__webpack_require__(9),r=__webpack_require__(21);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),n=__webpack_require__(9),r=__webpack_require__(22);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function x(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ba(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:x("227");function ca(a,b,c,d,e,f,g,h,l){var k=Array.prototype.slice.call(arguments,3);try{b.apply(c,k)}catch(m){this.onError(m)}}
 var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,l){da=!1;ea=null;ca.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,l){ja.apply(this,arguments);if(da){if(da){var k=ea;da=!1;ea=null}else x("198"),k=void 0;fa||(fa=!0,ha=k)}}var la=null,ma={};
 function na(){if(la)for(var a in ma){var b=ma[a],c=la.indexOf(a);-1<c?void 0:x("96",a);if(!oa[c]){b.extractEvents?void 0:x("97",a);oa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;pa.hasOwnProperty(h)?x("99",h):void 0;pa[h]=f;var l=f.phasedRegistrationNames;if(l){for(e in l)l.hasOwnProperty(e)&&qa(l[e],g,h);e=!0}else f.registrationName?(qa(f.registrationName,g,h),e=!0):e=!1;e?void 0:x("98",d,a)}}}}
@@ -1389,19 +1395,19 @@ X;X=!0;try{ki(a)}finally{(X=b)||W||Yh(1073741823,!1)}},__SECRET_INTERNALS_DO_NOT
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(22);
+  module.exports = __webpack_require__(23);
 } else {}
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1430,7 +1436,7 @@ exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l|
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(10)))
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1443,7 +1449,7 @@ exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l|
 
 
 
-var ReactPropTypesSecret = __webpack_require__(24);
+var ReactPropTypesSecret = __webpack_require__(25);
 
 function emptyFunction() {}
 function emptyFunctionWithReset() {}
@@ -1501,7 +1507,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1520,7 +1526,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -1529,7 +1535,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1551,17 +1557,17 @@ exports.isSuspense=function(a){return t(a)===p};
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(29);
+var content = __webpack_require__(30);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1575,40 +1581,40 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(44)(content, options);
+var update = __webpack_require__(45)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(30)(false);
+exports = module.exports = __webpack_require__(31)(false);
 // Imports
-var urlEscape = __webpack_require__(31);
-var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(32));
-var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(33));
-var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(34));
-var ___CSS_LOADER_URL___3___ = urlEscape(__webpack_require__(35));
-var ___CSS_LOADER_URL___4___ = urlEscape(__webpack_require__(36));
-var ___CSS_LOADER_URL___5___ = urlEscape(__webpack_require__(37));
-var ___CSS_LOADER_URL___6___ = urlEscape(__webpack_require__(38));
-var ___CSS_LOADER_URL___7___ = urlEscape(__webpack_require__(39));
-var ___CSS_LOADER_URL___8___ = urlEscape(__webpack_require__(40));
-var ___CSS_LOADER_URL___9___ = urlEscape(__webpack_require__(41));
-var ___CSS_LOADER_URL___10___ = urlEscape(__webpack_require__(42));
-var ___CSS_LOADER_URL___11___ = urlEscape(__webpack_require__(43));
+var urlEscape = __webpack_require__(32);
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(33));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(34));
+var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(35));
+var ___CSS_LOADER_URL___3___ = urlEscape(__webpack_require__(36));
+var ___CSS_LOADER_URL___4___ = urlEscape(__webpack_require__(37));
+var ___CSS_LOADER_URL___5___ = urlEscape(__webpack_require__(38));
+var ___CSS_LOADER_URL___6___ = urlEscape(__webpack_require__(39));
+var ___CSS_LOADER_URL___7___ = urlEscape(__webpack_require__(40));
+var ___CSS_LOADER_URL___8___ = urlEscape(__webpack_require__(41));
+var ___CSS_LOADER_URL___9___ = urlEscape(__webpack_require__(42));
+var ___CSS_LOADER_URL___10___ = urlEscape(__webpack_require__(43));
+var ___CSS_LOADER_URL___11___ = urlEscape(__webpack_require__(44));
 var ___CSS_LOADER_URL___12___ = urlEscape(__webpack_require__(1));
 
 // Module
-exports.push([module.i, "/*100 - Thin\n200 - Extra Light (Ultra Light)\n300 - Light\n400 - Normal\n500 - Medium\n600 - Semi Bold (Demi Bold)\n700 - Bold\n800 - Extra Bold (Ultra Bold)\n900 - Black (Heavy)\n*/\n@font-face {\n  font-family: \"Lato\";\n  src: url(" + ___CSS_LOADER_URL___0___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___1___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoLight\";\n  src: url(" + ___CSS_LOADER_URL___2___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___3___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoMedium\";\n  src: url(" + ___CSS_LOADER_URL___4___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___5___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoBold\";\n  src: url(" + ___CSS_LOADER_URL___6___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___7___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoHeavy\";\n  src: url(" + ___CSS_LOADER_URL___8___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___9___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"YesevaOne\";\n  src: url(" + ___CSS_LOADER_URL___10___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___11___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n/*========THEME============*/\n/*========FONTS============*/\n/*======moible-view========*/\nhtml {\n  font-family: Lato;\n  color: #2b2b2b; }\n\nbody {\n  margin: 0;\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  -khtml-user-select: none;\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently\n                                  supported by Chrome and Opera */ }\n\np {\n  margin: 0;\n  font-size: 1.75rem;\n  line-height: 2.75rem;\n  letter-spacing: 0rem;\n  font-weight: 300;\n  padding: 1.25rem 2.5rem;\n  font-family: LatoLight; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    p {\n      font-size: 1.2rem;\n      line-height: 1.8rem;\n      padding: 1rem 2rem;\n      margin: 0; } }\n\nh1 {\n  padding: 1.25rem 2.5rem;\n  margin: 0;\n  font-family: YesevaOne;\n  font-weight: 500;\n  font-size: 3.5rem;\n  line-height: 4.875rem;\n  letter-spacing: 0rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    h1 {\n      font-size: 2.6rem;\n      line-height: 3.6rem;\n      padding: 2rem; } }\n\nb {\n  font-size: 1.75rem;\n  font-weight: 500;\n  letter-spacing: 0rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    b {\n      font-size: 1.2rem;\n      line-height: 1.8rem; } }\n\n.verticalLine {\n  border: 0.05rem solid #dddddd;\n  border-radius: 0;\n  width: auto;\n  height: auto;\n  margin: 0;\n  padding: 0; }\n\nhr {\n  border: 0.05rem solid #dddddd;\n  border-radius: 0;\n  width: auto;\n  height: auto;\n  margin: 0;\n  padding: 0; }\n\np > .orangeText {\n  color: #ff9b40;\n  font-family: LatoMedium; }\n\n.orangeText {\n  color: #ff9b40; }\n\n.TopBarContainer {\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  width: 100%;\n  z-index: 10;\n  background-color: rgba(0, 0, 0, 0); }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .TopBarContainer {\n      display: none; } }\n  @media (max-width: 320px) {\n    .TopBarContainer {\n      display: none; } }\n\na {\n  text-decoration: none;\n  cursor: pointer;\n  color: white; }\n\n#UFlogo {\n  display: flex;\n  flex-direction: row; }\n  #UFlogo .TopBarHeadingContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    margin-left: 1.25rem; }\n    #UFlogo .TopBarHeadingContainer .TopBarHeading {\n      font-size: 28px;\n      margin-bottom: 0.5rem; }\n\n.logo {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  padding: 1rem; }\n  .logo .insta .instaPath {\n    fill: black; }\n\n.contact {\n  position: relative;\n  display: block;\n  margin: auto 0 auto 0; }\n\n.web {\n  position: relative;\n  display: block; }\n\n.contactUs {\n  font-family: \"Lato\";\n  text-decoration: none;\n  color: white;\n  font-size: 28px; }\n\n.HomeContainer {\n  align-items: center;\n  position: relative;\n  overflow: hidden; }\n  .HomeContainer .NavBarContainer {\n    position: fixed;\n    right: 0px;\n    top: 18.75rem;\n    width: 420px; }\n    @media (min-width: 768px) and (max-width: 1024px) {\n      .HomeContainer .NavBarContainer {\n        display: none; } }\n\n.NavBarContainer,\n.SubSectionNavBarContainer {\n  display: flex;\n  flex-direction: column;\n  list-style: none;\n  align-items: center;\n  width: fit-content; }\n  @media (min-width: 1025px) and (max-width: 1280px) {\n    .NavBarContainer,\n    .SubSectionNavBarContainer {\n      display: none; } }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .NavBarContainer,\n    .SubSectionNavBarContainer {\n      display: none; } }\n  @media (max-width: 320px) {\n    .NavBarContainer,\n    .SubSectionNavBarContainer {\n      display: none; } }\n  .NavBarContainer .NavItem .NavItemLinks,\n  .SubSectionNavBarContainer .NavItem .NavItemLinks {\n    border-left: 2px solid #fff;\n    color: #fff;\n    display: block;\n    font-family: Lato;\n    font-size: 25px;\n    font-weight: normal;\n    line-height: 30px;\n    padding: 32.51px 0px 32.01px 40px;\n    text-decoration: none;\n    text-transform: uppercase;\n    transition: background-color .4s ease;\n    width: 422px; }\n    .NavBarContainer .NavItem .NavItemLinks::before,\n    .SubSectionNavBarContainer .NavItem .NavItemLinks::before {\n      content: \"\";\n      border-left: 2px solid rgba(255, 255, 255, 0); }\n    .NavBarContainer .NavItem .NavItemLinks.hover:hover,\n    .SubSectionNavBarContainer .NavItem .NavItemLinks.hover:hover {\n      background-color: rgba(196, 196, 196, 0.1) !important; }\n    .NavBarContainer .NavItem .NavItemLinks:not(:focus):hover,\n    .SubSectionNavBarContainer .NavItem .NavItemLinks:not(:focus):hover {\n      background-color: #f0f0f0; }\n  .NavBarContainer .NavItem .activeLink::before,\n  .SubSectionNavBarContainer .NavItem .activeLink::before {\n    content: \"\";\n    border-left: 0px; }\n  .NavBarContainer .NavItem .activeLink,\n  .SubSectionNavBarContainer .NavItem .activeLink {\n    color: #ff9b40 !important;\n    background-color: #fbfbfb;\n    border-left: 6px solid #ff9b40 !important; }\n  .NavBarContainer .NavItem .activeLink.hover,\n  .SubSectionNavBarContainer .NavItem .activeLink.hover {\n    background-color: rgba(251, 251, 251, 0.2) !important; }\n\n.viewMore {\n  align-items: center;\n  border-radius: 0;\n  border: 0;\n  color: black;\n  cursor: pointer;\n  display: flex;\n  font-family: LatoHeavy;\n  font-weight: 900;\n  font-size: 1.2rem;\n  height: 3.5rem;\n  justify-content: space-around;\n  margin: 0;\n  min-width: 8rem;\n  width: -moz-fit-content;\n  width: fit-content;\n  color: white;\n  background-color: rgba(0, 0, 0, 0);\n  color: #ff9b40;\n  min-width: fit-content;\n  padding: 0;\n  min-height: fit-content; }\n  .viewMore:hover {\n    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n  .viewMore:hover:active, .viewMore:active {\n    box-shadow: 0 0 0 black;\n    background: rgba(0, 0, 0, 0); }\n  .viewMore > img {\n    margin-top: 0.2rem;\n    margin-left: 1rem; }\n\n.MainSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem;\n  color: white;\n  position: relative;\n  align-content: center;\n  justify-content: center; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .MainSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .MainSection::before {\n    content: ' ';\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100vw;\n    height: 100%;\n    z-index: -2;\n    background-image: url(" + ___CSS_LOADER_URL___12___ + ");\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover; }\n  .MainSection .grad {\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100vw;\n    z-index: -1;\n    opacity: 0.5;\n    height: 100%;\n    background-color: black; }\n  .MainSection > span {\n    display: flex;\n    flex-direction: row;\n    margin-left: 2.5rem;\n    padding: 2rem 0; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .MainSection > span {\n        margin-left: 2rem; } }\n  .MainSection .donate {\n    align-items: center;\n    border-radius: 0;\n    border: 0;\n    color: black;\n    cursor: pointer;\n    display: flex;\n    font-family: LatoHeavy;\n    font-weight: 900;\n    font-size: 1.2rem;\n    height: 3.5rem;\n    justify-content: space-around;\n    margin: 0;\n    min-width: 8rem;\n    width: -moz-fit-content;\n    width: fit-content;\n    background-color: #ff9b40;\n    text-transform: uppercase; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .MainSection .donate {\n        align-items: center;\n        border-radius: 0;\n        border: 0;\n        color: black;\n        cursor: pointer;\n        display: flex;\n        font-family: LatoHeavy;\n        font-weight: 900;\n        font-size: 0.96rem;\n        height: 2.8rem;\n        justify-content: space-around;\n        margin: 0;\n        min-width: 8rem;\n        width: -moz-fit-content;\n        width: fit-content;\n        background-color: #ff9b40;\n        text-transform: uppercase; }\n        .MainSection .donate:hover {\n          box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n        .MainSection .donate:hover:active, .MainSection .donate:active {\n          box-shadow: 0 0 0 white;\n          background: #ff8640; }\n        .MainSection .donate:disabled, .MainSection .donate:hover:disabled {\n          box-shadow: 0 0 0 white;\n          color: white;\n          background: #555555; } }\n    .MainSection .donate:hover {\n      box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n    .MainSection .donate:hover:active, .MainSection .donate:active {\n      box-shadow: 0 0 0 white;\n      background: #ff8640; }\n    .MainSection .donate:disabled, .MainSection .donate:hover:disabled {\n      box-shadow: 0 0 0 white;\n      color: white;\n      background: #555555; }\n  .MainSection .learnmore {\n    text-transform: uppercase;\n    padding: 1.25rem 1.25rem;\n    align-items: center;\n    border-radius: 0;\n    border: 0;\n    color: black;\n    cursor: pointer;\n    display: flex;\n    font-family: LatoHeavy;\n    font-weight: 900;\n    font-size: 1.2rem;\n    height: 3.5rem;\n    justify-content: space-around;\n    margin: 0;\n    min-width: 8rem;\n    width: -moz-fit-content;\n    width: fit-content;\n    color: white;\n    background-color: rgba(0, 0, 0, 0); }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .MainSection .learnmore {\n        align-items: center;\n        border-radius: 0;\n        border: 0;\n        color: black;\n        cursor: pointer;\n        display: flex;\n        font-family: LatoHeavy;\n        font-weight: 900;\n        font-size: 0.96rem;\n        height: 2.8rem;\n        justify-content: space-around;\n        margin: 0;\n        min-width: 8rem;\n        width: -moz-fit-content;\n        width: fit-content;\n        color: white;\n        background-color: rgba(0, 0, 0, 0); }\n        .MainSection .learnmore:hover {\n          box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n        .MainSection .learnmore:hover:active, .MainSection .learnmore:active {\n          box-shadow: 0 0 0 black;\n          background: rgba(0, 0, 0, 0); } }\n    .MainSection .learnmore:hover {\n      box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n    .MainSection .learnmore:hover:active, .MainSection .learnmore:active {\n      box-shadow: 0 0 0 black;\n      background: rgba(0, 0, 0, 0); }\n\n.AboutUsSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .AboutUsSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .AboutUsSection button {\n    margin-left: 2.5rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .AboutUsSection button {\n      margin-left: 2rem; } }\n\n.OurWorkSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurWorkSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .OurWorkSection .workContainer {\n    display: flex;\n    flex-direction: row;\n    padding: 0 2.5rem; }\n    .OurWorkSection .workContainer .imgMainContainer {\n      display: flex;\n      flex-direction: column;\n      margin: 0;\n      padding: 0;\n      vertical-align: middle;\n      overflow: hidden;\n      min-height: 13.78125rem;\n      width: 24.71875rem;\n      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n      height: fit-content; }\n      .OurWorkSection .workContainer .imgMainContainer > img {\n        min-height: 6.875rem;\n        height: 13.78125rem;\n        object-fit: cover;\n        margin: 0; }\n      .OurWorkSection .workContainer .imgMainContainer > .imgContent {\n        display: flex;\n        flex-direction: column;\n        padding: 1.05rem 1.575rem; }\n        .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgHeading {\n          font-size: 1.4rem;\n          margin-bottom: 0.35rem;\n          font-family: LatoMedium; }\n        .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgSubHeading {\n          font-size: 1.05rem;\n          font-family: LatoLight; }\n    .OurWorkSection .workContainer .imgSmallContainer {\n      display: flex;\n      flex-direction: column; }\n      .OurWorkSection .workContainer .imgSmallContainer div {\n        display: grid;\n        grid-template-rows: auto auto;\n        width: fit-content;\n        row-gap: 1rem;\n        height: auto;\n        margin-left: 1.25rem; }\n        .OurWorkSection .workContainer .imgSmallContainer div > span {\n          display: flex;\n          flex-direction: row;\n          display: grid;\n          grid-template-columns: auto auto;\n          column-gap: 1rem; }\n        .OurWorkSection .workContainer .imgSmallContainer div .imgContainer {\n          display: flex;\n          flex-direction: column;\n          margin: 0;\n          padding: 0;\n          vertical-align: middle;\n          overflow: hidden;\n          min-height: 7.875rem;\n          width: 14.125rem;\n          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n          height: fit-content; }\n          .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > img {\n            min-height: 6.875rem;\n            height: 7.875rem;\n            object-fit: cover;\n            margin: 0; }\n          .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > .imgContent {\n            display: flex;\n            flex-direction: column;\n            padding: 0.6rem 0.9rem; }\n            .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > .imgContent > .imgHeading {\n              font-size: 0.8rem;\n              margin-bottom: 0.2rem;\n              font-family: LatoMedium; }\n            .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > .imgContent > .imgSubHeading {\n              font-size: 0.6rem;\n              font-family: LatoLight; }\n      .OurWorkSection .workContainer .imgSmallContainer > button {\n        margin-left: auto; }\n  @media (max-width: 1281px) {\n    .OurWorkSection .workContainer {\n      display: flex;\n      flex-direction: column;\n      width: fit-content; }\n      .OurWorkSection .workContainer .imgMainContainer {\n        width: 100%; }\n      .OurWorkSection .workContainer .imgSmallContainer > div {\n        margin-left: 0;\n        margin-top: 1.25rem; } }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurWorkSection .workContainer {\n      display: flex;\n      flex-direction: column;\n      width: calc(100vw - 4rem);\n      padding: 0 2rem; }\n      .OurWorkSection .workContainer .imgMainContainer {\n        display: flex;\n        flex-direction: column;\n        margin: 0;\n        padding: 0;\n        vertical-align: middle;\n        overflow: hidden;\n        min-height: 9.45rem;\n        width: 16.95rem;\n        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n        height: auto;\n        width: 100%; }\n        .OurWorkSection .workContainer .imgMainContainer > img {\n          min-height: 6.875rem;\n          height: 9.45rem;\n          object-fit: cover;\n          margin: 0; }\n        .OurWorkSection .workContainer .imgMainContainer > .imgContent {\n          display: flex;\n          flex-direction: column;\n          padding: 0.72rem 1.08rem; }\n          .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgHeading {\n            font-size: 0.96rem;\n            margin-bottom: 0.24rem;\n            font-family: LatoMedium; }\n          .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgSubHeading {\n            font-size: 0.72rem;\n            font-family: LatoLight; }\n      .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer {\n        display: flex;\n        flex-direction: column;\n        margin: 0;\n        padding: 0;\n        vertical-align: middle;\n        overflow: hidden;\n        min-height: 4.725rem;\n        width: 8.475rem;\n        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n        height: auto;\n        width: auto; }\n        .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > img {\n          min-height: 6.875rem;\n          height: 4.725rem;\n          object-fit: cover;\n          margin: 0; }\n        .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > .imgContent {\n          display: flex;\n          flex-direction: column;\n          padding: 0.36rem 0.54rem; }\n          .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > .imgContent > .imgHeading {\n            font-size: 0.48rem;\n            margin-bottom: 0.12rem;\n            font-family: LatoMedium; }\n          .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > .imgContent > .imgSubHeading {\n            font-size: 0.36rem;\n            font-family: LatoLight; } }\n\n.DonateSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .DonateSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .DonateSection .verticalLine {\n    margin-top: 16.25rem;\n    margin-bottom: 5rem; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .DonateSection .verticalLine {\n        margin: 3.75rem 1.25rem; } }\n  .DonateSection .donateContainer {\n    display: flex;\n    flex-direction: row; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .DonateSection .donateContainer {\n        display: flex;\n        flex-direction: column; } }\n    .DonateSection .donateContainer > .donateSchemesContainer {\n      display: flex;\n      flex-direction: column; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .DonateSection .donateContainer > .donateSchemesContainer {\n          height: calc(100vh - 7.5rem);\n          width: 100%; } }\n      .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes {\n        display: flex;\n        flex-direction: column;\n        margin-top: 2.5rem;\n        padding: 0 2.5rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes {\n            padding: 0 2rem;\n            margin-top: 2rem; } }\n        .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input[type=radio] {\n          position: absolute;\n          opacity: 0;\n          margin: 0;\n          padding: 0; }\n        .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent {\n          padding-bottom: 5rem; }\n          @media (min-width: 320px) and (max-width: 767px) {\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent {\n              padding-bottom: 7.5rem; } }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent .donateSchemeName {\n            z-index: 0; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent .donateSchemeName img {\n              transform: rotate(90deg); }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent .donateSchemeContent > .donate {\n            max-height: 100vh;\n            opacity: 1; }\n        .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent {\n          position: relative;\n          transition: all .4s ease-in-out;\n          height: fit-content;\n          overflow: hidden;\n          display: flex;\n          flex-direction: column;\n          cursor: pointer; }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate {\n            align-items: center;\n            border-radius: 0;\n            border: 0;\n            color: black;\n            cursor: pointer;\n            display: flex;\n            font-family: LatoHeavy;\n            font-weight: 900;\n            font-size: 0.96rem;\n            height: 2.8rem;\n            justify-content: space-around;\n            margin: 0;\n            min-width: 8rem;\n            width: -moz-fit-content;\n            width: fit-content;\n            background-color: #ff9b40;\n            text-transform: uppercase;\n            color: white;\n            position: absolute;\n            top: 0.6rem;\n            right: 0;\n            max-height: 0;\n            transition: opacity .4s ease-in-out, max-height .4s ease-in-out;\n            opacity: 0; }\n            @media (min-width: 320px) and (max-width: 767px) {\n              .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate {\n                position: unset;\n                margin-top: 0.75rem;\n                margin-left: 2.125rem; } }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:hover {\n              box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:hover:active, .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:active {\n              box-shadow: 0 0 0 white;\n              background: #ff8640; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:disabled, .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:hover:disabled {\n              box-shadow: 0 0 0 white;\n              color: white;\n              background: #555555; }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName {\n            display: flex;\n            flex-direction: row;\n            cursor: pointer;\n            text-transform: uppercase;\n            font-size: 1.2rem;\n            padding: 1.25rem;\n            align-content: center;\n            align-items: center;\n            z-index: 10; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName > img {\n              margin-right: 1.375rem;\n              transition: all .4s ease-in-out; }\n              @media (min-width: 320px) and (max-width: 767px) {\n                .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName > img {\n                  margin-right: 0.625rem; } }\n            @media (min-width: 320px) and (max-width: 767px) {\n              .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName {\n                padding: 1rem; } }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent {\n            max-height: 0;\n            padding: 0 1rem;\n            display: grid;\n            grid-template-rows: auto auto; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent .schemeContentAmount,\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent .schemeContentDuration {\n              color: #888888; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent > span {\n              display: grid;\n              grid-template-columns: auto 5rem;\n              padding: 0.125rem 1.875rem 0.125rem 3.125rem; }\n              @media (min-width: 320px) and (max-width: 767px) {\n                .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent > span {\n                  padding-right: 0;\n                  padding-left: 2.125rem; } }\n    .DonateSection .donateContainer > .donateAmountContainer {\n      display: flex;\n      flex-direction: column;\n      width: 50%; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .DonateSection .donateContainer > .donateAmountContainer {\n          width: 100%;\n          height: 100vh; } }\n      .DonateSection .donateContainer > .donateAmountContainer > .donateAmount {\n        display: flex;\n        flex-direction: row;\n        align-content: center;\n        align-items: center;\n        margin-top: 2.5rem;\n        padding: 0 2.5rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount {\n            display: flex;\n            flex-direction: column;\n            align-items: normal;\n            margin-top: 2rem;\n            padding: 0 2rem; } }\n        .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput {\n          padding: 0px 1rem;\n          height: 3.6rem;\n          width: 16rem;\n          border: solid 1px #c4c4c4;\n          font-size: 1.75rem;\n          font-weight: 300;\n          font-family: Lato;\n          color: #2b2b2b;\n          border: 0.1rem solid #E5E5E5;\n          position: relative;\n          padding-left: 2rem;\n          margin-right: 1.25rem; }\n          @media (min-width: 320px) and (max-width: 767px) {\n            .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput {\n              display: flex;\n              flex-direction: column;\n              margin-right: 0;\n              width: auto;\n              margin-bottom: 1.25rem;\n              padding: 0px 0.8rem;\n              height: 2.88rem;\n              width: 12.8rem;\n              border: solid 1px #c4c4c4;\n              font-size: 1.4rem;\n              font-weight: 300;\n              font-family: Lato;\n              color: #2b2b2b;\n              border: 0.1rem solid #E5E5E5;\n              padding-left: 2rem; }\n              .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:focus {\n                border: 0.1rem solid #ff9b40;\n                outline-color: #ff9b40;\n                outline-style: none; }\n              .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-inner-spin-button, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-outer-spin-button {\n                -webkit-appearance: none;\n                margin: 0; } }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:focus {\n            border: 0.1rem solid #ff9b40;\n            outline-color: #ff9b40;\n            outline-style: none; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-inner-spin-button, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-outer-spin-button {\n            -webkit-appearance: none;\n            margin: 0; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:focus + .rupeeSymbol {\n            opacity: 1; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:valid + .rupeeSymbol {\n            opacity: 1; }\n        .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .rupeeSymbol {\n          position: absolute;\n          width: 0.9rem;\n          margin-left: 1rem;\n          opacity: 0; }\n          @media (min-width: 320px) and (max-width: 767px) {\n            .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .rupeeSymbol {\n              margin-top: 1rem; } }\n        .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate {\n          align-items: center;\n          border-radius: 0;\n          border: 0;\n          color: black;\n          cursor: pointer;\n          display: flex;\n          font-family: LatoHeavy;\n          font-weight: 900;\n          font-size: 0.96rem;\n          height: 2.8rem;\n          justify-content: space-around;\n          margin: 0;\n          min-width: 8rem;\n          width: -moz-fit-content;\n          width: fit-content;\n          background-color: #ff9b40;\n          text-transform: uppercase;\n          color: white; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:hover {\n            box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:hover:active, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:active {\n            box-shadow: 0 0 0 white;\n            background: #ff8640; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:disabled, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:hover:disabled {\n            box-shadow: 0 0 0 white;\n            color: white;\n            background: #555555; }\n\n.Error404Section {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem;\n  display: flex;\n  flex-direction: column; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .Error404Section {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .Error404Section .goHome a {\n    color: white;\n    text-decoration: none !important; }\n\n.ComingSoonSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem;\n  display: flex;\n  flex-direction: column; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .ComingSoonSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n\n.goHome {\n  align-items: center;\n  border-radius: 0;\n  border: 0;\n  color: black;\n  cursor: pointer;\n  display: flex;\n  font-family: LatoHeavy;\n  font-weight: 900;\n  font-size: 1.2rem;\n  height: 3.5rem;\n  justify-content: space-around;\n  margin: 0;\n  min-width: 8rem;\n  width: -moz-fit-content;\n  width: fit-content;\n  background-color: #ff9b40;\n  text-transform: uppercase;\n  color: white;\n  margin: 0 20px; }\n  .goHome:hover {\n    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n  .goHome:hover:active, .goHome:active {\n    box-shadow: 0 0 0 white;\n    background: #ff8640; }\n  .goHome:disabled, .goHome:hover:disabled {\n    box-shadow: 0 0 0 white;\n    color: white;\n    background: #555555; }\n\n.OurStorySubSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurStorySubSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n\n.OurEndeavoursSubSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurEndeavoursSubSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n\n.OurTeamSubSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurTeamSubSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .OurTeamSubSection .teamContainer {\n    display: flex;\n    flex-direction: column;\n    padding: 1.25rem 0 1.25rem 2.5rem; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .OurTeamSubSection .teamContainer {\n        display: flex;\n        flex-direction: column;\n        padding: 0 2rem; } }\n    .OurTeamSubSection .teamContainer > span {\n      display: flex;\n      flex-direction: row;\n      padding: 1.25rem 0;\n      justify-content: space-between; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .OurTeamSubSection .teamContainer > span {\n          display: flex;\n          flex-direction: column;\n          padding: 0;\n          justify-content: space-between; } }\n    .OurTeamSubSection .teamContainer .teamMemberContainer {\n      display: flex;\n      flex-direction: row;\n      width: 40rem; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .OurTeamSubSection .teamContainer .teamMemberContainer {\n          margin-bottom: 1.25rem;\n          width: calc(100vw - 4rem); } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer > img {\n        background: #c4c4c4;\n        width: 12, 5rem;\n        min-width: 10rem;\n        height: 13.75rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer > img {\n            min-width: 40%;\n            width: 40%;\n            height: 7.5rem; } }\n        @media (min-width: 768px) and (max-width: 1024px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer > img {\n            min-height: 7.5rem; } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer > span {\n        display: flex;\n        flex-direction: column;\n        padding: 0.75rem 2rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer > span {\n            padding: 0.75rem 0 0 1.25rem; } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberName {\n        font-size: 1.75rem;\n        font-family: Lato;\n        margin-bottom: 1.25rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberName {\n            font-size: 1.2rem;\n            margin-bottom: 0.5rem; } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberPost {\n        font-size: 1.75rem;\n        font-family: LatoLight; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberPost {\n            font-size: 1.2rem; } }\n", ""]);
+exports.push([module.i, "/*100 - Thin\n200 - Extra Light (Ultra Light)\n300 - Light\n400 - Normal\n500 - Medium\n600 - Semi Bold (Demi Bold)\n700 - Bold\n800 - Extra Bold (Ultra Bold)\n900 - Black (Heavy)\n*/\n@font-face {\n  font-family: \"Lato\";\n  src: url(" + ___CSS_LOADER_URL___0___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___1___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoLight\";\n  src: url(" + ___CSS_LOADER_URL___2___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___3___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoMedium\";\n  src: url(" + ___CSS_LOADER_URL___4___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___5___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoBold\";\n  src: url(" + ___CSS_LOADER_URL___6___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___7___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"LatoHeavy\";\n  src: url(" + ___CSS_LOADER_URL___8___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___9___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n@font-face {\n  font-family: \"YesevaOne\";\n  src: url(" + ___CSS_LOADER_URL___10___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL___11___ + ") format(\"woff2\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: auto; }\n\n/*========THEME============*/\n/*========FONTS============*/\n/*======moible-view========*/\nhtml,\ndiv {\n  font-family: Lato;\n  color: #2b2b2b; }\n  html::-webkit-scrollbar-track,\n  div::-webkit-scrollbar-track {\n    background-color: #dddddd; }\n  html::-webkit-scrollbar,\n  div::-webkit-scrollbar {\n    width: 10px;\n    background-color: #dddddd; }\n  html::-webkit-scrollbar-thumb,\n  div::-webkit-scrollbar-thumb {\n    background-color: #ff9b40; }\n\nbody {\n  margin: 0;\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  -khtml-user-select: none;\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently\n                                  supported by Chrome and Opera */ }\n\np {\n  margin: 0;\n  font-size: 1.75rem;\n  line-height: 2.75rem;\n  letter-spacing: 0rem;\n  font-weight: 300;\n  padding: 1.25rem 2.5rem;\n  font-family: LatoLight; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    p {\n      font-size: 1.2rem;\n      line-height: 1.8rem;\n      padding: 1rem 2rem;\n      margin: 0; } }\n\nh1 {\n  padding: 1.25rem 2.5rem;\n  margin: 0;\n  font-family: YesevaOne;\n  font-weight: 500;\n  font-size: 3.5rem;\n  line-height: 4.875rem;\n  letter-spacing: 0rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    h1 {\n      font-size: 2.6rem;\n      line-height: 3.6rem;\n      padding: 2rem; } }\n\nb {\n  font-size: 1.75rem;\n  font-weight: 500;\n  letter-spacing: 0rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    b {\n      font-size: 1.2rem;\n      line-height: 1.8rem; } }\n\n.verticalLine {\n  border: 0.05rem solid #dddddd;\n  border-radius: 0;\n  width: auto;\n  height: auto;\n  margin: 0;\n  padding: 0; }\n\nhr {\n  border: 0.05rem solid #dddddd;\n  border-radius: 0;\n  width: auto;\n  height: auto;\n  margin: 0;\n  padding: 0; }\n\np > .orangeText {\n  color: #ff9b40;\n  font-family: LatoMedium; }\n\n.orangeText {\n  color: #ff9b40; }\n\n.TopBarContainer,\n.SubSectionTopBarContainer {\n  height: 7.5rem;\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  width: 100%;\n  z-index: 10;\n  background-color: rgba(0, 0, 0, 0); }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .TopBarContainer,\n    .SubSectionTopBarContainer {\n      display: none; } }\n  @media (max-width: 320px) {\n    .TopBarContainer,\n    .SubSectionTopBarContainer {\n      display: none; } }\n\n.SubSectionTopBarContainer {\n  height: 7.5rem;\n  background-color: white; }\n  .SubSectionTopBarContainer .leftArrow {\n    padding: 1.25rem;\n    cursor: pointer; }\n\na {\n  text-decoration: none;\n  cursor: pointer;\n  color: white; }\n\n#UFlogo {\n  display: flex;\n  flex-direction: row; }\n  #UFlogo .TopBarHeadingContainer {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    margin-left: 1.25rem; }\n    #UFlogo .TopBarHeadingContainer .TopBarHeading {\n      font-size: 28px;\n      margin-bottom: 0.5rem; }\n\n.logo {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  padding: 1rem; }\n  .logo .insta .instaPath {\n    fill: black; }\n\n.contact {\n  position: relative;\n  display: block;\n  margin: auto 0 auto 0; }\n\n.web {\n  position: relative;\n  display: block; }\n\n.contactUs {\n  font-family: \"Lato\";\n  text-decoration: none;\n  color: white;\n  font-size: 28px; }\n\n.activeTopBar {\n  position: fixed !important; }\n\n.HomeContainer {\n  align-items: center;\n  position: relative;\n  overflow-x: hidden; }\n  .HomeContainer .NavBarContainer {\n    position: fixed;\n    right: 0px;\n    top: 18.75rem; }\n    @media (min-width: 768px) and (max-width: 1024px) {\n      .HomeContainer .NavBarContainer {\n        display: none; } }\n  .HomeContainer .SubSectionNavBarContainer {\n    position: absolute;\n    right: 8px;\n    top: 18.75rem; }\n    @media (min-width: 768px) and (max-width: 1024px) {\n      .HomeContainer .SubSectionNavBarContainer {\n        display: none; } }\n  .HomeContainer .HomeSubSectionContainer {\n    display: flex;\n    flex-direction: row;\n    position: relative;\n    height: 100vh;\n    width: 200vw; }\n    .HomeContainer .HomeSubSectionContainer .HomeSubSection {\n      position: relative;\n      width: 100vw; }\n      .HomeContainer .HomeSubSectionContainer .HomeSubSection .SubSectionTopBarContainer {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: calc(100% - 10px) !important; }\n    .HomeContainer .HomeSubSectionContainer .leftSection {\n      left: 0; }\n    .HomeContainer .HomeSubSectionContainer .rightSection {\n      right: 0;\n      height: 200vh; }\n\n.activeSection {\n  left: 0 !important; }\n\n.inactiveSection {\n  display: none !important; }\n\n.activeNavbar {\n  position: fixed !important; }\n  .activeNavbar .NavItemLinks {\n    color: black !important;\n    border-left: 2px solid #000 !important; }\n\n.NavBarContainer,\n.SubSectionNavBarContainer {\n  display: flex;\n  flex-direction: column;\n  list-style: none;\n  align-items: center;\n  width: fit-content; }\n  @media (min-width: 1025px) and (max-width: 1280px) {\n    .NavBarContainer,\n    .SubSectionNavBarContainer {\n      display: none; } }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .NavBarContainer,\n    .SubSectionNavBarContainer {\n      display: none; } }\n  @media (max-width: 320px) {\n    .NavBarContainer,\n    .SubSectionNavBarContainer {\n      display: none; } }\n  .NavBarContainer .NavItem .NavItemLinks,\n  .SubSectionNavBarContainer .NavItem .NavItemLinks {\n    border-left: 2px solid #fff;\n    color: #fff;\n    display: block;\n    font-family: Lato;\n    font-size: 25px;\n    font-weight: normal;\n    line-height: 30px;\n    padding: 32.51px 0px 32.01px 40px;\n    text-decoration: none;\n    text-transform: uppercase;\n    transition: background-color .4s ease;\n    width: 420px; }\n    .NavBarContainer .NavItem .NavItemLinks::before,\n    .SubSectionNavBarContainer .NavItem .NavItemLinks::before {\n      content: \"\";\n      border-left: 2px solid rgba(255, 255, 255, 0); }\n    .NavBarContainer .NavItem .NavItemLinks.hover:hover,\n    .SubSectionNavBarContainer .NavItem .NavItemLinks.hover:hover {\n      background-color: rgba(196, 196, 196, 0.1) !important; }\n    .NavBarContainer .NavItem .NavItemLinks:not(:focus):hover,\n    .SubSectionNavBarContainer .NavItem .NavItemLinks:not(:focus):hover {\n      background-color: #f0f0f0; }\n  .NavBarContainer .activeLink a::before,\n  .SubSectionNavBarContainer .activeLink a::before {\n    content: \"\";\n    border-left: 0px; }\n  .NavBarContainer .activeLink a,\n  .SubSectionNavBarContainer .activeLink a {\n    color: #ff9b40 !important;\n    background-color: #fbfbfb;\n    border-left: 6px solid #ff9b40 !important; }\n  .NavBarContainer .activeLink a.hover,\n  .SubSectionNavBarContainer .activeLink a.hover {\n    background-color: rgba(251, 251, 251, 0.2) !important; }\n\n.viewMore {\n  align-items: center;\n  border-radius: 0;\n  border: 0;\n  color: black;\n  cursor: pointer;\n  display: flex;\n  font-family: LatoHeavy;\n  font-weight: 900;\n  font-size: 1.2rem;\n  height: 3.5rem;\n  justify-content: space-around;\n  margin: 0;\n  min-width: 8rem;\n  width: -moz-fit-content;\n  width: fit-content;\n  color: white;\n  background-color: rgba(0, 0, 0, 0);\n  color: #ff9b40;\n  min-width: fit-content;\n  padding: 0;\n  min-height: fit-content; }\n  .viewMore:hover {\n    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n  .viewMore:hover:active, .viewMore:active {\n    box-shadow: 0 0 0 black;\n    background: rgba(0, 0, 0, 0); }\n  .viewMore > img {\n    margin-top: 0.2rem;\n    margin-left: 1rem; }\n\n.MainSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem;\n  color: white;\n  position: relative;\n  align-content: center;\n  justify-content: center; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .MainSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .MainSection::before {\n    content: ' ';\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100vw;\n    height: 100%;\n    z-index: -2;\n    background-image: url(" + ___CSS_LOADER_URL___12___ + ");\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover; }\n  .MainSection .grad {\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100vw;\n    z-index: -1;\n    opacity: 0.2;\n    height: 100%;\n    background-color: black; }\n  .MainSection > span {\n    display: flex;\n    flex-direction: row;\n    margin-left: 2.5rem;\n    padding: 2rem 0; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .MainSection > span {\n        margin-left: 2rem; } }\n  .MainSection .donate {\n    align-items: center;\n    border-radius: 0;\n    border: 0;\n    color: black;\n    cursor: pointer;\n    display: flex;\n    font-family: LatoHeavy;\n    font-weight: 900;\n    font-size: 1.2rem;\n    height: 3.5rem;\n    justify-content: space-around;\n    margin: 0;\n    min-width: 8rem;\n    width: -moz-fit-content;\n    width: fit-content;\n    background-color: #ff9b40;\n    text-transform: uppercase; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .MainSection .donate {\n        align-items: center;\n        border-radius: 0;\n        border: 0;\n        color: black;\n        cursor: pointer;\n        display: flex;\n        font-family: LatoHeavy;\n        font-weight: 900;\n        font-size: 0.96rem;\n        height: 2.8rem;\n        justify-content: space-around;\n        margin: 0;\n        min-width: 8rem;\n        width: -moz-fit-content;\n        width: fit-content;\n        background-color: #ff9b40;\n        text-transform: uppercase; }\n        .MainSection .donate:hover {\n          box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n        .MainSection .donate:hover:active, .MainSection .donate:active {\n          box-shadow: 0 0 0 white;\n          background: #ff8640; }\n        .MainSection .donate:disabled, .MainSection .donate:hover:disabled {\n          box-shadow: 0 0 0 white;\n          color: white;\n          background: #555555; } }\n    .MainSection .donate a {\n      color: black; }\n    .MainSection .donate:hover {\n      box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n    .MainSection .donate:hover:active, .MainSection .donate:active {\n      box-shadow: 0 0 0 white;\n      background: #ff8640; }\n    .MainSection .donate:disabled, .MainSection .donate:hover:disabled {\n      box-shadow: 0 0 0 white;\n      color: white;\n      background: #555555; }\n  .MainSection .learnmore {\n    text-transform: uppercase;\n    padding: 1.25rem 1.25rem;\n    align-items: center;\n    border-radius: 0;\n    border: 0;\n    color: black;\n    cursor: pointer;\n    display: flex;\n    font-family: LatoHeavy;\n    font-weight: 900;\n    font-size: 1.2rem;\n    height: 3.5rem;\n    justify-content: space-around;\n    margin: 0;\n    min-width: 8rem;\n    width: -moz-fit-content;\n    width: fit-content;\n    color: white;\n    background-color: rgba(0, 0, 0, 0); }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .MainSection .learnmore {\n        align-items: center;\n        border-radius: 0;\n        border: 0;\n        color: black;\n        cursor: pointer;\n        display: flex;\n        font-family: LatoHeavy;\n        font-weight: 900;\n        font-size: 0.96rem;\n        height: 2.8rem;\n        justify-content: space-around;\n        margin: 0;\n        min-width: 8rem;\n        width: -moz-fit-content;\n        width: fit-content;\n        color: white;\n        background-color: rgba(0, 0, 0, 0); }\n        .MainSection .learnmore:hover {\n          box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n        .MainSection .learnmore:hover:active, .MainSection .learnmore:active {\n          box-shadow: 0 0 0 black;\n          background: rgba(0, 0, 0, 0); } }\n    .MainSection .learnmore:hover {\n      box-shadow: 0 0 0 rgba(0, 0, 0, 0); }\n    .MainSection .learnmore:hover:active, .MainSection .learnmore:active {\n      box-shadow: 0 0 0 black;\n      background: rgba(0, 0, 0, 0); }\n\n.AboutUsSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .AboutUsSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .AboutUsSection button {\n    margin-left: 2.5rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .AboutUsSection button {\n      margin-left: 2rem; } }\n\n.OurWorkSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurWorkSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .OurWorkSection .workContainer {\n    display: flex;\n    flex-direction: row;\n    padding: 0 2.5rem; }\n    .OurWorkSection .workContainer .imgMainContainer {\n      display: flex;\n      flex-direction: column;\n      margin: 0;\n      padding: 0;\n      vertical-align: middle;\n      overflow: hidden;\n      min-height: 13.78125rem;\n      width: 24.71875rem;\n      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n      height: fit-content; }\n      .OurWorkSection .workContainer .imgMainContainer > img {\n        min-height: 6.875rem;\n        height: 13.78125rem;\n        object-fit: cover;\n        margin: 0; }\n      .OurWorkSection .workContainer .imgMainContainer > .imgContent {\n        display: flex;\n        flex-direction: column;\n        padding: 1.05rem 1.575rem; }\n        .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgHeading {\n          font-size: 1.4rem;\n          margin-bottom: 0.35rem;\n          font-family: LatoMedium; }\n        .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgSubHeading {\n          font-size: 1.05rem;\n          font-family: LatoLight; }\n    .OurWorkSection .workContainer .imgSmallContainer {\n      display: flex;\n      flex-direction: column; }\n      .OurWorkSection .workContainer .imgSmallContainer div {\n        display: grid;\n        grid-template-rows: auto auto;\n        width: fit-content;\n        row-gap: 1rem;\n        height: auto;\n        margin-left: 1.25rem; }\n        .OurWorkSection .workContainer .imgSmallContainer div > span {\n          display: flex;\n          flex-direction: row;\n          display: grid;\n          grid-template-columns: auto auto;\n          column-gap: 1rem; }\n        .OurWorkSection .workContainer .imgSmallContainer div .imgContainer {\n          display: flex;\n          flex-direction: column;\n          margin: 0;\n          padding: 0;\n          vertical-align: middle;\n          overflow: hidden;\n          min-height: 7.875rem;\n          width: 14.125rem;\n          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n          height: fit-content; }\n          .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > img {\n            min-height: 6.875rem;\n            height: 7.875rem;\n            object-fit: cover;\n            margin: 0; }\n          .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > .imgContent {\n            display: flex;\n            flex-direction: column;\n            padding: 0.6rem 0.9rem; }\n            .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > .imgContent > .imgHeading {\n              font-size: 0.8rem;\n              margin-bottom: 0.2rem;\n              font-family: LatoMedium; }\n            .OurWorkSection .workContainer .imgSmallContainer div .imgContainer > .imgContent > .imgSubHeading {\n              font-size: 0.6rem;\n              font-family: LatoLight; }\n      .OurWorkSection .workContainer .imgSmallContainer > button {\n        margin-left: auto; }\n  @media (max-width: 1281px) {\n    .OurWorkSection .workContainer {\n      display: flex;\n      flex-direction: column;\n      width: fit-content; }\n      .OurWorkSection .workContainer .imgMainContainer {\n        width: 100%; }\n      .OurWorkSection .workContainer .imgSmallContainer > div {\n        margin-left: 0;\n        margin-top: 1.25rem; } }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurWorkSection .workContainer {\n      display: flex;\n      flex-direction: column;\n      width: calc(100vw - 4rem);\n      padding: 0 2rem; }\n      .OurWorkSection .workContainer .imgMainContainer {\n        display: flex;\n        flex-direction: column;\n        margin: 0;\n        padding: 0;\n        vertical-align: middle;\n        overflow: hidden;\n        min-height: 9.45rem;\n        width: 16.95rem;\n        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n        height: auto;\n        width: 100%; }\n        .OurWorkSection .workContainer .imgMainContainer > img {\n          min-height: 6.875rem;\n          height: 9.45rem;\n          object-fit: cover;\n          margin: 0; }\n        .OurWorkSection .workContainer .imgMainContainer > .imgContent {\n          display: flex;\n          flex-direction: column;\n          padding: 0.72rem 1.08rem; }\n          .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgHeading {\n            font-size: 0.96rem;\n            margin-bottom: 0.24rem;\n            font-family: LatoMedium; }\n          .OurWorkSection .workContainer .imgMainContainer > .imgContent > .imgSubHeading {\n            font-size: 0.72rem;\n            font-family: LatoLight; }\n      .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer {\n        display: flex;\n        flex-direction: column;\n        margin: 0;\n        padding: 0;\n        vertical-align: middle;\n        overflow: hidden;\n        min-height: 4.725rem;\n        width: 8.475rem;\n        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);\n        height: auto;\n        width: auto; }\n        .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > img {\n          min-height: 6.875rem;\n          height: 4.725rem;\n          object-fit: cover;\n          margin: 0; }\n        .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > .imgContent {\n          display: flex;\n          flex-direction: column;\n          padding: 0.36rem 0.54rem; }\n          .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > .imgContent > .imgHeading {\n            font-size: 0.48rem;\n            margin-bottom: 0.12rem;\n            font-family: LatoMedium; }\n          .OurWorkSection .workContainer .imgSmallContainer > div > span .imgContainer > .imgContent > .imgSubHeading {\n            font-size: 0.36rem;\n            font-family: LatoLight; } }\n\n.DonateSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .DonateSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .DonateSection .verticalLine {\n    margin-top: 16.25rem;\n    margin-bottom: 5rem; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .DonateSection .verticalLine {\n        margin: 3.75rem 1.25rem; } }\n  .DonateSection .donateContainer {\n    display: flex;\n    flex-direction: row; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .DonateSection .donateContainer {\n        display: flex;\n        flex-direction: column; } }\n    .DonateSection .donateContainer > .donateSchemesContainer {\n      display: flex;\n      flex-direction: column; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .DonateSection .donateContainer > .donateSchemesContainer {\n          height: calc(100vh - 7.5rem);\n          width: 100%; } }\n      .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes {\n        display: flex;\n        flex-direction: column;\n        margin-top: 2.5rem;\n        padding: 0 2.5rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes {\n            padding: 0 2rem;\n            margin-top: 2rem; } }\n        .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input[type=radio] {\n          position: absolute;\n          opacity: 0;\n          margin: 0;\n          padding: 0; }\n        .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent {\n          padding-bottom: 5rem; }\n          @media (min-width: 320px) and (max-width: 767px) {\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent {\n              padding-bottom: 7.5rem; } }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent .donateSchemeName {\n            z-index: 0; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent .donateSchemeName img {\n              transform: rotate(90deg); }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer input:checked + .donateSchemeContainerContent .donateSchemeContent > .donate {\n            max-height: 100vh;\n            opacity: 1; }\n        .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent {\n          position: relative;\n          transition: all .4s ease-in-out;\n          height: fit-content;\n          overflow: hidden;\n          display: flex;\n          flex-direction: column;\n          cursor: pointer; }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate {\n            align-items: center;\n            border-radius: 0;\n            border: 0;\n            color: black;\n            cursor: pointer;\n            display: flex;\n            font-family: LatoHeavy;\n            font-weight: 900;\n            font-size: 0.96rem;\n            height: 2.8rem;\n            justify-content: space-around;\n            margin: 0;\n            min-width: 8rem;\n            width: -moz-fit-content;\n            width: fit-content;\n            background-color: #ff9b40;\n            text-transform: uppercase;\n            color: white;\n            position: absolute;\n            top: 0.6rem;\n            right: 0;\n            max-height: 0;\n            transition: opacity .4s ease-in-out, max-height .4s ease-in-out;\n            opacity: 0; }\n            @media (min-width: 320px) and (max-width: 767px) {\n              .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate {\n                position: unset;\n                margin-top: 0.75rem;\n                margin-left: 2.125rem; } }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:hover {\n              box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:hover:active, .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:active {\n              box-shadow: 0 0 0 white;\n              background: #ff8640; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:disabled, .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donate:hover:disabled {\n              box-shadow: 0 0 0 white;\n              color: white;\n              background: #555555; }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName {\n            display: flex;\n            flex-direction: row;\n            cursor: pointer;\n            text-transform: uppercase;\n            font-size: 1.2rem;\n            padding: 1.25rem;\n            align-content: center;\n            align-items: center;\n            z-index: 10; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName > img {\n              margin-right: 1.375rem;\n              transition: all .4s ease-in-out; }\n              @media (min-width: 320px) and (max-width: 767px) {\n                .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName > img {\n                  margin-right: 0.625rem; } }\n            @media (min-width: 320px) and (max-width: 767px) {\n              .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeName {\n                padding: 1rem; } }\n          .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent {\n            max-height: 0;\n            padding: 0 1rem;\n            display: grid;\n            grid-template-rows: auto auto; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent .schemeContentAmount,\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent .schemeContentDuration {\n              color: #888888; }\n            .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent > span {\n              display: grid;\n              grid-template-columns: auto 5rem;\n              padding: 0.125rem 1.875rem 0.125rem 3.125rem; }\n              @media (min-width: 320px) and (max-width: 767px) {\n                .DonateSection .donateContainer > .donateSchemesContainer .donateSchemes .donateSchemeContainer .donateSchemeContainerContent .donateSchemeContent > span {\n                  padding-right: 0;\n                  padding-left: 2.125rem; } }\n    .DonateSection .donateContainer > .donateAmountContainer {\n      display: flex;\n      flex-direction: column;\n      width: 50%; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .DonateSection .donateContainer > .donateAmountContainer {\n          width: 100%;\n          height: 100vh; } }\n      .DonateSection .donateContainer > .donateAmountContainer > .donateAmount {\n        display: flex;\n        flex-direction: row;\n        align-content: center;\n        align-items: center;\n        margin-top: 2.5rem;\n        padding: 0 2.5rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount {\n            display: flex;\n            flex-direction: column;\n            align-items: normal;\n            margin-top: 2rem;\n            padding: 0 2rem; } }\n        .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput {\n          padding: 0px 1rem;\n          height: 3.6rem;\n          width: 16rem;\n          border: solid 1px #c4c4c4;\n          font-size: 1.75rem;\n          font-weight: 300;\n          font-family: Lato;\n          color: #2b2b2b;\n          border: 0.1rem solid #E5E5E5;\n          position: relative;\n          padding-left: 2rem;\n          margin-right: 1.25rem; }\n          @media (min-width: 320px) and (max-width: 767px) {\n            .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput {\n              display: flex;\n              flex-direction: column;\n              margin-right: 0;\n              width: auto;\n              margin-bottom: 1.25rem;\n              padding: 0px 0.8rem;\n              height: 2.88rem;\n              width: 12.8rem;\n              border: solid 1px #c4c4c4;\n              font-size: 1.4rem;\n              font-weight: 300;\n              font-family: Lato;\n              color: #2b2b2b;\n              border: 0.1rem solid #E5E5E5;\n              padding-left: 2rem; }\n              .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:focus {\n                border: 0.1rem solid #ff9b40;\n                outline-color: #ff9b40;\n                outline-style: none; }\n              .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-inner-spin-button, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-outer-spin-button {\n                -webkit-appearance: none;\n                margin: 0; } }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:focus {\n            border: 0.1rem solid #ff9b40;\n            outline-color: #ff9b40;\n            outline-style: none; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-inner-spin-button, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput::-webkit-outer-spin-button {\n            -webkit-appearance: none;\n            margin: 0; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:focus + .rupeeSymbol {\n            opacity: 1; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donateInput:valid + .rupeeSymbol {\n            opacity: 1; }\n        .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .rupeeSymbol {\n          position: absolute;\n          width: 0.9rem;\n          margin-left: 1rem;\n          opacity: 0; }\n          @media (min-width: 320px) and (max-width: 767px) {\n            .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .rupeeSymbol {\n              margin-top: 1rem; } }\n        .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate {\n          align-items: center;\n          border-radius: 0;\n          border: 0;\n          color: black;\n          cursor: pointer;\n          display: flex;\n          font-family: LatoHeavy;\n          font-weight: 900;\n          font-size: 0.96rem;\n          height: 2.8rem;\n          justify-content: space-around;\n          margin: 0;\n          min-width: 8rem;\n          width: -moz-fit-content;\n          width: fit-content;\n          background-color: #ff9b40;\n          text-transform: uppercase;\n          color: white; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:hover {\n            box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:hover:active, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:active {\n            box-shadow: 0 0 0 white;\n            background: #ff8640; }\n          .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:disabled, .DonateSection .donateContainer > .donateAmountContainer > .donateAmount .donate:hover:disabled {\n            box-shadow: 0 0 0 white;\n            color: white;\n            background: #555555; }\n\n.Error404Section {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem;\n  display: flex;\n  flex-direction: column; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .Error404Section {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .Error404Section .goHome a {\n    color: white;\n    text-decoration: none !important; }\n\n.ComingSoonSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem;\n  display: flex;\n  flex-direction: column; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .ComingSoonSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n\n.goHome {\n  align-items: center;\n  border-radius: 0;\n  border: 0;\n  color: black;\n  cursor: pointer;\n  display: flex;\n  font-family: LatoHeavy;\n  font-weight: 900;\n  font-size: 1.2rem;\n  height: 3.5rem;\n  justify-content: space-around;\n  margin: 0;\n  min-width: 8rem;\n  width: -moz-fit-content;\n  width: fit-content;\n  background-color: #ff9b40;\n  text-transform: uppercase;\n  color: white;\n  margin: 0 20px; }\n  .goHome:hover {\n    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15); }\n  .goHome:hover:active, .goHome:active {\n    box-shadow: 0 0 0 white;\n    background: #ff8640; }\n  .goHome:disabled, .goHome:hover:disabled {\n    box-shadow: 0 0 0 white;\n    color: white;\n    background: #555555; }\n\n.OurStorySubSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurStorySubSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n\n.OurEndeavoursSubSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurEndeavoursSubSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n\n.OurTeamSubSection {\n  display: flex;\n  flex-direction: column;\n  width: 60vw;\n  height: 98vh;\n  justify-content: center;\n  padding: 0.9375rem 5.625rem; }\n  @media (min-width: 320px) and (max-width: 767px) {\n    .OurTeamSubSection {\n      min-height: 100vh;\n      height: 100%;\n      width: 100vw;\n      padding: 0; } }\n  .OurTeamSubSection .teamContainer {\n    display: flex;\n    flex-direction: column;\n    padding: 1.25rem 0 1.25rem 2.5rem; }\n    @media (min-width: 320px) and (max-width: 767px) {\n      .OurTeamSubSection .teamContainer {\n        display: flex;\n        flex-direction: column;\n        padding: 0 2rem; } }\n    .OurTeamSubSection .teamContainer > span {\n      display: flex;\n      flex-direction: row;\n      padding: 1.25rem 0;\n      justify-content: space-between; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .OurTeamSubSection .teamContainer > span {\n          display: flex;\n          flex-direction: column;\n          padding: 0;\n          justify-content: space-between; } }\n    .OurTeamSubSection .teamContainer .teamMemberContainer {\n      display: flex;\n      flex-direction: row;\n      width: 40rem; }\n      @media (min-width: 320px) and (max-width: 767px) {\n        .OurTeamSubSection .teamContainer .teamMemberContainer {\n          margin-bottom: 1.25rem;\n          width: calc(100vw - 4rem); } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer > img {\n        background: #c4c4c4;\n        width: 12.5rem;\n        min-width: 10rem;\n        height: 13.75rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer > img {\n            min-width: 40%;\n            width: 40%;\n            height: 7.5rem; } }\n        @media (min-width: 768px) and (max-width: 1024px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer > img {\n            min-height: 7.5rem; } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer > span {\n        display: flex;\n        flex-direction: column;\n        padding: 0.75rem 2rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer > span {\n            padding: 0.75rem 0 0 1.25rem; } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberName {\n        font-size: 1.75rem;\n        font-family: Lato;\n        margin-bottom: 1.25rem; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberName {\n            font-size: 1.2rem;\n            margin-bottom: 0.5rem; } }\n      .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberPost {\n        font-size: 1.75rem;\n        font-family: LatoLight; }\n        @media (min-width: 320px) and (max-width: 767px) {\n          .OurTeamSubSection .teamContainer .teamMemberContainer .teamMemberPost {\n            font-size: 1.2rem; } }\n", ""]);
 
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1699,7 +1705,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1725,79 +1731,79 @@ module.exports = function escape(url, needQuotes) {
 };
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/9c66bab167a73034d7e85ff6d2fb9333.woff";
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/f79fdb7f94b6c44fa464aaf878f986a4.woff2";
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/5e010e7d5a21e9105d6073ceec643520.woff";
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/620aadb8da576bcc887bc711463d99d5.woff2";
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/12a77593f1a1e9f8ecddb8bfdaa4e836.woff";
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/72bb03785e860c75618d1d7cdd478f24.woff2";
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/0b6ba4ad52519bf0a2001b0004f62d03.woff";
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/8a4beeaa789b8d5bbeb7742e7e7ca64e.woff2";
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/85650919c1d44b3c6ba44e987de12d8c.woff";
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/85bf84b45af1babcee374acae66a9ca3.woff2";
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/95ce76bd4b86c78903abba2b749e7f23.woff";
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/2011437f9a6e713e01b4e8871bf39f3e.woff2";
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1866,7 +1872,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(45);
+var	fixUrls = __webpack_require__(46);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -2201,7 +2207,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports) {
 
 
@@ -2296,7 +2302,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4461,7 +4467,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "MainSection",
+        className: "section MainSection",
         id: "main"
       }, react_default.a.createElement("div", {
         className: "grad"
@@ -4524,14 +4530,15 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "AboutUsSection",
+        className: "section AboutUsSection activeSection",
         id: "aboutus"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
       }, "the"), " challenge"), react_default.a.createElement("p", null, "We believe that society can only thrive when every individual is given a chance to contribute. However, due to issues such as poverty and umeployment, a part of society is left out. The rural areas are currently in despair, and the ongoing solutions aren\u2019t just enough."), react_default.a.createElement("p", null, react_default.a.createElement("span", {
         className: "orangeText"
       }, "Utthan"), " is an NGO which works to enhance the current scenario.", " "), react_default.a.createElement("button", {
-        className: "viewMore"
+        className: "viewMore",
+        id: "aboutUsInfo"
       }, "view more", react_default.a.createElement("img", {
         src: arrow_right_default.a
       })));
@@ -4657,7 +4664,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "DonateSection",
+        className: "section DonateSection",
         id: "donate"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
@@ -4735,7 +4742,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "OurWorkSection",
+        className: "section OurWorkSection",
         id: "ourwork"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
@@ -4788,7 +4795,8 @@ function (_Component) {
 
 function OurStory() {
   return react_default.a.createElement("section", {
-    className: "OurStorySubSection"
+    className: "subsection OurStorySubSection",
+    id: "ourstory"
   }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
     className: "orangeText"
   }, "our"), " story"), react_default.a.createElement("p", null, "Utthan is a trust based in Bareilly, U.P. Established in september 2018, by ", react_default.a.createElement("b", null, "Dr. Manjula Singh"), " along with 3 other women, Utthan is growing quickly and working efficiently. We have collaborated with industries for helping in our objective and have plans to work in 4 villages as of now."), react_default.a.createElement("p", null, "In only a span of few months, we have worked hard to conduct events and campaigns and have recieved immense cooperation from every side."));
@@ -4832,7 +4840,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react_default.a.createElement("section", {
-        className: "OurEndeavoursSubSection"
+        className: "subsection OurEndeavoursSubSection"
       }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
         className: "orangeText"
       }, "our"), " endeavours"));
@@ -4848,7 +4856,8 @@ function (_Component) {
 
 function OurTeam() {
   return react_default.a.createElement("section", {
-    className: "OurTeamSubSection"
+    className: "subsection OurTeamSubSection",
+    id: "ourteam"
   }, react_default.a.createElement("h1", null, react_default.a.createElement("span", {
     className: "orangeText"
   }, "our"), " team"), react_default.a.createElement("div", {
@@ -4963,7 +4972,7 @@ function (_Component) {
         id: "UFlogo"
       }, react_default.a.createElement("img", {
         src: logo_default.a
-      }), react_default.a.createElement("div", {
+      }), react_default.a.createElement("span", {
         className: "TopBarHeadingContainer"
       }, react_default.a.createElement("span", {
         className: "TopBarHeading"
@@ -4997,6 +5006,26 @@ function (_Component) {
 }(react["Component"]);
 
 /* harmony default export */ var topbar_TopBar = (TopBar_TopBar);
+// EXTERNAL MODULE: ./src/app/images/arrow-left.svg
+var arrow_left = __webpack_require__(18);
+var arrow_left_default = /*#__PURE__*/__webpack_require__.n(arrow_left);
+
+// CONCATENATED MODULE: ./src/app/components/topbar/SubSectionTopBar.js
+
+
+
+function SubSectionTopBar() {
+  return react_default.a.createElement("div", {
+    className: "SubSectionTopBarContainer",
+    id: "subsection-topbar"
+  }, react_default.a.createElement("img", {
+    src: arrow_left_default.a,
+    className: "leftArrow",
+    id: "back-left-arrow"
+  }));
+}
+
+/* harmony default export */ var topbar_SubSectionTopBar = (SubSectionTopBar);
 // CONCATENATED MODULE: ./src/app/components/navbar/NavBar.js
 function NavBar_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { NavBar_typeof = function _typeof(obj) { return typeof obj; }; } else { NavBar_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return NavBar_typeof(obj); }
 
@@ -5008,9 +5037,9 @@ function NavBar_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 function NavBar_possibleConstructorReturn(self, call) { if (call && (NavBar_typeof(call) === "object" || typeof call === "function")) { return call; } return NavBar_assertThisInitialized(self); }
 
-function NavBar_getPrototypeOf(o) { NavBar_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return NavBar_getPrototypeOf(o); }
-
 function NavBar_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function NavBar_getPrototypeOf(o) { NavBar_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return NavBar_getPrototypeOf(o); }
 
 function NavBar_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) NavBar_setPrototypeOf(subClass, superClass); }
 
@@ -5035,67 +5064,39 @@ function (_Component) {
       dataScroll: 0,
       isHovered: false
     };
-    _this.toggleClass = _this.toggleClass.bind(NavBar_assertThisInitialized(_this));
     return _this;
   }
 
   NavBar_createClass(NavBar, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {// let header = document.getElementById("navbar");
-      // let navItemsLinks = header.getElementsByClassName("NavItemLinks");
-      // for (let i = 0; i < navItemsLinks.length; i++) {
-      //   navItemsLinks[i].addEventListener("click", () => {
-      //     let current = header.getElementsByClassName("active");
-      //     current[0].className = current[0].className.replace(" active", "");
-      //     this.className += " active";
-      //   });
-      // }
-    }
-  }, {
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(nextProps) {
-      if (nextProps.dataScroll <= 350) {}
-    }
-  }, {
-    key: "toggleClass",
-    value: function toggleClass(e) {
-      e.preventDefault();
-      this.setState({
-        isActive: !this.state.isActive
-      });
-      this.scrollToRef(e);
-    }
-  }, {
     key: "render",
     value: function render() {
-      var _this$state = this.state,
-          isActive = _this$state.isActive,
-          flag = _this$state.flag;
-      var dataScroll = this.props.dataScroll;
       return react_default.a.createElement("ul", {
         className: "NavBarContainer",
         id: "navbar"
       }, react_default.a.createElement("li", {
-        className: "NavItem"
+        className: "NavItem activeLink"
       }, react_default.a.createElement("a", {
         href: "#main",
-        className: "NavItemLinks js-scroll-trigger hover activeLink",
+        className: "NavItemLinks js-scroll-trigger hover ",
         id: "nav-main"
       }, "HOME")), react_default.a.createElement("li", {
         className: "NavItem"
       }, react_default.a.createElement("a", {
         href: "#aboutus",
-        className: "NavItemLinks js-scroll-trigger hover"
+        className: "NavItemLinks js-scroll-trigger hover",
+        id: "nav-main"
       }, "WHO WE ARE")), react_default.a.createElement("li", {
         className: "NavItem"
       }, react_default.a.createElement("a", {
         href: "#ourwork",
-        className: "NavItemLinks js-scroll-trigger hover"
+        className: "NavItemLinks js-scroll-trigger hover",
+        id: "nav-main"
       }, "WHAT WE DO")), react_default.a.createElement("li", {
         className: "NavItem"
       }, react_default.a.createElement("a", {
         href: "#donate",
-        className: "NavItemLinks js-scroll-trigger hover"
+        className: "NavItemLinks js-scroll-trigger hover",
+        id: "nav-main"
       }, "JOIN THE JOURNEY")));
     }
   }]);
@@ -5104,6 +5105,29 @@ function (_Component) {
 }(react["Component"]);
 
 /* harmony default export */ var navbar_NavBar = (NavBar_NavBar);
+// CONCATENATED MODULE: ./src/app/components/navbar/SubSectionNavBar.js
+
+
+var SubSectionNavBar_SubSectionNavBar = function SubSectionNavBar() {
+  return react_default.a.createElement("ul", {
+    className: "SubSectionNavBarContainer",
+    id: "subsection-navbar"
+  }, react_default.a.createElement("li", {
+    className: "NavItem activeLink"
+  }, react_default.a.createElement("a", {
+    href: "#ourstory",
+    className: "NavItemLinks js-scroll-trigger hover ",
+    id: "nav-sub-section"
+  }, "OUR STORY")), react_default.a.createElement("li", {
+    className: "NavItem"
+  }, react_default.a.createElement("a", {
+    href: "#ourteam",
+    className: "NavItemLinks js-scroll-trigger hover",
+    id: "nav-sub-section"
+  }, "OUR TEAM")));
+};
+
+/* harmony default export */ var navbar_SubSectionNavBar = (SubSectionNavBar_SubSectionNavBar);
 // CONCATENATED MODULE: ./src/app/components/home/Home.js
 function Home_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Home_typeof = function _typeof(obj) { return typeof obj; }; } else { Home_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Home_typeof(obj); }
 
@@ -5115,13 +5139,15 @@ function Home_createClass(Constructor, protoProps, staticProps) { if (protoProps
 
 function Home_possibleConstructorReturn(self, call) { if (call && (Home_typeof(call) === "object" || typeof call === "function")) { return call; } return Home_assertThisInitialized(self); }
 
-function Home_getPrototypeOf(o) { Home_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Home_getPrototypeOf(o); }
-
 function Home_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function Home_getPrototypeOf(o) { Home_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Home_getPrototypeOf(o); }
 
 function Home_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) Home_setPrototypeOf(subClass, superClass); }
 
 function Home_setPrototypeOf(o, p) { Home_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Home_setPrototypeOf(o, p); }
+
+
 
 
 
@@ -5133,52 +5159,29 @@ var Home_Home =
 function (_Component) {
   Home_inherits(Home, _Component);
 
-  function Home(props) {
-    var _this;
-
+  function Home() {
     Home_classCallCheck(this, Home);
 
-    _this = Home_possibleConstructorReturn(this, Home_getPrototypeOf(Home).call(this, props));
-
-    _this.listenToScroll = function () {
-      var scroll = // eslint-disable-next-line prefer-template
-      (document.body.scrollTop || document.documentElement.scrollTop) + "";
-
-      _this.setState({
-        dataScroll: scroll
-      }); // console.log(typeof this.state.dataScroll);
-
-    };
-
-    _this.state = {
-      dataScroll: 0
-    };
-    _this.listenToScroll = _this.listenToScroll.bind(Home_assertThisInitialized(_this));
-    return _this;
+    return Home_possibleConstructorReturn(this, Home_getPrototypeOf(Home).apply(this, arguments));
   }
 
   Home_createClass(Home, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      window.addEventListener("scroll", this.listenToScroll);
-      window.onscroll = this.listenToScroll;
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      window.removeEventListener("scroll", this.listenToScroll);
-    }
-  }, {
     key: "render",
     value: function render() {
-      var dataScroll = this.state.dataScroll;
       return react_default.a.createElement("div", {
-        className: "HomeContainer"
+        className: "HomeContainer activeSection",
+        id: "home-container"
       }, react_default.a.createElement(topbar_TopBar, null), react_default.a.createElement("div", {
         className: "HomeSection"
-      }, react_default.a.createElement(Sections.Main, null), react_default.a.createElement(Sections.AboutUs, null), react_default.a.createElement(Sections.OurWork, null), react_default.a.createElement(Sections.Donate, null)), react_default.a.createElement(navbar_NavBar, {
-        dataScroll: dataScroll
-      }));
+      }, react_default.a.createElement(Sections.Main, null), react_default.a.createElement("span", {
+        className: "HomeSubSectionContainer"
+      }, react_default.a.createElement("div", {
+        className: "HomeSubSection leftSection",
+        id: "home-subsection-left-section"
+      }, react_default.a.createElement(Sections.AboutUs, null)), react_default.a.createElement("div", {
+        className: "HomeSubSection rightSection",
+        id: "home-subsection-right-section"
+      }, react_default.a.createElement(topbar_SubSectionTopBar, null), react_default.a.createElement("div", null, react_default.a.createElement(SubSections.OurStory, null), react_default.a.createElement(SubSections.OurTeam, null)), react_default.a.createElement(navbar_SubSectionNavBar, null))), react_default.a.createElement(Sections.OurWork, null), react_default.a.createElement(Sections.Donate, null), react_default.a.createElement(navbar_NavBar, null)));
     }
   }]);
 
@@ -5187,7 +5190,7 @@ function (_Component) {
 
 /* harmony default export */ var home_Home = (Home_Home);
 // EXTERNAL MODULE: ./src/app/components/test/index.js
-var test = __webpack_require__(27);
+var test = __webpack_require__(28);
 
 // CONCATENATED MODULE: ./src/app/components/coming-soon/ComingSoon.js
 
@@ -5206,7 +5209,7 @@ var ComingSoon_ComingSoon = function ComingSoon() {
 
 /* harmony default export */ var coming_soon_ComingSoon = (ComingSoon_ComingSoon);
 // EXTERNAL MODULE: ./src/app/styles/main.scss
-var main = __webpack_require__(28);
+var main = __webpack_require__(29);
 
 // CONCATENATED MODULE: ./src/app/components/App.js
 function App_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { App_typeof = function _typeof(obj) { return typeof obj; }; } else { App_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return App_typeof(obj); }
@@ -5267,7 +5270,7 @@ function (_React$Component) {
 
 /* harmony default export */ var App = (App_Index);
 // EXTERNAL MODULE: ./node_modules/offline-plugin/runtime.js
-var runtime = __webpack_require__(18);
+var runtime = __webpack_require__(19);
 
 // CONCATENATED MODULE: ./src/app/Index.js
 
