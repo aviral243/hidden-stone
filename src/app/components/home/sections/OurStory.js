@@ -1,7 +1,7 @@
 import React from "react";
 function OurStory() {
   return (
-    <section className="OurStorySubSection">
+    <section className="section OurStorysection" id="ourstory">
       <h1>
         <span className="orangeText">our</span> story
       </h1>

@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import { Sections, SubSections } from "./sections";
-import TopBar from "../topbar/TopBar";
+import { Sections } from "./sections";
 import NavBar from "../navbar/NavBar";
 class Home extends Component {
   render() {
     return (
-      <div className="HomeContainer">
-        <TopBar />
+      <div className="HomeContainer activeSection" id="home-container">
         <div className="HomeSection">
           <Sections.Main />
           <Sections.AboutUs />
           <Sections.OurWork />
           <Sections.Donate />
+          <Sections.OurStory />
+          <Sections.OurTeam />
         </div>
-        <NavBar />
       </div>
     );
   }

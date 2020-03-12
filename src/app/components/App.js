@@ -5,14 +5,21 @@ import Home from "./home/Home";
 import Test from "./test/index";
 import ComingSoon from "./coming-soon/ComingSoon";
 import "../styles/main.scss";
+import TopBar from "./topbar/TopBar";
+
 class Index extends React.Component {
   render() {
     return (
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/coming-soon" component={ComingSoon} />
-        <Route path="*" component={Error404} />
-      </Switch>
+      <div className="App">
+        <Router>
+          <TopBar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/coming-soon" component={ComingSoon} />
+            <Route path="*" component={Error404} />
+          </Switch>
+        </Router>
+      </div>
     );
   }
 }

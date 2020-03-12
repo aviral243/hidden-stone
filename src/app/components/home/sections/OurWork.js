@@ -5,7 +5,7 @@ import arrowRight from "../../../images/arrow-right.svg";
 class OurWork extends Component {
   render() {
     return (
-      <section className="OurWorkSection" id="ourwork">
+      <section className="section OurWorkSection" id="ourwork">
         <h1>
           <span className="orangeText">the</span> mission
         </h1>

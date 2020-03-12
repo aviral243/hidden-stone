@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import work from "../../../../images/HomeBG.png";
+import work from "../../../images/HomeBG.png";
 
 class OurEndeavours extends Component {
   render() {
     return (
-      <section className="OurEndeavoursSubSection">
+      <section className="section OurEndeavourssection">
         <h1>
           <span className="orangeText">our</span> endeavours
         </h1>

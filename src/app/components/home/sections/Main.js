@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 class Main extends Component {
   render() {
     return (
-      <section className="MainSection" id="main">
+      <section className="section MainSection" id="main">
         <div className="grad" />
         <h1>
           let’s build a <span className="orangeText">society</span> with skilled
@@ -14,9 +14,10 @@ class Main extends Component {
           of our dreams
         </p>
         <span>
-          <button className="donate">
-            <Link to="/">Donate</Link>
-          </button>
+          <Link to="/coming-soon">
+            <button className="donate">Donate</button>
+          </Link>
+
           <button className="learnmore">Learn More</button>
         </span>
       </section>
