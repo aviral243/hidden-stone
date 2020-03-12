@@ -2,18 +2,17 @@ import Main from "./Main";
 import AboutUs from "./AboutUs";
 import Donate from "./Donate";
 import OurWork from "./OurWork";
-import OurStory from "./subsections/OurStory";
-import OurEndeavours from "./subsections/OurEndeavours";
-import OurTeam from "./subsections/OurTeam";
+import OurStory from "./OurStory";
+import OurEndeavours from "./OurEndeavours";
+import OurTeam from "./OurTeam";
 const Sections = {
   Main,
   AboutUs,
   Donate,
-  OurWork
-};
-const SubSections = {
+  OurWork,
   OurEndeavours,
   OurTeam,
   OurStory
 };
-export { Sections, SubSections };
+
+export { Sections };

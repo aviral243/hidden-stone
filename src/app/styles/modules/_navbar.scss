@@ -1,5 +1,4 @@
-.NavBarContainer,
-.SubSectionNavBarContainer {
+.NavBarContainer{
   @include desktop-1025-1280() {
     display: none;
   }
@@ -33,7 +32,7 @@
       text-decoration: none;
       text-transform: uppercase;
       transition: background-color .4s ease;
-      width: 422px;
+      width: 420px;
 
       &::before {
         content: "";
@@ -51,16 +50,19 @@
 
     }
 
-    .activeLink {
+
+  }
+
+  .activeLink {
+    a {
       &::before {
         content: "";
-        border-left: 0px;
+        border-left: 0px !important;
       }
 
       & {
         color: $primaryColor !important;
         background-color: rgba($hlWhite, 1);
-
         border-left: 6px solid $primaryColor !important;
       }
 

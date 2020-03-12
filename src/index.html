@@ -28,11 +28,11 @@
                     let target = $(this.hash);
                     target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
                     if (target.length) {
-                        $("html, body").animate(
+                        $("html, body, div").animate(
                             {
                                 scrollTop: target.offset().top
                             },
-                            800,
+                            1000,
                             "easeInOutExpo"
                         );
                         return false;
@@ -40,16 +40,45 @@
                 }
             });
             $("body").scrollspy({
-                target: "#navbar"
+                target: "#topbar"
             });
+
+            $(window).bind('scroll', function () {
+                var currentTop = $(window).scrollTop();
+                var elems = $('.section');
+                elems.each(function (index) {
+                    var elemTop = $(this).offset().top - 50;
+                    var elemBottom = elemTop + $(this).height();
+                    if (currentTop >= elemTop && currentTop <= elemBottom) {
+                        var id = $(this).attr('id');
+                        var navElem = $('a[href="#' + id + '"]');
+                        navElem.parent().addClass('activeLink').siblings().removeClass('activeLink');
+                    }
+                })
+            });
+
+            $("#home-section-right-section").bind('scroll', function () {
+                var currentTop = $("#home-section-right-section").scrollTop();
+                console.log("scrolled");
+                var elems = $('.section');
+                elems.each(function (index) {
+                    var elemTop = $(this).offset().top - 50;
+                    var elemBottom = elemTop + $(this).height();
+                    if (currentTop >= elemTop && currentTop <= elemBottom) {
+                        var id = $(this).attr('id');
+                        var navElem = $('a[href="#' + id + '"]');
+                        navElem.parent().addClass('activeLink').siblings().removeClass('activeLink');
+                    }
+                })
+            });
+
             $(document).scroll(function () {
                 let rgbHL = $(document).scrollTop();
-                let opacityHL = 0.2 + rgbHL / 500;
-                let rgb = $(document).scrollTop() / 4;
+                let opacityHL = rgbHL;
+                let rgb = $(document).scrollTop();
                 let reverseRgb = 300 - $(document).scrollTop();
-                let rgbTop = rgb * 4 / 3;
-                let reverseRgbContactUs = (500 - rgbHL / 2) <= 40 ? 43 : 500 - rgbHL / 2;
-                console.log(rgbHL);
+                let rgbTop = rgb * 5;
+                let reverseRgbContactUs = 255 - rgbTop;
                 if (rgbHL < 600) {
                     $(".NavItemLinks").addClass("hover");
                 }
@@ -58,21 +87,77 @@
 
                 }
                 let rgbTopOpacity = rgbHL > 950 ? 1 : rgbTop / 900;
-                $("#navbar .NavItem .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
-                $("#navbar .NavItem .NavItemLinks").css("border-color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                let rgbTopOpacityShadow = rgbHL > 50 ? 0.1 : rgbTop / 900;
+                $("#navbar .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#navbar .NavItemLinks").css("border-color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
                 $("#topbar").css("background-color", "rgba(" + rgbTop + ", " + rgbTop + ", " + rgbTop + "," + rgbTopOpacity + ")");
-                $("#topbar .logo a img").css("fill", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
-                $("#topbar .logo a").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
+                $("#topbar").css("box-shadow", " 0px 10px 25px rgba(0, 0, 0," + rgbTopOpacityShadow + ")");
+                $("#topbar a img .icon").css("fill", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
+                $("#topbar a").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
             });
-            var header = document.getElementById("navbar");
-            var links = header.getElementsByClassName("NavItemLinks");
-            for (var i = 0; i < links.length; i++) {
-                links[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("activeLink");
-                    current[0].className = current[0].className.replace(" activeLink", "");
-                    this.className += " activeLink";
-                });
-            }
+            // var headerNavbar = document.getElementById("navbar");
+
+            // var linksNavbar = headerNavbar.getElementsByClassName("NavItemLinks");
+            // for (var i = 0; i < linksNavbar.length; i++) {
+            //     linksNavbar[i].addEventListener("click", function () {
+            //         var current = headerNavbar.getElementsByClassName("activeLinkNavbar");
+            //         current[0].className = current[0].className.replace(" activeLinkNavbar", "");
+            //         this.className += " activeLinkNavbar";
+            //     });
+
+            // }
+
+            // var headersectionNavbar = document.getElementById("section-navbar");
+            // var linkssectionNavbar = headerNavbar.getElementsByClassName("NavItemLinks");
+            //         console.log(linkssectionNavbar);
+
+            // for (var i = 0; i < linkssectionNavbar.length; i++) {
+            //     linkssectionNavbar[i].addEventListener("click", function () {
+            //         var current = headersectionNavbar.getElementsByClassName("activeLinksectionNavbar");
+            //         current[0].className = current[0].className.replace(" activeLinksectionNavbar", "");
+            //         this.className += " activeLinksectionNavBar";
+            //     });
+
+            // }
+            // $('a#nav-main').each(function () {
+            //     this.addEventListener("click", function () {
+            //         $("a#nav-main").parent().removeClass("activeLink")
+            //         $(this).parent().addClass("activeLink")
+            //     });
+            // });
+            // $('a#nav-sub-section').each(function () {
+            //     this.addEventListener("click", function () {
+            //         $("a#nav-sub-section").removeClass("activeLink")
+            //         $(this).addClass("activeLink")
+            //     });
+            // });
+
+            $("#aboutUsInfo").click(function () {
+                var section = document.getElementsByClassName("section")
+                for (let i = 0; i < section.length; i++) {
+                    const element = section[i];
+                    element.className += " inactiveSection";
+                }
+                $("#topbar").addClass("inactiveSection")
+                $("#navbar").addClass("inactiveSection")
+                $("#section-navbar").addClass("activeNavbar")
+                $("#section-topbar").addClass("activeTopBar")
+                $("#home-section-right-section").addClass("activeSection");
+                $("#home-section-left-section").addClass("inactiveSection");
+            });
+            $("#back-left-arrow").click(function () {
+                var section = document.getElementsByClassName("section")
+                for (let i = 0; i < section.length; i++) {
+                    const element = section[i];
+                    element.className = element.className.replace(" inactiveSection", "");
+                }
+                $("#topbar").removeClass("inactiveSection")
+                $("#navbar").removeClass("inactiveSection")
+                $("#section-topbar").removeClass("activeTopBar")
+                $("#section-navbar").removeClass("activeNavbar")
+                $("#home-section-right-section").removeClass("activeSection");
+                $("#home-section-left-section").removeClass("inactiveSection");
+            });
         }(jQuery)); 
     </script>
 </body>

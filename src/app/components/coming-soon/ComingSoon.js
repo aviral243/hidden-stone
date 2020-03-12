@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const ComingSoon = () => (
   <div className="ComingSoonSection">
     <h1>
@@ -10,7 +12,9 @@ const ComingSoon = () => (
       Go back to
       <span className="orangeText"> Home</span>.
     </p>
-    <button className="goHome">Home</button>
+    <Link to="/">
+      <button className="goHome">Home</button>
+    </Link>
   </div>
 );
 export default ComingSoon;

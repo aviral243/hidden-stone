@@ -5,7 +5,7 @@ import Instalogo from "../../images/Insta.svg";
 class TopBar extends Component {
   render() {
     return (
-      <div className="TopBarContainer" id="topbar">
+      <ul className="TopBarContainer" id="topbar">
         <div className="web">
           <div className="logo">
             <a href={"https://utthanfoundation.co"} id="UFlogo">
@@ -19,6 +19,60 @@ class TopBar extends Component {
             </a>
           </div>
         </div>
+        <li className="NavItem activeLink">
+          <a
+            href="#main"
+            className="NavItemLinks js-scroll-trigger hover "
+            id="nav-main"
+          >
+            HOME
+          </a>
+        </li>
+        <li className="NavItem">
+          <a
+            href="#aboutus"
+            className="NavItemLinks js-scroll-trigger hover"
+            id="nav-main"
+          >
+            WHO WE ARE
+          </a>
+        </li>
+        <li className="NavItem">
+          <a
+            href="#ourwork"
+            className="NavItemLinks js-scroll-trigger hover"
+            id="nav-main"
+          >
+            WHAT WE DO
+          </a>
+        </li>
+        <li className="NavItem">
+          <a
+            href="#donate"
+            className="NavItemLinks js-scroll-trigger hover"
+            id="nav-main"
+          >
+            JOIN THE JOURNEY
+          </a>
+        </li>
+        <li className="NavItem activeLink">
+          <a
+            href="#ourstory"
+            className="NavItemLinks js-scroll-trigger hover "
+            id="nav-sub-section"
+          >
+            OUR STORY
+        </a>
+        </li>
+        <li className="NavItem">
+          <a
+            href="#ourteam"
+            className="NavItemLinks js-scroll-trigger hover"
+            id="nav-sub-section"
+          >
+            OUR TEAM
+        </a>
+        </li>
         <div className="contact">
           <div className="logo">
             <a href={"https://www.google.com"}>
@@ -36,7 +90,7 @@ class TopBar extends Component {
             </a>
           </div>
         </div>
-      </div>
+      </ul>
     );
   }
 }

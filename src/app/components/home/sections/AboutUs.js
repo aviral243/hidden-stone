@@ -3,7 +3,7 @@ import arrowRight from "../../../images/arrow-right.svg";
 class AboutUs extends Component {
   render() {
     return (
-      <section className="AboutUsSection" id="aboutus">
+      <section className="section AboutUsSection activeSection" id="aboutus">
         <h1>
           <span className="orangeText">the</span> challenge
         </h1>
@@ -17,7 +17,7 @@ class AboutUs extends Component {
           <span className="orangeText">Utthan</span> is an NGO which works to
           enhance the current scenario.{" "}
         </p>
-        <button className="viewMore">
+        <button className="viewMore" id="aboutUsInfo">
           view more
           <img src={arrowRight} />
         </button>
