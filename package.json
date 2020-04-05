@@ -10,7 +10,8 @@
     "start:dashboard": "webpack-dashboard -- npm start",
     "build:prod": "rm -rf public/* && webpack --config webpack.prod.js",
     "bundle-report": "webpack --profile --json > stats.json && webpack-bundle-analyzer  --port 9000 stats.json",
-    "deploy": "cp ./CNAME ./public && gh-pages -d public"
+    "deploy": "cp ./CNAME ./public && gh-pages -d public",
+    "lint": "eslint --fix src "
   },
   "repository": {
     "type": "git",

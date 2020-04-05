@@ -57,7 +57,7 @@ class NavBar extends Component {
             id="nav-sub-section"
           >
             OUR STORY
-        </a>
+          </a>
         </li>
         <li className="NavItem">
           <a
@@ -66,7 +66,7 @@ class NavBar extends Component {
             id="nav-sub-section"
           >
             OUR TEAM
-        </a>
+          </a>
         </li>
       </ul>
     );
