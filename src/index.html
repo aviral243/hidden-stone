@@ -51,7 +51,7 @@
                     var elemBottom = elemTop + $(this).height();
                     if (currentTop >= elemTop && currentTop <= elemBottom) {
                         var id = $(this).attr('id');
-                        var navElem = $('a[href="#' + id + '"]');
+                        var navElem = $('a[href="/#' + id + '"]');
                         navElem.parent().addClass('activeLink').siblings().removeClass('activeLink');
                     }
                 })

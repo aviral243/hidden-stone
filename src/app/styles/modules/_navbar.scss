@@ -1,16 +1,4 @@
 .NavBarContainer {
-  @include desktop-1025-1280() {
-    display: none;
-  }
-
-  @include desktop-320-767() {
-    display: none;
-  }
-
-  @include desktop-320() {
-    display: none;
-  }
-
   list-style: none;
   align-items: center;
   @include display-row();
@@ -19,7 +7,7 @@
   margin: 0;
   justify-content: space-between;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   list-style: none;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
@@ -39,7 +27,12 @@
         margin-left: $gutterWidth;
 
         .NavBarHeading {
-          font-size: 28px;
+          font-size: $normalFontSize*0.8;
+          margin-bottom: $gutterWidth * 0.4;
+        }
+
+        .NavBarSubHeading {
+          font-size: $normalFontSize*0.5;
           margin-bottom: $gutterWidth * 0.4;
         }
       }
@@ -48,6 +41,10 @@
   }
 
   .NavItem {
+    @include desktop-0-1281() {
+      display: none;
+    }
+
     @include display-row();
     justify-content: space-between;
 
@@ -69,7 +66,6 @@
       line-height: $normaLineHeight;
       padding: $gutterWidth*0.6 $gutterWidth*0.8;
       text-align: center;
-      text-decoration: none;
       text-transform: uppercase;
       transition: background-color .4s ease;
 

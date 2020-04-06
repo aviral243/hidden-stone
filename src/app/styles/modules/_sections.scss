@@ -407,8 +407,12 @@
 }
 
 .Error404Section {
-  @include section();
   @include display-column();
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100vh;
 
   .goHome {
     a {
@@ -419,16 +423,20 @@
 }
 
 .ComingSoonSection {
-  @include section();
   @include display-column();
-  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100vh;
 }
 
 .goHome {
   @include btn-standard();
   color: white;
-  margin: 0 20px;
+  margin: 0 $gutterWidth*2;
 }
+
 .OurStorysection {
   @include section();
 }
