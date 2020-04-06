@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Error404 = () => (
-  <div className="Error404Section">
+  <div className="Error404Section MainSection">
     <h1>
       <span className="orangeText">Oops!!!</span> 404
     </h1>
