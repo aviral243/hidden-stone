@@ -1,4 +1,4 @@
-.NavBarContainer{
+.NavBarContainer {
   @include desktop-1025-1280() {
     display: none;
   }
@@ -11,65 +11,80 @@
     display: none;
   }
 
-  @include display-column();
-
   list-style: none;
   align-items: center;
-  width: fit-content;
+  @include display-row();
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  list-style: none;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+
+  .uf-logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem;
+
+    #UFlogo {
+      @include display-row();
+
+      .NavBarHeadingContainer {
+        @include display-column();
+        justify-content: center;
+        margin-left: $gutterWidth;
+
+        .NavBarHeading {
+          font-size: 28px;
+          margin-bottom: $gutterWidth * 0.4;
+        }
+      }
+    }
+
+  }
 
   .NavItem {
+    @include display-row();
+    justify-content: space-between;
 
+    align-items: center;
+
+    &.activeLink {
+      .NavItemLinks {
+        color: $primaryColor !important;
+      }
+    }
 
     .NavItemLinks {
-      border-left: 2px solid #fff;
-      color: #fff;
-      display: block;
+      @include display-row();
+      align-items: center;
       font-family: Lato;
-      font-size: 25px;
+      font-size: $normalFontSize*0.6;
       font-weight: normal;
-      line-height: 30px;
-      padding: 32.51px 0px 32.01px 40px;
+      justify-content: center;
+      line-height: $normaLineHeight;
+      padding: $gutterWidth*0.6 $gutterWidth*0.8;
+      text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       transition: background-color .4s ease;
-      width: 420px;
-
-      &::before {
-        content: "";
-        border-left: 2px solid rgba(255, 255, 255, 0);
-      }
 
       &.hover:hover {
-        background-color: rgba($hlBlack, 0.1) !important;
+        background-color: rgba($hlBlack, 0.2) !important;
       }
 
       &:not(:focus):hover {
         background-color: $hlHover;
       }
-
-
     }
 
-
-  }
-
-  .activeLink {
-    a {
-      &::before {
-        content: "";
-        border-left: 0px !important;
-      }
-
-      & {
-        color: $primaryColor !important;
-        background-color: rgba($hlWhite, 1);
-        border-left: 6px solid $primaryColor !important;
-      }
-
-      &.hover {
-        background-color: rgba($hlWhite, 0.2) !important;
-
-      }
+    &:last-child {
+      padding-right: $gutterWidth;
+      ;
     }
   }
 }
