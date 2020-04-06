@@ -4,7 +4,7 @@ import NavBar from "../navbar/NavBar";
 class Home extends Component {
   render() {
     return (
-      <div className="HomeContainer activeSection" id="home-container">
+      <div className="HomeContainer" id="home-container">
         <div className="HomeSection">
           <Sections.Main />
           <Sections.AboutUs />

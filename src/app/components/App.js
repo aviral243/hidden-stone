@@ -5,14 +5,14 @@ import Home from "./home/Home";
 import Test from "./test/index";
 import ComingSoon from "./coming-soon/ComingSoon";
 import "../styles/main.scss";
-import TopBar from "./topbar/TopBar";
+import NavBar from "./navbar/NavBar";
 
 class Index extends React.Component {
   render() {
     return (
       <div className="App">
         <Router>
-          <TopBar />
+          <NavBar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/coming-soon" component={ComingSoon} />

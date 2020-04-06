@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ComingSoon = () => (
-  <div className="ComingSoonSection">
+  <div className="ComingSoonSection MainSection">
     <h1>
       <span className="orangeText">Coming</span> Soon!!!
     </h1>

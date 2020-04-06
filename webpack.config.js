@@ -41,7 +41,7 @@ const config = {
       },
       {
         test: /\.js?/,
-        include: [`${SRC_DIR}/app/components`, `${SRC_DIR}/app/Index.js`],
+        include: [`${SRC_DIR}`],
         use: [
           {
             loader: "babel-loader",
