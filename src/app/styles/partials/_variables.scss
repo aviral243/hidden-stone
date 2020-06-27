@@ -1,23 +1,26 @@
-@include font-Lato('Lato', 'Lato-Regular');
-@include font-Lato('LatoLight', 'Lato-Light');
-@include font-Lato('LatoMedium', 'Lato-Medium');
-@include font-Lato('LatoBold', 'Lato-Bold');
-@include font-Lato('LatoHeavy', 'Lato-Heavy');
 
-@include font-YesevaOne('YesevaOne', 'YesevaOne-Regular');
+
 /*========THEME============*/
 //highlighter black bg
-$primaryColor: #ff9b40;
-$primaryColorDark: #ff8640;
-$primaryDisabledColor: #555555;
-$primaryGreyColor:#888888;
+$primary-color: #ff9b40;
+$grey: #B5B5B5;
+$white: #ffffff;
+$black: #000000;
+
 $gutterWidth: 1.25rem;
-$blackText: #2b2b2b; //black color for text
-$hlWhite: #fbfbfb; //highlighter white bg
-$hlBlack: #c4c4c4;
-$hlHover: #f0f0f0;
-$dividerColor: #dddddd;
-$borderColor:#E5E5E5;
+
+$orange-500: $primary-color;
+$orange-600: #ff8640;
+
+$grey-100: #F3F3F3;
+$grey-200: #dddddd;
+$grey-300: #E5E5E5;
+$grey-400: #C4C4C4;
+$grey-500: $grey;
+$grey-600: #979797;
+$grey-700: #828282;
+$grey-800: #555555;
+$grey-900: #2b2b2b;
 
 /*========FONTS============*/
 //highlighter black bg
@@ -29,7 +32,7 @@ $headerFontFamily: YesevaOne;
 $text: 300;
 $heading: 500;
 $thinHeading: 400;
-$letterSpacing: 0.0rem;
+$letterSpacing: 0rem;
 $normaLineHeight: 2.75rem;
 $headerLineHeight: 4.875rem;
 $normalFontSize: 1.75rem;
@@ -40,3 +43,18 @@ $mobileNormalFontSize: 1.2rem;
 $mobileHeaderFontSize: 2.6rem;
 $mobileNormaLineHeight: 1.8rem;
 $mobileHeaderLineHeight: 3.6rem;
+
+:export {
+  orange500: $orange-500;
+  orange600: $orange-600;
+  grey200: $grey-200;
+  grey300: $grey-300;
+  grey400: $grey-400;
+  grey500: $grey-500;
+  grey600: $grey-600;
+  grey700: $grey-700;
+  grey800: $grey-800;
+  grey900: $grey-900;
+  white: $white;
+  black: $black;
+}

@@ -5,7 +5,7 @@ class AboutUs extends Component {
     return (
       <section className="section AboutUsSection activeSection" id="aboutus">
         <h1>
-          <span className="orangeText">the</span> challenge
+          <span className="orange-text">the</span> challenge
         </h1>
         <p>
           We believe that society can only thrive when every individual is given
@@ -14,7 +14,7 @@ class AboutUs extends Component {
           currently in despair, and the ongoing solutions aren’t just enough.
         </p>
         <p>
-          <span className="orangeText">Utthan</span> is an NGO which works to
+          <span className="orange-text">Utthan</span> is an NGO which works to
           enhance the current scenario.{" "}
         </p>
         <button className="viewMore" id="aboutUsInfo">

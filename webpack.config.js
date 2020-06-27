@@ -22,7 +22,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /(\.scss)$/,
+        test: /(\.scss|css)$/,
         include: `${SRC_DIR}/app/styles`,
         use: ["style-loader", "css-loader", "sass-loader"]
       },

@@ -15,7 +15,7 @@ class Donate extends Component {
     return (
       <section className="section DonateSection" id="donate">
         <h1>
-          <span className="orangeText">help</span> us
+          <span className="orange-text">help</span> us
         </h1>
         <div className="donateContainer">
           <div className="donateSchemesContainer">

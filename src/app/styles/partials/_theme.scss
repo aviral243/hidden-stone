@@ -1,34 +1,51 @@
+@include font-Lato('Lato', 'Lato-Regular');
+@include font-Lato('LatoLight', 'Lato-Light');
+@include font-Lato('LatoMedium', 'Lato-Medium');
+@include font-Lato('LatoBold', 'Lato-Bold');
+@include font-Lato('LatoHeavy', 'Lato-Heavy');
+
+@include font-YesevaOne('YesevaOne', 'YesevaOne-Regular');
+
 html,
 div {
   font-family: $generalFontFamily;
   overflow-x: hidden;
+
   &::-webkit-scrollbar-track {
-    background-color: $dividerColor;
+    background-color: $grey-200;
   }
 
   &::-webkit-scrollbar {
     width: 10px;
-    background-color: $dividerColor;
+    background-color: $grey-200;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $primaryColor;
+    background-color: $orange-500;
   }
 }
 
 body {
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: 0;
   -webkit-touch-callout: none;
+
   /* iOS Safari */
   -webkit-user-select: none;
+
   /* Safari */
   -khtml-user-select: none;
+
   /* Konqueror HTML */
   -moz-user-select: none;
+
   /* Firefox */
   -ms-user-select: none;
+
   /* Internet Explorer/Edge */
   user-select: none;
+
   /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }

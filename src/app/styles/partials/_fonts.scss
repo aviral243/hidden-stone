@@ -1,8 +1,7 @@
 @mixin font-Lato($font-family, $font-file) {
   @font-face {
     font-family: $font-family;
-    src: url('../fonts/Lato/'+$font-file+'.woff') format('woff'),
-      url('../fonts/Lato/'+$font-file+'.woff2') format('woff2');
+    src: url('../fonts/Lato/' + $font-file + '.woff') format('woff'), url('../fonts/Lato/' + $font-file + '.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
@@ -12,8 +11,7 @@
 @mixin font-YesevaOne($font-family, $font-file) {
   @font-face {
     font-family: $font-family;
-    src: url('../fonts/YesevaOne/'+$font-file+'.woff') format('woff'),
-      url('../fonts/YesevaOne/'+$font-file+'.woff2') format('woff2');
+    src: url('../fonts/YesevaOne/' + $font-file + '.woff') format('woff'), url('../fonts/YesevaOne/' + $font-file + '.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
@@ -30,3 +28,80 @@
 800 - Extra Bold (Ultra Bold)
 900 - Black (Heavy)
 */
+
+%font-base {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fs-large {
+  @extend %font-base;
+
+  font-size: 2.5rem;
+}
+
+.fs-xxxxxl {
+  @extend %font-base;
+
+  font-size: 2rem;
+}
+
+.fs-xxxxl {
+  @extend %font-base;
+
+  font-size: 1.75rem;
+}
+
+.fs-xxxl {
+  @extend %font-base;
+
+  font-size: 1.5rem;
+}
+
+.fs-xxl {
+  @extend %font-base;
+
+  font-size: 1.25rem;
+}
+
+.fs-xl {
+  @extend %font-base;
+
+  font-size: 1.125rem;
+}
+
+.fs-l {
+  @extend %font-base;
+
+  font-size: 1rem;
+}
+
+.fs-m {
+  @extend %font-base;
+
+  font-size: 0.875rem !important;
+}
+
+.fs-s {
+  @extend %font-base;
+
+  font-size: 0.75rem;
+}
+
+.fs-xs {
+  @extend %font-base;
+
+  font-size: 0.625rem;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}
+
+.fw-bolder {
+  font-weight: 800 !important;
+}
+
+.fw-n {
+  font-weight: normal;
+}

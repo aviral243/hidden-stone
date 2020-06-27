@@ -1,20 +1,19 @@
 .viewMore {
-  @include btn-standard-transparent();
-  color: $primaryColor;
+  @include btn-standard-transparent;
+
+  color: $orange-500;
   min-width: fit-content;
   padding: 0;
   min-height: fit-content;
 
-  >img {
+  > img {
     margin-top: 0.2rem;
     margin-left: 1rem;
   }
 }
 
-.MainSection {
-  @include section();
-  color: white;
-  position: relative;
+.section-main-container {
+  padding: (0.75 * $gutterWidth) (4.5 * $gutterWidth);
 
   &::before {
     content: ' ';
@@ -25,7 +24,7 @@
     width: 100vw;
     height: 100%;
     z-index: -2;
-    background-image: url("../images/HomeBG.png");
+    background-image: url('../images/HomeBG.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -39,78 +38,88 @@
     width: 100vw;
     z-index: -1;
     opacity: 0.2;
+    width: 100vw;
     height: 100%;
     background-color: black;
   }
 
-  @include desktop-320-767() {}
+  .section-main {
+    @include section;
 
-  align-content: center;
-  justify-content: center;
+    color: white;
+    position: relative;
+    align-content: center;
+    justify-content: center;
 
-  >span {
-    @include desktop-320-767() {
-      margin-left: $gutterWidth*1.6;
+    > span {
+      @include desktop-320-767 {
+        margin-left: $gutterWidth * 1.6;
+      }
+
+
+      @include display-row;
+
+      margin-left: $gutterWidth * 2;
+      padding: (1.6 * $gutterWidth) 0;
     }
 
-    @include display-row();
-    margin-left: $gutterWidth*2;
+    .donate {
+      @include desktop-320-767 {
+        @include btn-standard(0.8);
+      }
 
-    padding: 1.6*$gutterWidth 0;
-  }
 
-  .donate {
-    @include desktop-320-767() {
-      @include btn-standard(0.8);
+      a {
+        color: black;
+      }
+
+      @include btn-standard;
     }
 
-    a {
-      color: black;
+    .learn-more {
+      text-transform: uppercase;
+      padding: $gutterWidth $gutterWidth;
+
+      @include desktop-320-767 {
+        @include btn-standard-transparent(0.8);
+      }
+
+
+      @include btn-standard-transparent;
     }
-
-    @include btn-standard();
-  }
-
-  .learnmore {
-    text-transform: uppercase;
-    padding: $gutterWidth $gutterWidth;
-
-    @include desktop-320-767() {
-      @include btn-standard-transparent(0.8);
-    }
-
-    @include btn-standard-transparent();
   }
 }
 
 .AboutUsSection {
-  @include section();
+  @include section;
 
   button {
-    margin-left: $gutterWidth*2;
+    margin-left: $gutterWidth * 2;
   }
 
-  @include desktop-320-767() {
+  @include desktop-320-767 {
     button {
-      margin-left: $gutterWidth*1.6;
+      margin-left: $gutterWidth * 1.6;
     }
   }
 }
 
 .OurWorkSection {
-  @include section();
+  @include section;
 
   .workContainer {
-    @include display-row();
-    padding: 0 2*$gutterWidth;
+    @include display-row;
+
+    padding: 0 (2 * $gutterWidth);
 
     .imgMainContainer {
       @include image-container(1.75);
+
       height: fit-content;
     }
 
     .imgSmallContainer {
-      @include display-column();
+      @include display-column;
 
       div {
         display: grid;
@@ -120,8 +129,9 @@
         height: auto;
         margin-left: $gutterWidth;
 
-        >span {
-          @include display-row();
+        > span {
+          @include display-row;
+
           display: grid;
           grid-template-columns: auto auto;
           column-gap: 1rem;
@@ -129,19 +139,21 @@
 
         .imgContainer {
           @include image-container(1);
+
           height: fit-content;
         }
       }
 
-      >button {
+      > button {
         margin-left: auto;
       }
     }
   }
 
-  @include desktop-0-1281() {
+  @include desktop-0-1281 {
     .workContainer {
-      @include display-column();
+      @include display-column;
+
       width: fit-content;
 
       .imgMainContainer {
@@ -149,7 +161,7 @@
       }
 
       .imgSmallContainer {
-        >div {
+        > div {
           margin-left: 0;
           margin-top: $gutterWidth;
         }
@@ -157,23 +169,27 @@
     }
   }
 
-  @include desktop-320-767() {
+
+  @include desktop-320-767 {
     .workContainer {
-      @include display-column();
-      width: calc(100vw - #{3.2*$gutterWidth});
-      padding: 0 1.6*$gutterWidth;
+      @include display-column;
+
+      width: calc(100vw - #{3.2 * $gutterWidth});
+      padding: 0 (1.6 * $gutterWidth);
 
       .imgMainContainer {
         @include image-container(1.2);
+
         height: auto;
         width: 100%;
       }
 
       .imgSmallContainer {
-        >div {
-          >span {
+        > div {
+          > span {
             .imgContainer {
               @include image-container(0.6);
+
               height: auto;
               width: auto;
             }
@@ -185,41 +201,46 @@
 }
 
 .DonateSection {
-  @include section();
+  @include section;
 
   .verticalLine {
-    @include desktop-320-767() {
-      margin: 3*$gutterWidth $gutterWidth;
+    @include desktop-320-767 {
+      margin: (3 * $gutterWidth) $gutterWidth;
     }
 
-    margin-top: 13*$gutterWidth;
-    margin-bottom: 4*$gutterWidth;
+
+    margin-top: 13 * $gutterWidth;
+    margin-bottom: 4 * $gutterWidth;
   }
 
   .donateContainer {
-    @include desktop-320-767() {
-      @include display-column();
+    @include desktop-320-767 {
+      @include display-column;
     }
 
-    @include display-row();
 
-    >.donateSchemesContainer {
-      @include desktop-320-767() {
-        height: calc(100vh - #{6*$gutterWidth});
+    @include display-row;
+
+    > .donateSchemesContainer {
+      @include desktop-320-767 {
+        height: calc(100vh - #{6 * $gutterWidth});
         width: 100%;
       }
 
-      @include display-column();
+
+      @include display-column;
 
       .donateSchemes {
-        @include desktop-320-767() {
-          padding: 0 $gutterWidth*1.6;
-          margin-top: $gutterWidth*1.6;
+        @include desktop-320-767 {
+          padding: 0 ($gutterWidth * 1.6);
+          margin-top: $gutterWidth * 1.6;
         }
 
-        @include display-column();
-        margin-top: 2*$gutterWidth;
-        padding: 0 2*$gutterWidth;
+
+        @include display-column;
+
+        margin-top: 2 * $gutterWidth;
+        padding: 0 (2 * $gutterWidth);
 
         .donateSchemeContainer {
           input[type=radio] {
@@ -230,12 +251,13 @@
           }
 
           input:checked {
-            +.donateSchemeContainerContent {
+            + .donateSchemeContainerContent {
               padding-bottom: 5rem;
 
-              @include desktop-320-767() {
-                padding-bottom: 6*$gutterWidth;
+              @include desktop-320-767 {
+                padding-bottom: 6 * $gutterWidth;
               }
+
 
               .donateSchemeName {
                 z-index: 0;
@@ -246,7 +268,7 @@
               }
 
               .donateSchemeContent {
-                >.donate {
+                > .donate {
                   max-height: 100vh;
                   opacity: 1;
                 }
@@ -260,47 +282,52 @@
             height: fit-content;
 
             .donate {
-              @include desktop-320-767() {
+              @include desktop-320-767 {
                 position: unset;
-                margin-top: 0.6*$gutterWidth;
-
-                margin-left: 1.7*$gutterWidth;
+                margin-top: 0.6 * $gutterWidth;
+                margin-left: 1.7 * $gutterWidth;
               }
 
+
               @include btn-standard(0.8);
+
               color: white;
               position: absolute;
               top: 0.6rem;
               right: 0;
               max-height: 0;
-              transition: opacity .4s ease-in-out,
-              max-height .4s ease-in-out;
+              transition: opacity .4s ease-in-out, max-height .4s ease-in-out;
               opacity: 0;
             }
 
             overflow: hidden;
-            @include display-column();
+
+            @include display-column;
+
             cursor: pointer;
 
             .donateSchemeName {
-              >img {
-                @include desktop-320-767() {
-                  margin-right: 0.5*$gutterWidth;
+              > img {
+                @include desktop-320-767 {
+                  margin-right: 0.5 * $gutterWidth;
                 }
 
-                margin-right: 1.1*$gutterWidth;
+
+                margin-right: 1.1 * $gutterWidth;
                 transition: all .4s ease-in-out;
               }
 
-              @include display-row();
+              @include display-row;
+
               cursor: pointer;
               text-transform: uppercase;
               font-size: 1.2rem;
               padding: $gutterWidth;
 
-              @include desktop-320-767() {
-                padding: $gutterWidth*0.8;
+              @include desktop-320-767 {
+                padding: $gutterWidth * 0.8;
               }
+
 
               align-content: center;
               align-items: center;
@@ -308,10 +335,11 @@
             }
 
             .donateSchemeContent {
+              overflow: visible;
 
               .schemeContentAmount,
               .schemeContentDuration {
-                color: $primaryGreyColor;
+                color: $grey;
               }
 
               max-height: 0;
@@ -319,15 +347,16 @@
               display: grid;
               grid-template-rows: auto auto;
 
-              >span {
-                @include desktop-320-767() {
+              > span {
+                @include desktop-320-767 {
                   padding-right: 0;
-                  padding-left: 1.7*$gutterWidth;
+                  padding-left: 1.7 * $gutterWidth;
                 }
 
+
                 display: grid;
-                grid-template-columns: auto 4*$gutterWidth;
-                padding: 0.1*$gutterWidth 1.5*$gutterWidth 0.1*$gutterWidth 2.5*$gutterWidth;
+                grid-template-columns: auto (4 * $gutterWidth);
+                padding: (0.1 * $gutterWidth) (1.5 * $gutterWidth) (0.1 * $gutterWidth) (2.5 * $gutterWidth);
               }
             }
           }
@@ -335,52 +364,62 @@
       }
     }
 
-    >.donateAmountContainer {
-      @include desktop-320-767() {
+    > .donateAmountContainer {
+      @include desktop-320-767 {
         width: 100%;
         height: 100vh;
       }
 
-      @include display-column();
+
+      @include display-column;
+
       width: 50%;
 
-      >.donateAmount {
-        @include desktop-320-767() {
-          @include display-column();
+      > .donateAmount {
+        @include desktop-320-767 {
+          @include display-column;
+
           align-items: normal;
-          margin-top: 1.6*$gutterWidth;
-          padding: 0 1.6*$gutterWidth;
+          margin-top: 1.6 * $gutterWidth;
+          padding: 0 (1.6 * $gutterWidth);
         }
 
-        @include display-row();
+
+        @include display-row;
+
         align-content: center;
         align-items: center;
-        margin-top: 2*$gutterWidth;
-        padding: 0 2*$gutterWidth;
+        margin-top: 2 * $gutterWidth;
+        padding: 0 (2 * $gutterWidth);
 
         .donateInput {
-          @include desktop-320-767() {
-            @include display-column();
+          @include desktop-320-767 {
+            @include display-column;
+
             margin-right: 0;
             width: auto;
             margin-bottom: $gutterWidth;
+
             @include input(0.8);
+
             padding-left: 2rem;
           }
 
+
           @include input(1);
+
           position: relative;
           padding-left: 2rem;
-          margin-right: 1*$gutterWidth;
+          margin-right: 1 * $gutterWidth;
 
           &:focus {
-            +.rupeeSymbol {
+            + .rupeeSymbol {
               opacity: 1;
             }
           }
 
           &:valid {
-            +.rupeeSymbol {
+            + .rupeeSymbol {
               opacity: 1;
             }
           }
@@ -389,16 +428,17 @@
         .rupeeSymbol {
           position: absolute;
           width: 0.9rem;
-          margin-left: 0.8*$gutterWidth;
+          margin-left: 0.8 * $gutterWidth;
           opacity: 0;
 
-          @include desktop-320-767() {
-            margin-top: 0.8*$gutterWidth;
+          @include desktop-320-767 {
+            margin-top: 0.8 * $gutterWidth;
           }
         }
 
         .donate {
           @include btn-standard(0.8);
+
           color: white;
         }
       }
@@ -407,7 +447,8 @@
 }
 
 .Error404Section {
-  @include display-column();
+  @include display-column;
+
   width: 100%;
   overflow: hidden;
   padding-top: 0;
@@ -423,7 +464,8 @@
 }
 
 .ComingSoonSection {
-  @include display-column();
+  @include display-column;
+
   width: 100%;
   overflow: hidden;
   padding-top: 0;
@@ -432,84 +474,97 @@
 }
 
 .goHome {
-  @include btn-standard();
+  @include btn-standard;
+
   color: white;
-  margin: 0 $gutterWidth*2;
+  margin: 0 ($gutterWidth * 2);
 }
 
 .OurStorysection {
-  @include section();
+  @include section;
 }
 
 .OurEndeavourssection {
-  @include section();
+  @include section;
 }
 
 .OurTeamsection {
-  @include section();
+  @include section;
 
   .teamContainer {
-    @include desktop-320-767() {
-      @include display-column();
-      padding: 0 1.6*$gutterWidth;
+    @include desktop-320-767 {
+      @include display-column;
+
+      padding: 0 (1.6 * $gutterWidth);
     }
 
-    @include display-column();
-    padding: $gutterWidth 0 $gutterWidth $gutterWidth*2;
 
-    >span {
-      @include desktop-320-767() {
-        @include display-column();
+    @include display-column;
+
+    padding: $gutterWidth 0 $gutterWidth ($gutterWidth * 2);
+
+    > span {
+      @include desktop-320-767 {
+        @include display-column;
+
         padding: 0;
         justify-content: space-between;
       }
 
-      @include display-row();
+
+      @include display-row;
+
       padding: $gutterWidth 0;
       justify-content: space-between;
     }
 
     .teamMemberContainer {
-      @include desktop-320-767() {
+      @include desktop-320-767 {
         margin-bottom: $gutterWidth;
-        width: calc(100vw - #{3.2*$gutterWidth});
+        width: calc(100vw - #{3.2 * $gutterWidth});
       }
 
-      @include display-row();
+
+      @include display-row;
+
       width: 40rem;
 
-      >img {
-        @include desktop-320-767() {
+      > img {
+        @include desktop-320-767 {
           min-width: 40%;
           width: 40%;
-          height: 6*$gutterWidth;
+          height: 6 * $gutterWidth;
         }
 
-        @include desktop-768-1024() {
-          min-height: 6*$gutterWidth;
 
+        @include desktop-768-1024 {
+          min-height: 6 * $gutterWidth;
         }
 
-        background: $hlBlack;
+
+        background: $grey-400;
         width: 12.5rem;
         min-width: 10rem;
         height: 13.75rem;
       }
 
-      >span {
-        @include desktop-320-767() {
-          padding: 0.6*$gutterWidth 0 0 $gutterWidth;
+      > span {
+        @include desktop-320-767 {
+          padding: (0.6 * $gutterWidth) 0 0 $gutterWidth;
         }
 
-        @include display-column();
-        padding: 0.6*$gutterWidth 1.6*$gutterWidth;
+
+        @include display-column;
+
+        padding: (0.6 * $gutterWidth) (1.6 * $gutterWidth);
       }
 
       .teamMemberName {
-        @include desktop-320-767() {
+        @include desktop-320-767 {
           font-size: $mobileNormalFontSize;
-          margin-bottom: 0.4*$gutterWidth;
+          margin-bottom: 0.4 * $gutterWidth;
         }
+
 
         font-size: $normalFontSize;
         font-family: $generalFontFamily;
@@ -517,9 +572,10 @@
       }
 
       .teamMemberPost {
-        @include desktop-320-767() {
+        @include desktop-320-767 {
           font-size: $mobileNormalFontSize;
         }
+
 
         font-size: $normalFontSize;
         font-family: $generalFontFamilyLight;

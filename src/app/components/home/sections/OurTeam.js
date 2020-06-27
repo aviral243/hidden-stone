@@ -3,7 +3,7 @@ function OurTeam() {
   return (
     <section className="section OurTeamsection" id="ourteam">
       <h1>
-        <span className="orangeText">our</span> team
+        <span className="orange-text">our</span> team
       </h1>
       <div className="teamContainer">
         <span>
