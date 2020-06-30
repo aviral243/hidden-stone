@@ -6,6 +6,8 @@ const DIST_DIR = path.resolve(__dirname, "public");
 const SRC_DIR = path.resolve(__dirname, "src");
 const BundleAnalyzerPlugin = require("@bundle-analyzer/webpack-plugin");
 
+const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+
 const config = {
   entry: {
     path: `${SRC_DIR}/app/Index.js`
@@ -82,7 +84,7 @@ const config = {
       inject: false
     }),
     new webpack.ProgressPlugin(),
-    new BundleAnalyzerPlugin({ token: process.env.BUNDLE_ANALYZER_TOKEN })
+    new BundleAnalyzerPlugin({ token: dotenv.BUNDLE_ANALYZER_TOKEN })
   ]
 };
 
