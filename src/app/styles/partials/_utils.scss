@@ -43,11 +43,11 @@ hr {
 	@include divider();
 }
 p {
-	> .orangeText {
-		color: $primaryColor;
+	> .orange-text {
+		color: $orange-500;
 		font-family: $generalFontFamilyMedium;
 	}
 }
-.orangeText {
-	color: $primaryColor;
+.orange-text {
+	color: $orange-500;
 }

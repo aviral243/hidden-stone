@@ -3,7 +3,7 @@ function OurStory() {
   return (
     <section className="section OurStorysection" id="ourstory">
       <h1>
-        <span className="orangeText">our</span> story
+        <span className="orange-text">our</span> story
       </h1>
       <p>
         Utthan is a trust based in Bareilly, U.P. Established in september 2018,

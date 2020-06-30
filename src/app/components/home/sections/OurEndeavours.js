@@ -6,7 +6,7 @@ class OurEndeavours extends Component {
     return (
       <section className="section OurEndeavourssection">
         <h1>
-          <span className="orangeText">our</span> endeavours
+          <span className="orange-text">our</span> endeavours
         </h1>
       </section>
     );

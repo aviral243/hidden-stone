@@ -7,10 +7,10 @@ class OurWork extends Component {
     return (
       <section className="section OurWorkSection" id="ourwork">
         <h1>
-          <span className="orangeText">the</span> mission
+          <span className="orange-text">the</span> mission
         </h1>
         <p>
-          <span className="orangeText">Utthan</span> strives to deliver
+          <span className="orange-text">Utthan</span> strives to deliver
           facilites at the doorstep of these people. Our primary aim is to teach
           them different skills. Later we collaborate with different sectors to
           find them jobs. We also organise session to spread awareness and

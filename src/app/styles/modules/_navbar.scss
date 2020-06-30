@@ -1,86 +1,101 @@
-.NavBarContainer {
-  list-style: none;
-  align-items: center;
-  @include display-row();
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
+.main-navbar-container {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  list-style: none;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  width: 100%;
+  padding: 0 ($gutterWidth * 0.8);
 
-  .uf-logo {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 1rem;
+  .NavBarContainer {
+    @include display-row;
 
-    #UFlogo {
-      @include display-row();
-
-      .NavBarHeadingContainer {
-        @include display-column();
-        justify-content: center;
-        margin-left: $gutterWidth;
-
-        .NavBarHeading {
-          font-size: $normalFontSize*0.8;
-          margin-bottom: $gutterWidth * 0.4;
-        }
-
-        .NavBarSubHeading {
-          font-size: $normalFontSize*0.5;
-          margin-bottom: $gutterWidth * 0.4;
-        }
-      }
-    }
-
-  }
-
-  .NavItem {
-    @include desktop-0-1281() {
-      display: none;
-    }
-
-    @include display-row();
-    justify-content: space-between;
-
+    list-style: none;
     align-items: center;
 
-    &.activeLink {
-      .NavItemLinks {
-        color: $primaryColor !important;
+    // width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+
+    .uf-logo-container {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+
+      .uf-logo-link-container {
+        padding: 0.8rem;
+
+        @include display-row;
+
+        .uf-logo {
+          width: 3rem;
+          height: 3rem;
+        }
+
+        .NavBarHeadingContainer {
+          @include display-column;
+
+          justify-content: center;
+          margin-left: $gutterWidth;
+
+          .NavBarHeading {
+            @extend .fs-xxl;
+
+            margin-bottom: $gutterWidth * 0.4;
+          }
+
+          .NavBarSubHeading {
+            @extend .fs-s;
+          }
+        }
       }
     }
 
-    .NavItemLinks {
-      @include display-row();
+    .NavItem {
+      @include display-row;
+      @include desktop-0-1281 {
+        display: none;
+      }
+
+
+      justify-content: space-between;
       align-items: center;
-      font-family: Lato;
-      font-size: $normalFontSize*0.6;
-      font-weight: normal;
-      justify-content: center;
-      line-height: $normaLineHeight;
-      padding: $gutterWidth*0.6 $gutterWidth*0.8;
-      text-align: center;
-      text-transform: uppercase;
-      transition: background-color .4s ease;
 
-      &.hover:hover {
-        background-color: rgba($hlBlack, 0.2) !important;
+      &.activeLink {
+        .NavItemLinks {
+          color: $orange-500 !important;
+        }
       }
 
-      &:not(:focus):hover {
-        background-color: $hlHover;
-      }
-    }
+      .NavItemLinks {
+        @include display-row;
 
-    &:last-child {
-      padding-right: $gutterWidth;
-      ;
+        align-items: center;
+        font-family: Lato;
+        font-size: $normalFontSize * 0.6;
+        font-weight: normal;
+        justify-content: center;
+        line-height: $normaLineHeight;
+        padding: ($gutterWidth * 0.2) ($gutterWidth * 0.8);
+        text-align: center;
+        text-transform: uppercase;
+        transition: background-color .4s ease;
+
+        &.logo {
+          padding: $gutterWidth * 0.2;
+        }
+
+        &:hover {
+          background-color: rgba($grey-400, 0.2) !important;
+        }
+
+        &:not(:focus):hover {
+          background-color: $grey-400;
+        }
+      }
     }
   }
 }

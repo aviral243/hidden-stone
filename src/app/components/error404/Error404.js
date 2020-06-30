@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Error404 = () => (
-  <div className="Error404Section MainSection">
+  <div className="Error404Section section-main">
     <h1>
-      <span className="orangeText">Oops!!!</span> 404
+      <span className="orange-text">Oops!!!</span> 404
     </h1>
     <p>
       Page not found.
@@ -12,7 +12,7 @@ const Error404 = () => (
     </p>
     <p>
       Go back to
-      <span className="orangeText"> Home</span>.
+      <span className="orange-text"> Home</span>.
     </p>
     <button className="goHome">
       <a href="/">Home</a>

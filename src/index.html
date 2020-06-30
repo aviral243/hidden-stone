@@ -63,84 +63,14 @@
                 let reverseRgb = 300 - $(document).scrollTop();
                 let rgbTop = rgb * 5;
                 let reverseRgbContactUs = 255 - rgbTop;
-                if (rgbHL < 600) {
-                    $(".NavItemLinks").addClass("hover");
-                }
-                if (rgbHL > 100) {
 
-                }
                 let rgbTopOpacity = rgbHL > 950 ? 1 : rgbTop / 900;
                 let rgbTopOpacityShadow = rgbHL > 50 ? 0.15 : rgbTop / 800;
                 $("#navbar .NavItemLinks").css("color", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
                 $("#navbar").css("background-color", "rgba(" + rgbTop + ", " + rgbTop + ", " + rgbTop + "," + rgbTopOpacity + ")");
-                $("#navbar .logo").css("filter", 'invert(' + rgbTopOpacity + ')');
                 $("#navbar").css("box-shadow", " 0px 10px 25px rgba(0, 0, 0," + rgbTopOpacityShadow + ")");
-                $("#navbar a img .icon").css("fill", "rgb(" + reverseRgb + ", " + reverseRgb + ", " + reverseRgb + ")");
                 $("#navbar a").css("color", "rgb(" + reverseRgbContactUs + ", " + reverseRgbContactUs + ", " + reverseRgbContactUs + ")");
             });
-            // var headerNavbar = document.getElementById("navbar");
-
-            // var linksNavbar = headerNavbar.getElementsByClassName("NavItemLinks");
-            // for (var i = 0; i < linksNavbar.length; i++) {
-            //     linksNavbar[i].addEventListener("click", function () {
-            //         var current = headerNavbar.getElementsByClassName("activeLinkNavbar");
-            //         current[0].className = current[0].className.replace(" activeLinkNavbar", "");
-            //         this.className += " activeLinkNavbar";
-            //     });
-
-            // }
-
-            // var headersectionNavbar = document.getElementById("section-navbar");
-            // var linkssectionNavbar = headerNavbar.getElementsByClassName("NavItemLinks");
-            //         console.log(linkssectionNavbar);
-
-            // for (var i = 0; i < linkssectionNavbar.length; i++) {
-            //     linkssectionNavbar[i].addEventListener("click", function () {
-            //         var current = headersectionNavbar.getElementsByClassName("activeLinksectionNavbar");
-            //         current[0].className = current[0].className.replace(" activeLinksectionNavbar", "");
-            //         this.className += " activeLinksectionNavBar";
-            //     });
-
-            // }
-            // $('a#nav-main').each(function () {
-            //     this.addEventListener("click", function () {
-            //         $("a#nav-main").parent().removeClass("activeLink")
-            //         $(this).parent().addClass("activeLink")
-            //     });
-            // });
-            // $('a#nav-sub-section').each(function () {
-            //     this.addEventListener("click", function () {
-            //         $("a#nav-sub-section").removeClass("activeLink")
-            //         $(this).addClass("activeLink")
-            //     });
-            // });
-
-            //      $("#aboutUsInfo").click(function () {
-            //          var section = document.getElementsByClassName("section")
-            //          for (let i = 0; i < section.length; i++) {
-            //              const element = section[i];
-            //              element.className += " inactiveSection";
-            //          }
-            //          $("#topbar").addClass("inactiveSection")
-            //          $("#navbar").addClass("inactiveSection")
-            //          $("#section-navbar").addClass("activeNavbar")
-            //          $("#section-topbar").addClass("activeTopBar")
-            //          $("#home-section-right-section").addClass("activeSection");
-            //          $("#home-section-left-section").addClass("inactiveSection");
-            //      });
-            //      $("#back-left-arrow").click(function () {
-            //          var section = document.getElementsByClassName("section")
-            //          for (let i = 0; i < section.length; i++) {
-            //              const element = section[i];
-            //              element.className = element.className.replace(" inactiveSection", "");
-            //          }
-            //          $("#topbar").removeClass("inactiveSection")
-            //          $("#navbar").removeClass("inactiveSection")
-            //          $("#section-topbar").removeClass("activeTopBar")
-            //          $("#section-navbar").removeClass("activeNavbar")
-            //          $("#home-section-right-section").removeClass("activeSection");
-            //          $("#home-section-left-section").removeClass("inactiveSection");
-            //      });
         }(jQuery)); 
     </script>
 </body>

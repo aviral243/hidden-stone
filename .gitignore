@@ -5,3 +5,4 @@ scripts/setup.sh
 stats.json
 .vscode
 .dist
+.env
