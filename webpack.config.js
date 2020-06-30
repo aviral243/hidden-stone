@@ -4,6 +4,8 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const DIST_DIR = path.resolve(__dirname, "public");
 const SRC_DIR = path.resolve(__dirname, "src");
+const BundleAnalyzerPlugin = require("@bundle-analyzer/webpack-plugin");
+
 const config = {
   entry: {
     path: `${SRC_DIR}/app/Index.js`
@@ -79,7 +81,8 @@ const config = {
       filename: `${DIST_DIR}/index.html`,
       inject: false
     }),
-    new webpack.ProgressPlugin()
+    new webpack.ProgressPlugin(),
+    new BundleAnalyzerPlugin({ token: process.env.BUNDLE_ANALYZER_TOKEN })
   ]
 };
 
