@@ -43,6 +43,6 @@ export const theme = createMuiTheme({
 
 export const sectionUseStyles = makeStyles(theme => ({
   root: {
-    paddingLeft: theme.spacing(6)
+    paddingLeft: theme.spacing(10)
   }
 }));

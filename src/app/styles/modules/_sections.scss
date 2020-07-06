@@ -47,32 +47,6 @@
     color: white;
     position: relative;
     align-content: center;
-    justify-content: center;
-
-    .donate {
-      @include desktop-320-767 {
-        @include btn-standard(0.8);
-      }
-
-
-      a {
-        color: black;
-      }
-
-      @include btn-standard;
-    }
-
-    .learn-more {
-      text-transform: uppercase;
-      padding: $gutterWidth $gutterWidth;
-
-      @include desktop-320-767 {
-        @include btn-standard-transparent(0.8);
-      }
-
-
-      @include btn-standard-transparent;
-    }
   }
 }
 

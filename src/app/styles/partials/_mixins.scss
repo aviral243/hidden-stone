@@ -11,9 +11,6 @@
 @mixin section {
   @include desktop-320-767 {
     min-height: 100vh;
-    height: 100%;
-    width: 100vw;
-    padding: 0;
   }
 
 

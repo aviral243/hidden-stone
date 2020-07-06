@@ -1,18 +1,10 @@
 /* eslint-disable no-param-reassign */
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, useMediaQuery } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    textTransform: "none",
-    minWidth: "fit-content",
-    lineHeight: "unset"
-  },
-  label: {
-    whiteSpace: "nowrap"
-  },
+const customStyles = makeStyles(theme => ({
   containedPrimary: {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
@@ -43,6 +35,40 @@ const useStyles = makeStyles(theme => ({
       cursor: "not-allowed",
       backgroundColor: "Transparent"
     }
+  },
+  textWhite: {
+    backgroundColor: "Transparent",
+    color: theme.palette.common.white,
+    "&:hover": {
+      color: theme.palette.common.white,
+      backgroundColor: "Transparent"
+    },
+    "&:active": {
+      color: theme.palette.common.white,
+      backgroundColor: "Transparent"
+    },
+    "&:disabled": {
+      color: theme.palette.common.white,
+      cursor: "not-allowed",
+      backgroundColor: "Transparent"
+    }
+  }
+}));
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    textTransform: "none",
+    minWidth: "fit-content",
+    lineHeight: "unset",
+    borderRadius: "0"
+  },
+  label: {
+    whiteSpace: "nowrap"
+  },
+  sizeLarge: {
+    fontSize: "1.2rem",
+    minHeight: "3.5rem",
+    minWidth: "8rem"
   }
 }));
 
@@ -52,9 +78,7 @@ const MuIButton = ({
   color = "primary",
   isDisabled,
   handleSubmit,
-  size,
-  startIcon,
-  endIcon,
+  size = "large",
   className,
   fullWidth,
   spinner,
@@ -63,13 +87,15 @@ const MuIButton = ({
 }) => {
   const propClasses = className;
   const classes = useStyles();
+  const customClasses = customStyles();
 
   const customClass = variant + color.charAt(0).toUpperCase() + color.slice(1);
 
+  const buttonClasses = {
+    ...classes,
+    containedPrimary: customClasses[customClass]
+  };
   const buttonLabel = label || "Save";
-  const lgBreakpoint = useMediaQuery(theme => theme.breakpoints.up("lg"));
-  size = lgBreakpoint ? size : "medium";
-
   return (
     <>
       <Button
@@ -82,14 +108,8 @@ const MuIButton = ({
         disableElevation
         fullWidth={!!fullWidth}
         disableRipple={!!disableRipple}
-        classes={{
-          root: classes.root,
-          containedPrimary: classes[customClass],
-          label: classes.label
-        }}
+        classes={buttonClasses}
         className={`${propClasses}`}
-        startIcon={startIcon}
-        endIcon={endIcon}
         {...props}
       >
         {spinner ? "" : buttonLabel}
@@ -100,14 +120,12 @@ const MuIButton = ({
 
 MuIButton.propTypes = {
   variant: PropTypes.string,
-  label: PropTypes.object,
+  label: PropTypes.string,
   isDisabled: PropTypes.bool,
   isSubmitting: PropTypes.bool,
   handleSubmit: PropTypes.func,
   className: PropTypes.string,
   size: PropTypes.string,
-  startIcon: PropTypes.object,
-  endIcon: PropTypes.string,
   fullWidth: PropTypes.bool,
   spinner: PropTypes.bool,
   disableRipple: PropTypes.bool,

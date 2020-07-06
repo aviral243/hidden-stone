@@ -12,7 +12,7 @@ const Main = () => {
     <Grid container className="section section-main-container" id="main">
       <div className="grad" />
       <Grid item xs={8} classes={sectionStyles}>
-        <section className="section-main">
+        <FlexBox.Col justifyContent="center" className="section-main">
           <h1>
             let’s build a <span className="orange-text">society</span> with
             skilled individuals
@@ -21,14 +21,18 @@ const Main = () => {
             <span className="orange-text">Utthan</span> works to build this
             society of our dreams
           </p>
-          <FlexBox>
+          <FlexBox.Row mt={2}>
             <Link to="/coming-soon">
-              <Button className="donate">Donate</Button>
+              <Button className="donate" label="Donate" />
             </Link>
-
-            <button className="learn-more">Learn More</button>
-          </FlexBox>
-        </section>
+            <Button
+              className="learn-more"
+              label="Learn More"
+              variant="text"
+              color="white"
+            />
+          </FlexBox.Row>
+        </FlexBox.Col>
       </Grid>
     </Grid>
   );
