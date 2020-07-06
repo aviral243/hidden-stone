@@ -6,7 +6,7 @@ const DIST_DIR = path.resolve(__dirname, "public");
 const SRC_DIR = path.resolve(__dirname, "src");
 const BundleAnalyzerPlugin = require("@bundle-analyzer/webpack-plugin");
 
-const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+const dotenv = require("dotenv").config({ path: `${__dirname}/.env` });
 
 const config = {
   entry: {
