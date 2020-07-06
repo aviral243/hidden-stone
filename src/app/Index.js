@@ -10,5 +10,5 @@ render(
   <Router>
     <Route component={App} />
   </Router>,
-  document.getElementById("app")
+  document.getElementById("root")
 );
