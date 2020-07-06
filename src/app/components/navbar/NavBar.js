@@ -5,8 +5,8 @@ import { UFLogo } from "../core/Icons";
 class NavBar extends Component {
   render() {
     return (
-      <nav className="main-navbar-container">
-        <div className="NavBarContainer" id="navbar">
+      <div className="main-navbar-container">
+        <div className="navbar-conatiner" id="navbar">
           <div className="uf-logo-container">
             <a
               href={"https://utthanfoundation.co"}
@@ -97,7 +97,7 @@ class NavBar extends Component {
             </a>
           </li>
         </div>
-      </nav>
+      </div>
     );
   }
 }

@@ -13,8 +13,6 @@
 }
 
 .section-main-container {
-  padding: (0.75 * $gutterWidth) (4.5 * $gutterWidth);
-
   &::before {
     content: ' ';
     display: block;
@@ -50,18 +48,6 @@
     position: relative;
     align-content: center;
     justify-content: center;
-
-    > span {
-      @include desktop-320-767 {
-        margin-left: $gutterWidth * 1.6;
-      }
-
-
-      @include display-row;
-
-      margin-left: $gutterWidth * 2;
-      padding: (1.6 * $gutterWidth) 0;
-    }
 
     .donate {
       @include desktop-320-767 {

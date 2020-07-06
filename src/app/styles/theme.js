@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme, makeStyles } from "@material-ui/core";
 import variables from "./partials/_variables.scss";
 
 const fontFamilyArr = [];
@@ -40,3 +40,9 @@ export const theme = createMuiTheme({
     }
   }
 });
+
+export const sectionUseStyles = makeStyles(theme => ({
+  root: {
+    paddingLeft: theme.spacing(6)
+  }
+}));
