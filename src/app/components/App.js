@@ -16,7 +16,9 @@ class Index extends React.Component {
       <ThemeProvider theme={theme}>
         <div className="App">
           <Router>
-            <NavBar />
+            <Switch>
+              <Route exact path="/" component={NavBar} />
+            </Switch>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/coming-soon" component={ComingSoon} />

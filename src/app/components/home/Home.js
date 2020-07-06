@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Sections } from "./sections";
-import NavBar from "../navbar/NavBar";
+
 class Home extends Component {
   render() {
     return (
