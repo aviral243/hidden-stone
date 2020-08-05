@@ -6,40 +6,39 @@ const DIST_DIR = path.resolve(__dirname, "public");
 const SRC_DIR = path.resolve(__dirname, "src");
 const BundleAnalyzerPlugin = require("@bundle-analyzer/webpack-plugin");
 
+// Now you can use .env variables in webpack as well
 const dotenv = require("dotenv").config({ path: `${__dirname}/.env` });
 
 const config = {
   entry: {
-    path: `${SRC_DIR}/app/Index.js`
+    path: `${SRC_DIR}/index.js`
   },
   output: {
     filename: "bundle.js",
-    path: `${DIST_DIR}/app`,
-    publicPath: "/app/",
+    path: DIST_DIR,
+    publicPath: "/",
     pathinfo: false
   },
   resolve: {
     // options for resolving module requests
     // (does not apply to resolving to loaders)
-    modules: ["node_modules", `${SRC_DIR}/app`]
+    modules: ["node_modules", `${SRC_DIR}`]
   },
   module: {
     rules: [
       {
         test: /(\.scss|css)$/,
-        include: `${SRC_DIR}/app/styles`,
+        include: `${SRC_DIR}/styles`,
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(html)$/,
         include: `${SRC_DIR}/index.html`,
-        exclude: [/(node_modules|bower_components)/, `${SRC_DIR}/app/`],
+        exclude: [/(node_modules|bower_components)/],
         use: {
           loader: "html-loader",
           options: {
-            minimize: false,
-            removeComments: true,
-            collapseWhitespace: false
+            minimize: false
           }
         }
       },
@@ -58,12 +57,12 @@ const config = {
       },
       {
         test: /\.(jpe?g|png|svg)(\?[a-z0-9=.]+)?$/,
-        include: `${SRC_DIR}/app/images`,
+        include: `${SRC_DIR}/images`,
         loader: "url-loader?limit=10000&name=images/[hash].[ext]"
       },
       {
         test: /\.(woff|woff2)?/,
-        include: `${SRC_DIR}/app/fonts`,
+        include: `${SRC_DIR}/fonts`,
         loader:
           "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[hash].[ext]"
       }
@@ -71,9 +70,6 @@ const config = {
   },
   plugins: [
     new CleanWebpackPlugin({
-      // Simulate the removal of files
-      //
-      // default: false
       dry: true,
       verbose: true,
       cleanStaleWebpackAssets: true
