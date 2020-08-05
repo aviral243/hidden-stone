@@ -13,7 +13,7 @@ const configDev = {
     compress: true,
     open: true,
     inline: true,
-    port: 9000,
+    port: 3000,
     hot: true,
     stats: {
       colors: true,
